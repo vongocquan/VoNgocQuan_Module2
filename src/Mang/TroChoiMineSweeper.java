@@ -1,7 +1,7 @@
 package Mang;
 
 import java.util.Scanner;
-
+//Demo Push
 public class TroChoiMineSweeper {
     public static void main(String[] args) {
         char[][] map = {{'.','.','.','.','.','.'},
