@@ -1,7 +1,7 @@
 package Mang;
 
 import java.util.Scanner;
-//Demo Push
+
 public class TroChoiMineSweeper {
     public static void main(String[] args) {
         char[][] map = {{'.','.','.','.','.','.'},
@@ -48,24 +48,6 @@ public class TroChoiMineSweeper {
                 }
             }
         }
-        char a;
-
-        for (int x = 1; x < 5; x++){
-            for (int y = 1; y < 5; y++){
-                do {
-                    System.out.print("nhập hàng " + x + " cột " + y + ": ");
-                    a = scanner.next().charAt(0);
-                    if (a == map[x][y]) {
-                        System.out.println("dung. choi tiep");
-                    }else {
-                        System.out.println("sai. nhap lai");
-                    }
-
-                } while (a != map[x][y]);
-
-            }
-        }System.out.println("win");
-        System.out.println("ket qua: ");
         for (int x = 1; x<5; x++){
             for (int y = 1; y<5; y++){
                 System.out.print(map[x][y]);
