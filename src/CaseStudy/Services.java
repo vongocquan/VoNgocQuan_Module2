@@ -1,9 +1,9 @@
 package CaseStudy;
 
 public class Services {
-    String tenDichVu;
-    String dienTichSuDung;
-    String chiPhiThue;
+    private String tenDichVu;
+    private String dienTichSuDung;
+    private String chiPhiThue;
     int soNguoiToiDa;
     String kieuThue;
     public Services(){

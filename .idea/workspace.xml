@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1dd7df49-2c16-4e68-9da8-8f0b9612c4a4" name="Default Changelist" comment="" />
+    <list default="true" id="a927b024-ce27-453f-8979-84925c95ce71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/LopAniMalVaInterface/Animal/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/LopAniMalVaInterface/Animal/Chicken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/LopAniMalVaInterface/Animal/Tiger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/LopAniMalVaInterface/Edible/Edible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/LopAniMalVaInterface/Fruit/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/LopAniMalVaInterface/Fruit/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/LopAniMalVaInterface/Fruit/Orange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/LopAniMalVaInterface/Object.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/THInterfaceComparator/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/THInterfaceComparator/CircleComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/THInterfaceComparator/CircleComparatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/THInterfaceComparator/Comparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/interfaceResizeable/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/interfaceResizeable/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/interfaceResizeable/Resizeable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/interfaceResizeable/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/interfaceResizeable/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/interfaceResizeable/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Services.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeThua_HeCacDoiTuongHinhHoc/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeThua_HeCacDoiTuongHinhHoc/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeThua_HeCacDoiTuongHinhHoc/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeThua_HeCacDoiTuongHinhHoc/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeThua_HeCacDoiTuongHinhHoc/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeThua_HeCacDoiTuongHinhHoc/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeThua_HeCacDoiTuongHinhHoc/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeThua_HeCacDoiTuongHinhHoc/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeThua_LopCircleVaCylinder/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeThua_LopCircleVaCylinder/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeThua_LopCircleVaCylinder/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeThua_LopCircleVaCylinder/Cylinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeThua_LopCircleVaCylinder/object.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeThua_LopCircleVaCylinder/object.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeThua_Triangle/Ojbect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeThua_Triangle/Ojbect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LopVaDoiTuongTrongJava_dienTichHinhChuNhat.java/LopHinhChuNhat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LopVaDoiTuongTrongJava_dienTichHinhChuNhat.java/LopHinhChuNhat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mang/TroChoiMineSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mang/TroChoiMineSweeper.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +49,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1abRbqQTSWBRjK61YmBYAUVlvLF" />
+  <component name="ProjectId" id="1ai7UqJAGbQE1pBgU3l3Niekbsa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,27 +58,78 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AdvancedObjectOrientedDesign.interfaceResizeable.test" />
+      <module name="VoNgocQuan_Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AdvancedObjectOrientedDesign.interfaceResizeable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b714dd40-9a86-44f7-83c4-0f37d3eaa250" name="Default Changelist" comment="" />
-      <created>1587002381295</created>
+      <changelist id="a927b024-ce27-453f-8979-84925c95ce71" name="Default Changelist" comment="" />
+      <created>1587206578974</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1587002381295</updated>
-      <workItem from="1587002388038" duration="321000" />
+      <updated>1587206578974</updated>
+      <workItem from="1587206583218" duration="1432000" />
+      <workItem from="1587208165714" duration="1917000" />
+      <workItem from="1587210392249" duration="811000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1587207386863">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1587207386863" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1587211210783">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587211210783" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1587211210783">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587211210783" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1587211210782">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587211210782" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1587211210783">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587211210783" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1587210469813">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587210469813" />
   </component>
 </project>
