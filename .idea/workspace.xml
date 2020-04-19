@@ -2,37 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a927b024-ce27-453f-8979-84925c95ce71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/LopAniMalVaInterface/Animal/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/LopAniMalVaInterface/Animal/Chicken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/LopAniMalVaInterface/Animal/Tiger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/LopAniMalVaInterface/Edible/Edible.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/LopAniMalVaInterface/Fruit/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/LopAniMalVaInterface/Fruit/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/LopAniMalVaInterface/Fruit/Orange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/LopAniMalVaInterface/Object.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/THInterfaceComparator/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/THInterfaceComparator/CircleComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/THInterfaceComparator/CircleComparatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/THInterfaceComparator/Comparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/interfaceResizeable/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/interfaceResizeable/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/interfaceResizeable/Resizeable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/interfaceResizeable/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/interfaceResizeable/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/interfaceResizeable/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/InterfaceColorable/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/InterfaceColorable/Colorable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/InterfaceColorable/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/InterfaceColorable/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/InterfaceColorable/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/InterfaceColorable/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Task1/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Task1/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Task1/Services.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Task1/Villa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Task1/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Task2/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/ChiSoCanNangCoThe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/DocSoThanhChu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/HienThi20SoNguyenToDauTien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/HienThiCacLoaiHinh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/HienThiLoiChao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/HienThiSoNguyenToNhoHon100.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/KhaiBaoVaSuDungBien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/KiemTraNamNhuan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/KiemTraSoNguyenTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/MenuUngDung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/PhuongTrinhBacNhat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/SystemTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/TimGiaTriTrongMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/TimUocSoChungLonNhat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/TinhDienTichHinhChuNhat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/TinhSoNgayTrongThang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/TinhTienLaiChoVay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/chuyenDoiTienTe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Services.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KeThua_HeCacDoiTuongHinhHoc/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeThua_HeCacDoiTuongHinhHoc/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KeThua_HeCacDoiTuongHinhHoc/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeThua_HeCacDoiTuongHinhHoc/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KeThua_HeCacDoiTuongHinhHoc/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeThua_HeCacDoiTuongHinhHoc/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KeThua_HeCacDoiTuongHinhHoc/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeThua_HeCacDoiTuongHinhHoc/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KeThua_LopCircleVaCylinder/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeThua_LopCircleVaCylinder/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KeThua_LopCircleVaCylinder/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeThua_LopCircleVaCylinder/Cylinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KeThua_LopCircleVaCylinder/object.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeThua_LopCircleVaCylinder/object.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KeThua_Triangle/Ojbect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeThua_Triangle/Ojbect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LopVaDoiTuongTrongJava_dienTichHinhChuNhat.java/LopHinhChuNhat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LopVaDoiTuongTrongJava_dienTichHinhChuNhat.java/LopHinhChuNhat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mang/TroChoiMineSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mang/TroChoiMineSweeper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Services.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AdvancedObjectOrientedDesign/AdvancedObjectOrientedDesign.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/House.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Services.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/ChuyenDoiTienTe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/DientichHinhChuNhat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/DocSo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/GiaiPhuongTrinhBacNhat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/HienThi20SoNguyenToDauTien.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/HienThiCacLoaiHinh.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/HienThiLoiChao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/HienThiSoNguyenToNhoHon100.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/KhaiBaoVaSuDungBien.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/KiemTraNamNhuan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/KiemTraSoNguyenTo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/MenuUngDung.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/SystemTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/TimGiaTriTrongMang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/TimUocSoChungLonNhat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/TinhChiSoCanNangCoThe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/TinhSoNgayTrongThang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonNguLapTrinhJava/TinhTienLaiChoVay.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +89,47 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager">
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.test (1)">
+    <configuration name="MainController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CaseStudy.Task2.MainController" />
+      <module name="VoNgocQuan_Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CaseStudy.Task2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SystemTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ngonNguLapTrinh_java.SystemTime" />
+      <module name="VoNgocQuan_Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ngonNguLapTrinh_java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AdvancedObjectOrientedDesign.InterfaceColorable.test" />
+      <module name="VoNgocQuan_Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AdvancedObjectOrientedDesign.InterfaceColorable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AdvancedObjectOrientedDesign.interfaceResizeable.test" />
       <module name="VoNgocQuan_Module2" />
       <extension name="coverage">
@@ -81,9 +142,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CaseStudy.Task1.test" />
+      <module name="VoNgocQuan_Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CaseStudy.Task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test (1)" />
+        <item itemvalue="Application.test (2)" />
+        <item itemvalue="Application.MainController" />
         <item itemvalue="Application.test" />
+        <item itemvalue="Application.SystemTime" />
       </list>
     </recent_temporary>
   </component>
@@ -100,6 +178,8 @@
       <workItem from="1587206583218" duration="1432000" />
       <workItem from="1587208165714" duration="1917000" />
       <workItem from="1587210392249" duration="811000" />
+      <workItem from="1587214739543" duration="10384000" />
+      <workItem from="1587263508307" duration="4302000" />
     </task>
     <servers />
   </component>
@@ -107,29 +187,29 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1587207386863">
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1587264537060">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1587207386863" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1587211210783">
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1587264537060" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1587268049384">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587211210783" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1587211210783">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587268049384" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1587268049384">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587211210783" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1587211210782">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587268049384" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1587268049384">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587211210782" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1587211210783">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587268049384" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1587268049384">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587211210783" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1587210469813">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587268049384" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1587263647542">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587210469813" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587263647542" />
   </component>
 </project>
