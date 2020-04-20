@@ -3,7 +3,7 @@ package CaseStudy.Task1;
 public class House extends Services {
     private String tieuChuanPhong;
     private String moTaTienNghiKhac;
-    private int soTang;
+    private String soTang;
 
     public House() {
     }
@@ -24,21 +24,21 @@ public class House extends Services {
         this.moTaTienNghiKhac = moTaTienNghiKhac;
     }
 
-    public int getSoTang() {
+    public String getSoTang() {
         return soTang;
     }
 
-    public void setSoTang(int soTang) {
+    public void setSoTang(String soTang) {
         this.soTang = soTang;
     }
 
-    public House(String tieuChuanPhong, String moTaTienNghiKhac, int soTang) {
+    public House(String tieuChuanPhong, String moTaTienNghiKhac, String soTang) {
         this.tieuChuanPhong = tieuChuanPhong;
         this.moTaTienNghiKhac = moTaTienNghiKhac;
         this.soTang = soTang;
     }
 
-    public House(String tenDichVu, String dienTichSuDung, String chiPhiThue, int soLuongNguoiToiDa, String kieuThue, String tieuChuanPhong, String moTaTienNghiKhac, int soTang) {
+    public House(String tenDichVu, String dienTichSuDung, String chiPhiThue, int soLuongNguoiToiDa, String kieuThue, String tieuChuanPhong, String moTaTienNghiKhac, String soTang) {
         super(tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue);
         this.tieuChuanPhong = tieuChuanPhong;
         this.moTaTienNghiKhac = moTaTienNghiKhac;

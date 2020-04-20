@@ -1,11 +1,11 @@
 package CaseStudy.Task1;
 
 public abstract class Services{
-    private String tenDichVu = "thue phong";
-    private String dienTichSuDung = "45 m2";
-    private String chiPhiThue = "50 do";
-    private int soLuongNguoiToiDa = 3;
-    private String kieuThue = "thue theo ngay";
+    private String tenDichVu;
+    private String dienTichSuDung;
+    private String chiPhiThue;
+    private int soLuongNguoiToiDa;
+    private String kieuThue;
 
     public Services() {
     }

@@ -16,7 +16,7 @@ public class test {
         House house =new House();
         house.setTieuChuanPhong("binh thuong");
         house.setMoTaTienNghiKhac("may giat, tu lanh");
-        house.setSoTang(2);
+        house.setSoTang("2");
         System.out.println(house.showInfor());
         Room room = new Room();
         room.setDichVuDiKem("an toi");
