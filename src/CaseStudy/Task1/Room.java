@@ -15,7 +15,7 @@ public class Room extends Services {
     }
 
     @Override
-    String showInfor() {
+    public String showInfor() {
         return "Room{" +
                 "dichVuDiKem='" + dichVuDiKem + '\'' +
                 '}' + super.toString();
@@ -26,7 +26,7 @@ public class Room extends Services {
         this.dichVuDiKem = dichVuDiKem;
     }
 
-    public Room(String tenDichVu, String dienTichSuDung, String chiPhiThue, int soLuongNguoiToiDa, String kieuThue, String dichVuDiKem) {
+    public Room(String tenDichVu, String dienTichSuDung, String chiPhiThue, String soLuongNguoiToiDa, String kieuThue, String dichVuDiKem) {
         super(tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue);
         this.dichVuDiKem = dichVuDiKem;
     }

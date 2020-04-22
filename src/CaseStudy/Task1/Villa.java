@@ -10,7 +10,7 @@ public class Villa extends Services {
     }
 
     @Override
-    String showInfor() {
+    public String showInfor() {
         return "Villa{" +
                 "tieuChuanPhong='" + tieuChuanPhong + '\'' +
                 ", moTaTienNghiKhac='" + moTaTienNghiKhac + '\'' +
@@ -59,7 +59,7 @@ public class Villa extends Services {
         this.soTang = soTang;
     }
 
-    public Villa(String tenDichVu, String dienTichSuDung, String chiPhiThue, int soLuongNguoiToiDa, String kieuThue, String tieuChuanPhong, String moTaTienNghiKhac, String dienTichHoBoi, String soTang) {
+    public Villa(String tenDichVu, String dienTichSuDung, String chiPhiThue, String soLuongNguoiToiDa, String kieuThue, String tieuChuanPhong, String moTaTienNghiKhac, String dienTichHoBoi, String soTang) {
         super(tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue);
         this.tieuChuanPhong = tieuChuanPhong;
         this.moTaTienNghiKhac = moTaTienNghiKhac;

@@ -4,13 +4,13 @@ public abstract class Services{
     private String tenDichVu;
     private String dienTichSuDung;
     private String chiPhiThue;
-    private int soLuongNguoiToiDa;
+    private String soLuongNguoiToiDa;
     private String kieuThue;
 
     public Services() {
     }
 
-    public Services(String tenDichVu, String dienTichSuDung, String chiPhiThue, int soLuongNguoiToiDa, String kieuThue) {
+    public Services(String tenDichVu, String dienTichSuDung, String chiPhiThue, String soLuongNguoiToiDa, String kieuThue) {
         this.tenDichVu = tenDichVu;
         this.dienTichSuDung = dienTichSuDung;
         this.chiPhiThue = chiPhiThue;
@@ -42,11 +42,11 @@ public abstract class Services{
         this.chiPhiThue = chiPhiThue;
     }
 
-    public int getSoLuongNguoiToiDa() {
+    public String getSoLuongNguoiToiDa() {
         return soLuongNguoiToiDa;
     }
 
-    public void setSoLuongNguoiToiDa(int soLuongNguoiToiDa) {
+    public void setSoLuongNguoiToiDa(String soLuongNguoiToiDa) {
         this.soLuongNguoiToiDa = soLuongNguoiToiDa;
     }
 
@@ -67,5 +67,5 @@ public abstract class Services{
                 '}';
     }
 
-    abstract String showInfor();
+    public abstract String showInfor();
 }
