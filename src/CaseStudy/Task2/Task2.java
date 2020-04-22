@@ -6,11 +6,14 @@ import CaseStudy.Task1.Services;
 import CaseStudy.Task1.Villa;
 
 import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class Task2 {
+//    private ArrayList<Services>;
+//    private ArrayList<Services> ;
+
     //task2
     public static void displayMainMenu() {
         System.out.println ("1. Add New Services");
@@ -37,15 +40,13 @@ public class Task2 {
         }
 
     }
-
     public static Services[] services = new Services[15];
-
+    public static ArrayList<Services> arr = new ArrayList<Services>();
 
     public static void addNewServices(){
         Villa villa = new Villa();
         House house = new House();
         Room room = new Room();
-
         Scanner scanner = new Scanner(System.in);
         System.out.println("1. Add New Villa \n2. Add New House \n3. Add New Room \n4. Back to menu \n5. Exit" );
         System.out.print("nhập: ");
@@ -68,27 +69,50 @@ public class Task2 {
                 }while (!check);
                 check = false;
                 do {
-                    System.out.print("nhap dien tich su dung: ");
-                    villa.setDienTichSuDung(scanner.next());
-                    if (Double.parseDouble(villa.getDienTichSuDung()) > 30){
+                    try {
+                        System.out.print("nhap dien tich su dung: ");
+                        villa.setDienTichSuDung(scanner.next());
+                        if (Double.parseDouble(villa.getDienTichSuDung()) > 30){
                         check = true;
-                    }else {
-                        System.out.print("nhap lai: ");
+                        }else if (Double.parseDouble(villa.getDienTichSuDung()) <= 30){
+                            System.out.println("dien tich su dung phai la so thuc lon hon 30. Yeu cau nhap lai!");
+                        }
+                    }catch (NumberFormatException e){
+                        System.out.println("dien tich su dung phai la so thuc lon hon 30. Yeu cau nhap lai!");
                     }
                 }while (!check);
                 check = false;
                 do {
-                    System.out.print("nhap chi phi thue: ");
-                    villa.setChiPhiThue(scanner.next());
-                    if (Double.parseDouble(villa.getChiPhiThue()) > 0){
-                        check = true;
-                    }else {
-                        System.out.print("nhap lai: ");
+                    try {
+                        System.out.print("nhap chi phi thue: ");
+                        villa.setChiPhiThue(scanner.next());
+                        if (Double.parseDouble(villa.getChiPhiThue()) >  0){
+                            check = true;
+                        }else if (Double.parseDouble(villa.getChiPhiThue()) <= 0){
+                            System.out.println("chi phi thue phai la so duong. yeu cau nhap lai!");
+                        }
+                    }catch (NumberFormatException e){
+                        System.out.println("chi phi thue phai la so duong. yeu cau nhap lai!");
+                    }
+                }while (!check);
+                check = false;
+                do {
+                    try {
+                        System.out.print("nhap so luong nguoi toi da: ");
+                        villa.setSoLuongNguoiToiDa(scanner.next());
+                        if (Integer.parseInt(villa.getSoLuongNguoiToiDa()) < 20 &
+                                Integer.parseInt(villa.getSoLuongNguoiToiDa()) > 0){
+                            check = true;
+                        }else if (Integer.parseInt(villa.getSoLuongNguoiToiDa()) > 20 |
+                                Integer.parseInt(villa.getSoLuongNguoiToiDa()) < 0){
+                            System.out.println("so luong nguoi toi da khong toi 20 nguoi. yeu cau nhap lai!");
+
+                        }
+                    }catch (NumberFormatException e){
+                        System.out.println("so luong nguoi toi da khong toi 20 nguoi. yeu cau nhap lai!");
                     }
                 }while (!check);
 
-                System.out.print("nhap so luong nguoi toi da: ");
-                villa.setSoLuongNguoiToiDa(scanner.next());
                 System.out.print("nhap kieu thue: ");
                 villa.setKieuThue(scanner.next());
                 System.out.print("nhap tieu chuan phong: ");
@@ -99,14 +123,7 @@ public class Task2 {
                 villa.setDienTichHoBoi(scanner.next());
                 System.out.print("nhap so tang: ");
                 villa.setSoTang(scanner.next());
-                if (services[0] == null) {
-                    services[0] = villa;
-                } else {
-                    for (int i = 4; i > 0; i--) {
-                        services[i] = services[i - 1];
-
-                    }services[0] = villa;
-                }
+                arr.add(villa);
                 addNewServices();
                 break;
             } case 2:{
@@ -143,14 +160,7 @@ public class Task2 {
                 house.setMoTaTienNghiKhac(scanner.next());
                 System.out.print("nhập số tầng: ");
                 house.setSoTang(scanner.next());
-                if (services[5] == null){
-                    services[5] = house;
-                }else {
-                    for (int i = 9; i > 5; i--){
-                        services[i] = services[i-1];
-
-                    }services[5] = house;
-                }
+                arr.add(house);
                 addNewServices();
                 break;
             } case 3:{
@@ -186,12 +196,8 @@ public class Task2 {
                 room.setDichVuDiKem(scanner.next());
                 if (services[10] == null ){
                     services[10] = room;
-                }else {
-                    for (int i = 14; i > 10; i--){
-                        services[i] = services[i-1];
-
-                    }services[10] = room;
                 }
+                arr.add(room);
                 addNewServices();
                 break;
 
@@ -214,21 +220,27 @@ public class Task2 {
         int num2 = scanner.nextInt();
         switch (num2){
             case 1:{
-                for (int i = 0; i < 5; i++){
-                    System.out.println(services[i].getTenDichVu());
+                for (int i = 0; i < arr.size(); i++){
+                    if (arr.get(i) instanceof Villa){
+                        System.out.println(arr.get(i).getTenDichVu());
+                    }
                 }
                 showServices();
                 break;
             } case 2:{
-                for (int i = 5; i < 10; i++){
-                    System.out.println(services[i].getTenDichVu());
+                for (int i = 0; i < arr.size(); i++){
+                    if (arr.get(i) instanceof House){
+                        System.out.println(arr.get(i).getTenDichVu());
+                    }
                 }
                 showServices();
                 break;
 
             } case 3:{
-                for (int i = 10; i < 15; i++){
-                    System.out.println(services[i].getTenDichVu());
+                for (int i = 0; i < arr.size(); i++){
+                    if (arr.get(i) instanceof Room){
+                        System.out.println(arr.get(i).getTenDichVu());
+                    }
                 }
                 showServices();
                 break;
