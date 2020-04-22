@@ -38,7 +38,7 @@ public class House extends Services {
         this.soTang = soTang;
     }
 
-    public House(String tenDichVu, String dienTichSuDung, String chiPhiThue, int soLuongNguoiToiDa, String kieuThue, String tieuChuanPhong, String moTaTienNghiKhac, String soTang) {
+    public House(String tenDichVu, String dienTichSuDung, String chiPhiThue, String soLuongNguoiToiDa, String kieuThue, String tieuChuanPhong, String moTaTienNghiKhac, String soTang) {
         super(tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue);
         this.tieuChuanPhong = tieuChuanPhong;
         this.moTaTienNghiKhac = moTaTienNghiKhac;
@@ -46,7 +46,7 @@ public class House extends Services {
     }
 
     @Override
-    String showInfor() {
+    public String showInfor() {
         return "House{" +
                 "tieuChuanPhong='" + tieuChuanPhong + '\'' +
                 ", moTaTienNghiKhac='" + moTaTienNghiKhac + '\'' +
