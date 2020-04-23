@@ -7,6 +7,8 @@ import CaseStudy.Task1.Villa;
 
 import java.util.ArrayList;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -38,8 +40,8 @@ public class Task2 {
         }
 
     }
-    public static Services[] services = new Services[15];
-    public static ArrayList<Services> arr = new ArrayList<Services>();
+
+    public static List<Services> arr = new ArrayList<>();
 
     public static void addNewServices(){
         Villa villa = new Villa();
@@ -372,7 +374,7 @@ public class Task2 {
             case 1:{
                 for (int i = 0; i < arr.size(); i++){
                     if (arr.get(i) instanceof Villa){
-                        System.out.println(arr.get(i).getTenDichVu());
+                        System.out.println(arr.get(i).showInfor());
                     }
                 }
                 showServices();
@@ -380,7 +382,7 @@ public class Task2 {
             } case 2:{
                 for (int i = 0; i < arr.size(); i++){
                     if (arr.get(i) instanceof House){
-                        System.out.println(arr.get(i).getTenDichVu());
+                        System.out.println(arr.get(i).showInfor());
                     }
                 }
                 showServices();
@@ -389,7 +391,7 @@ public class Task2 {
             } case 3:{
                 for (int i = 0; i < arr.size(); i++){
                     if (arr.get(i) instanceof Room){
-                        System.out.println(arr.get(i).getTenDichVu());
+                        System.out.println(arr.get(i).showInfor());
                     }
                 }
                 showServices();
