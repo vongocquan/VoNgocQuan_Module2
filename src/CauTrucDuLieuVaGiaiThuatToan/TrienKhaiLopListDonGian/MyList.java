@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class MyList <E>{
     private int size = 0;
-    private static final int DEFAULT_CAPACITY = 1;
+    private static final int DEFAULT_CAPACITY = 10;
     private Object elements[];
 
     public MyList() {
@@ -39,7 +39,9 @@ public class MyList <E>{
 
         System.out.println("element 1: "+listInteger.get(1));
         System.out.println("element 2: "+listInteger.get(2));
-        System.out.println("element 4: "+listInteger.get(0));
+        System.out.println("element 4: "+listInteger.get(6));
+
+
 
 
     }

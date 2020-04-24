@@ -11,12 +11,11 @@ public class Villa extends Services {
 
     @Override
     public String showInfor() {
-        return "Villa{" +
+        return "Villa{" + super.toString() +
                 "tieuChuanPhong='" + tieuChuanPhong + '\'' +
                 ", moTaTienNghiKhac='" + moTaTienNghiKhac + '\'' +
                 ", dienTichHoBoi='" + dienTichHoBoi + '\'' +
                 ", soTang='" + soTang + '\'' +
-                 super.toString() +
                 '}';
     }
 

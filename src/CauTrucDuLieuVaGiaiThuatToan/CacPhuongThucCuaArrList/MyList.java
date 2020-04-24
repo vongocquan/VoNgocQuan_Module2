@@ -70,9 +70,9 @@ public class MyList<E> {
         }
     }
     public E get(int i){
-        if (i >= size || i < 0) {
-            throw new IndexOutOfBoundsException("Index: " + i + ", Size " + i );
-        }
+//        if (i >= size || i < 0) {
+//            throw new IndexOutOfBoundsException("Index: " + i + ", Size " + i );
+//        }
         return (E) elements[i];
     }
     public void clear(){
@@ -84,7 +84,8 @@ public class MyList<E> {
     }
 
     public static void main(String[] args) {
-        MyList<Integer> arr = new MyList<>(1);
+        MyList<Integer> arr = new MyList<>();
+        System.out.println(arr.get(2));
         arr.add(1);
         arr.add(4);
         arr.add(7);
@@ -93,16 +94,17 @@ public class MyList<E> {
         arr.add(12);
         arr.add(65);
         arr.add(56);
-        System.out.println(arr.get(3));
-        arr.remove(3);
-        System.out.println(arr.get(3));
-        System.out.println(arr.size());
-        System.out.println(arr.contains(6));
-        System.out.println(arr.contains(7));
-        System.out.println(arr.indexOf(7));
-        System.out.println(arr.indexOf(46));
-        arr.clear();
-        System.out.println(arr.size());
+        System.out.println(arr.get(6));
+//        arr.remove(3);
+//        System.out.println(arr.get(3));
+//        System.out.println(arr.size());
+//        System.out.println(arr.contains(6));
+//        System.out.println(arr.contains(7));
+//        System.out.println(arr.indexOf(7));
+//        System.out.println(arr.indexOf(46));
+//
+//        System.out.println(arr.size());
+//        System.out.println(arr.get(12));
     }
 
 }

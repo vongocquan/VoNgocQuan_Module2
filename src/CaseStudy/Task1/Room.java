@@ -16,9 +16,8 @@ public class Room extends Services {
 
     @Override
     public String showInfor() {
-        return "Room{" +
+        return "Room{" +  super.toString() +
                 "dichVuDiKem='" + dichVuDiKem + '\'' +
-                super.toString() +
                 '}';
     }
 

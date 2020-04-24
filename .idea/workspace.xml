@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c23867fb-c1f2-488b-a81f-8b1df93b73f2" name="Default Changelist" comment="" />
+    <list default="true" id="c23867fb-c1f2-488b-a81f-8b1df93b73f2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/CauTrucDuLieuVaGiaiThuatToan/CacPhuongThucCuaMyLinkeList/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task2/Task2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task2/Task2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task5/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task5/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CauTrucDuLieuVaGiaiThuatToan/TrienKhaiLopLinkedListDonGian/MyLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CauTrucDuLieuVaGiaiThuatToan/TrienKhaiLopLinkedListDonGian/MyLinkedList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CauTrucDuLieuVaGiaiThuatToan/TrienKhaiLopLinkedListDonGian/MyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CauTrucDuLieuVaGiaiThuatToan/TrienKhaiLopLinkedListDonGian/MyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task1/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Task1/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task1/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Task1/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task1/Villa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Task1/Villa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task2/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Task2/Task2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task5/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Task5/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CauTrucDuLieuVaGiaiThuatToan/CacPhuongThucCuaArrList/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CauTrucDuLieuVaGiaiThuatToan/CacPhuongThucCuaArrList/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CauTrucDuLieuVaGiaiThuatToan/TrienKhaiLopLinkedListDonGian/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CauTrucDuLieuVaGiaiThuatToan/TrienKhaiLopLinkedListDonGian/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CauTrucDuLieuVaGiaiThuatToan/TrienKhaiLopListDonGian/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CauTrucDuLieuVaGiaiThuatToan/TrienKhaiLopListDonGian/MyList.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +40,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -46,10 +65,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,7 +77,20 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Application.MyList (1)">
+  <component name="RunManager" selected="Application.Task2">
+    <configuration name="Customer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CaseStudy.Task5.Customer" />
+      <module name="VoNgocQuan_Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CaseStudy.Task5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CauTrucDuLieuVaGiaiThuatToan.TrienKhaiLopLinkedListDonGian.MyLinkedList" />
       <module name="VoNgocQuan_Module2" />
@@ -84,19 +117,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CauTrucDuLieuVaGiaiThuatToan.TrienKhaiLopListDonGian.MyList" />
-      <module name="VoNgocQuan_Module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CauTrucDuLieuVaGiaiThuatToan.TrienKhaiLopListDonGian.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CaseStudy.Task2.Task2" />
       <module name="VoNgocQuan_Module2" />
@@ -111,24 +131,18 @@
       </method>
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CauTrucDuLieuVaGiaiThuatToan.TrienKhaiLopListDonGian.Test" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="VoNgocQuan_Module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CauTrucDuLieuVaGiaiThuatToan.TrienKhaiLopListDonGian.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyList (1)" />
-        <item itemvalue="Application.MyList" />
         <item itemvalue="Application.Task2" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Customer" />
+        <item itemvalue="Application.MyList (1)" />
         <item itemvalue="Application.MyLinkedList" />
       </list>
     </recent_temporary>
@@ -173,6 +187,13 @@
       <workItem from="1587661735655" duration="30000" />
       <workItem from="1587661980351" duration="137000" />
       <workItem from="1587662330897" duration="88000" />
+      <workItem from="1587690451012" duration="11484000" />
+      <workItem from="1587705236832" duration="980000" />
+      <workItem from="1587706246408" duration="185000" />
+      <workItem from="1587716071332" duration="1203000" />
+      <workItem from="1587723804434" duration="23000" />
+      <workItem from="1587723837868" duration="340000" />
+      <workItem from="1587729655895" duration="5049000" />
     </task>
     <servers />
   </component>
@@ -184,30 +205,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="0" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1587431348931" />
-    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1587614096008">
+    <state x="448" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587732157984">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1587614096008" />
-    <state x="460" y="106" key="FileChooserDialogImpl" timestamp="1587662115994">
+    <state x="448" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1587732157984" />
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1587697612972">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="460" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587662115994" />
-    <state width="1286" height="167" key="GridCell.Tab.0.bottom" timestamp="1587650439247">
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1587697612972" />
+    <state x="460" y="106" key="FileChooserDialogImpl" timestamp="1587723825540">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="167" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587650439247" />
-    <state width="1286" height="167" key="GridCell.Tab.0.center" timestamp="1587650439247">
+    <state x="460" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587723825540" />
+    <state width="1323" height="167" key="GridCell.Tab.0.bottom" timestamp="1587734485575">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="167" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587650439247" />
-    <state width="1286" height="167" key="GridCell.Tab.0.left" timestamp="1587650439247">
+    <state width="1323" height="167" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587734485575" />
+    <state width="1323" height="167" key="GridCell.Tab.0.center" timestamp="1587734485575">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="167" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587650439247" />
-    <state width="1286" height="167" key="GridCell.Tab.0.right" timestamp="1587650439247">
+    <state width="1323" height="167" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587734485575" />
+    <state width="1323" height="167" key="GridCell.Tab.0.left" timestamp="1587734485575">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="167" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587650439247" />
+    <state width="1323" height="167" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587734485575" />
+    <state width="1323" height="167" key="GridCell.Tab.0.right" timestamp="1587734485575">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="167" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587734485575" />
     <state width="1286" height="208" key="GridCell.Tab.1.bottom" timestamp="1587550014000">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -224,10 +249,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1286" height="208" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1587550014000" />
-    <state x="384" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1587690053342">
+    <state x="384" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1587729658471">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="384" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587690053342" />
+    <state x="384" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587729658471" />
     <state x="62" y="0" key="new project wizard" timestamp="1587641203096">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
