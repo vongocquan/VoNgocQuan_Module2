@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c23867fb-c1f2-488b-a81f-8b1df93b73f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CauTrucDuLieuVaGiaiThuatToan/CacPhuongThucCuaMyLinkeList/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task2/Task2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task2/Task2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task5/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task5/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CauTrucDuLieuVaGiaiThuatToan/TrienKhaiLopLinkedListDonGian/MyLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CauTrucDuLieuVaGiaiThuatToan/TrienKhaiLopLinkedListDonGian/MyLinkedList$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CauTrucDuLieuVaGiaiThuatToan/TrienKhaiLopLinkedListDonGian/MyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CauTrucDuLieuVaGiaiThuatToan/TrienKhaiLopLinkedListDonGian/MyLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task1/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Task1/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task1/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Task1/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task1/Villa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Task1/Villa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task2/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Task2/Task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task5/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Task5/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CauTrucDuLieuVaGiaiThuatToan/CacPhuongThucCuaArrList/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CauTrucDuLieuVaGiaiThuatToan/CacPhuongThucCuaArrList/MyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CauTrucDuLieuVaGiaiThuatToan/TrienKhaiLopLinkedListDonGian/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CauTrucDuLieuVaGiaiThuatToan/TrienKhaiLopLinkedListDonGian/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CauTrucDuLieuVaGiaiThuatToan/TrienKhaiLopListDonGian/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CauTrucDuLieuVaGiaiThuatToan/TrienKhaiLopListDonGian/MyList.java" afterDir="false" />
-    </list>
+    <list default="true" id="c23867fb-c1f2-488b-a81f-8b1df93b73f2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +177,7 @@
       <workItem from="1587716071332" duration="1203000" />
       <workItem from="1587723804434" duration="23000" />
       <workItem from="1587723837868" duration="340000" />
-      <workItem from="1587729655895" duration="5495000" />
+      <workItem from="1587729655895" duration="5668000" />
     </task>
     <servers />
   </component>
