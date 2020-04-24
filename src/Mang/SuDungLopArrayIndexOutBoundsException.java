@@ -13,7 +13,7 @@ public class SuDungLopArrayIndexOutBoundsException {
         int x = scaner.nextInt();
         try {
             System.out.println("Giá trị của phần tử có chỉ số thứ" + x + " là " + arr[x]);
-        } catch (IndexOutOfBoundsException e) {
+        } catch (ArrayIndexOutOfBoundsException e) {
             System.err.println("Chỉ số vượt quá giới hạn của mảng");
         }
     }public static Integer[] createRandom() {

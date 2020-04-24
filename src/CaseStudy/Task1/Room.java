@@ -18,7 +18,8 @@ public class Room extends Services {
     public String showInfor() {
         return "Room{" +
                 "dichVuDiKem='" + dichVuDiKem + '\'' +
-                '}' + super.toString();
+                super.toString() +
+                '}';
     }
 
 

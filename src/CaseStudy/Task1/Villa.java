@@ -16,7 +16,8 @@ public class Villa extends Services {
                 ", moTaTienNghiKhac='" + moTaTienNghiKhac + '\'' +
                 ", dienTichHoBoi='" + dienTichHoBoi + '\'' +
                 ", soTang='" + soTang + '\'' +
-                '}' + super.toString();
+                 super.toString() +
+                '}';
     }
 
 

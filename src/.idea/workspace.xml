@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84715374-084c-4f5f-822a-9899acab03c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VoNgocQuan_Module2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mang/MineSweeper.java" beforeDir="false" />
-    </list>
+    <list default="true" id="df124552-2b69-4d83-9249-e4eb04f5d4ab" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,14 +10,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="D:\Git\VoNgocQuan_Module2\src\.idea" />
-      </set>
-    </option>
-  </component>
-  <component name="ProjectId" id="1abWo7iyHK3n2iq2Xbo6KqxrTC3" />
+  <component name="ProjectId" id="1anjKWVpF4Hg02yOacCQteV1Pb1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -41,12 +27,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="84715374-084c-4f5f-822a-9899acab03c6" name="Default Changelist" comment="" />
-      <created>1587004945697</created>
+      <changelist id="df124552-2b69-4d83-9249-e4eb04f5d4ab" name="Default Changelist" comment="" />
+      <created>1587378189274</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1587004945697</updated>
-      <workItem from="1587004950633" duration="63000" />
+      <updated>1587378189274</updated>
+      <workItem from="1587378193233" duration="130000" />
     </task>
     <servers />
   </component>
@@ -54,13 +40,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="462" y="106" key="FileChooserDialogImpl" timestamp="1587005007601">
+    <state x="462" y="109" key="FileChooserDialogImpl" timestamp="1587378320579">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587005007601" />
-    <state x="65" y="0" key="new project wizard" timestamp="1587005011865">
+    <state x="462" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587378320579" />
+    <state x="390" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1587378193238">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1587005011865" />
+    <state x="390" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587378193238" />
+    <state x="65" y="0" key="new project wizard" timestamp="1587378323813">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1587378323813" />
   </component>
 </project>

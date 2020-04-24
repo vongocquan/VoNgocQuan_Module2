@@ -58,13 +58,11 @@ public abstract class Services{
         this.kieuThue = kieuThue;
     }
     public String toString() {
-        return "Services{" +
-                "tenDichVu='" + tenDichVu + '\'' +
+        return "tenDichVu='" + tenDichVu + '\'' +
                 ", dienTichSuDung='" + dienTichSuDung + '\'' +
                 ", chiPhiThue='" + chiPhiThue + '\'' +
                 ", soLuongNguoiToiDa=" + soLuongNguoiToiDa +
-                ", kieuThue='" + kieuThue + '\'' +
-                '}';
+                ", kieuThue='" + kieuThue + '\'';
     }
 
     public abstract String showInfor();

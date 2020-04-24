@@ -51,6 +51,7 @@ public class House extends Services {
                 "tieuChuanPhong='" + tieuChuanPhong + '\'' +
                 ", moTaTienNghiKhac='" + moTaTienNghiKhac + '\'' +
                 ", soTang=" + soTang +
-                '}' + super.toString();
+                super.toString()+
+                '}';
     }
 }

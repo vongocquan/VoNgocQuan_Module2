@@ -25,6 +25,7 @@ public class Square extends Rectangle implements Colorable {
     public void setWidth(double width) {
         setSide(width);
     }
+    
 
     @Override
     public void setLength(double length) {

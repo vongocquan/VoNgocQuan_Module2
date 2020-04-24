@@ -370,28 +370,29 @@ public class Task2 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("nhap: ");
         int num2 = scanner.nextInt();
+
         switch (num2){
             case 1:{
-                for (int i = 0; i < arr.size(); i++){
-                    if (arr.get(i) instanceof Villa){
-                        System.out.println(arr.get(i).showInfor());
+                for (Services services : arr) {
+                    if (services instanceof Villa) {
+                        System.out.println(services.showInfor());
                     }
                 }
                 showServices();
                 break;
             } case 2:{
-                for (int i = 0; i < arr.size(); i++){
-                    if (arr.get(i) instanceof House){
-                        System.out.println(arr.get(i).showInfor());
+                for (Services services : arr) {
+                    if (services instanceof House) {
+                        System.out.println(services.showInfor());
                     }
                 }
                 showServices();
                 break;
 
             } case 3:{
-                for (int i = 0; i < arr.size(); i++){
-                    if (arr.get(i) instanceof Room){
-                        System.out.println(arr.get(i).showInfor());
+                for (Services services : arr) {
+                    if (services instanceof Room) {
+                        System.out.println(services.showInfor());
                     }
                 }
                 showServices();
