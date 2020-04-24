@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c23867fb-c1f2-488b-a81f-8b1df93b73f2" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/CauTrucDuLieuVaGiaiThuatToan/CacPhuongThucCuaMyLinkeList/MyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task2/Task2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task2/Task2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task5/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task5/Customer.class" afterDir="false" />
@@ -193,7 +192,7 @@
       <workItem from="1587716071332" duration="1203000" />
       <workItem from="1587723804434" duration="23000" />
       <workItem from="1587723837868" duration="340000" />
-      <workItem from="1587729655895" duration="5049000" />
+      <workItem from="1587729655895" duration="5495000" />
     </task>
     <servers />
   </component>
