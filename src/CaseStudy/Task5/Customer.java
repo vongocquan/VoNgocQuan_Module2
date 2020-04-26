@@ -8,7 +8,7 @@ import com.sun.deploy.cache.BaseLocalApplicationProperties;
 import java.util.Arrays;
 
 public class Customer {
-    String tenCustomer;
+    private String tenCustomer;
     String ngaySinh;
     String gioiTinh;
     String cmnd;
