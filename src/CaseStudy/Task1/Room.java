@@ -1,33 +1,33 @@
 package CaseStudy.Task1;
 
 public class Room extends Services {
-    private String dichVuDiKem;
+    private String accompaniedService;
 
     public Room() {
     }
 
-    public String getDichVuDiKem() {
-        return dichVuDiKem;
+    public String getAccompaniedService() {
+        return accompaniedService;
     }
 
-    public void setDichVuDiKem(String dichVuDiKem) {
-        this.dichVuDiKem = dichVuDiKem;
+    public void setAccompaniedService(String accompaniedService) {
+        this.accompaniedService = accompaniedService;
     }
 
     @Override
     public String showInfor() {
-        return "Room{" +  super.toString() +
-                "dichVuDiKem='" + dichVuDiKem + '\'' +
+        return "Room{" + super.toString() +
+                "accompaniedService='" + accompaniedService + '\'' +
                 '}';
     }
 
 
-    public Room(String dichVuDiKem) {
-        this.dichVuDiKem = dichVuDiKem;
+    public Room(String accompaniedService) {
+        this.accompaniedService = accompaniedService;
     }
 
-    public Room(String tenDichVu, String dienTichSuDung, String chiPhiThue, String soLuongNguoiToiDa, String kieuThue, String dichVuDiKem) {
-        super(tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue);
-        this.dichVuDiKem = dichVuDiKem;
+    public Room(String serviceName, String areaUsed, String rentalCosts, String maximumPeople, String rentalType, String accompaniedService) {
+        super(serviceName, areaUsed, rentalCosts, maximumPeople, rentalType);
+        this.accompaniedService = accompaniedService;
     }
 }

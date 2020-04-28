@@ -1,10 +1,10 @@
 package CaseStudy.Task1;
 
 public class Villa extends Services {
-    private String tieuChuanPhong;
-    private String moTaTienNghiKhac;
-    private String dienTichHoBoi;
-    private String soTang;
+    private String roomStandard;
+    private String otherFacilities;
+    private String poolArea;
+    private String numberOfFloors;
 
     public Villa() {
     }
@@ -12,59 +12,60 @@ public class Villa extends Services {
     @Override
     public String showInfor() {
         return "Villa{" + super.toString() +
-                "tieuChuanPhong='" + tieuChuanPhong + '\'' +
-                ", moTaTienNghiKhac='" + moTaTienNghiKhac + '\'' +
-                ", dienTichHoBoi='" + dienTichHoBoi + '\'' +
-                ", soTang='" + soTang + '\'' +
+                "roomStandard='" + roomStandard + '\'' +
+                ", otherFacilities='" + otherFacilities + '\'' +
+                ", poolArea='" + poolArea + '\'' +
+                ", numberOfFloors='" + numberOfFloors + '\'' +
                 '}';
     }
 
 
-    public String getTieuChuanPhong() {
-        return tieuChuanPhong;
+
+    public String getRoomStandard() {
+        return roomStandard;
     }
 
-    public void setTieuChuanPhong(String tieuChuanPhong) {
-        this.tieuChuanPhong = tieuChuanPhong;
+    public void setRoomStandard(String roomStandard) {
+        this.roomStandard = roomStandard;
     }
 
-    public String getMoTaTienNghiKhac() {
-        return moTaTienNghiKhac;
+    public String getOtherFacilities() {
+        return otherFacilities;
     }
 
-    public void setMoTaTienNghiKhac(String moTaTienNghiKhac) {
-        this.moTaTienNghiKhac = moTaTienNghiKhac;
+    public void setOtherFacilities(String otherFacilities) {
+        this.otherFacilities = otherFacilities;
     }
 
-    public String getDienTichHoBoi() {
-        return dienTichHoBoi;
+    public String getPoolArea() {
+        return poolArea;
     }
 
-    public void setDienTichHoBoi(String dienTichHoBoi) {
-        this.dienTichHoBoi = dienTichHoBoi;
+    public void setPoolArea(String poolArea) {
+        this.poolArea = poolArea;
     }
 
-    public String getSoTang() {
-        return soTang;
+    public String getNumberOfFloors() {
+        return numberOfFloors;
     }
 
-    public void setSoTang(String soTang) {
-        this.soTang = soTang;
+    public void setNumberOfFloors(String numberOfFloors) {
+        this.numberOfFloors = numberOfFloors;
     }
 
-    public Villa(String tieuChuanPhong, String moTaTienNghiKhac, String dienTichHoBoi, String soTang) {
-        this.tieuChuanPhong = tieuChuanPhong;
-        this.moTaTienNghiKhac = moTaTienNghiKhac;
-        this.dienTichHoBoi = dienTichHoBoi;
-        this.soTang = soTang;
+    public Villa(String roomStandard, String otherFacilities, String poolArea, String numberOfFloors) {
+        this.roomStandard = roomStandard;
+        this.otherFacilities = otherFacilities;
+        this.poolArea = poolArea;
+        this.numberOfFloors = numberOfFloors;
     }
 
-    public Villa(String tenDichVu, String dienTichSuDung, String chiPhiThue, String soLuongNguoiToiDa, String kieuThue, String tieuChuanPhong, String moTaTienNghiKhac, String dienTichHoBoi, String soTang) {
-        super(tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue);
-        this.tieuChuanPhong = tieuChuanPhong;
-        this.moTaTienNghiKhac = moTaTienNghiKhac;
-        this.dienTichHoBoi = dienTichHoBoi;
-        this.soTang = soTang;
+    public Villa(String serviceName, String areaUsed, String rentalCosts, String maximumPeople, String rentalType, String roomStandard, String otherFacilities, String poolArea, String numberOfFloors) {
+        super(serviceName, areaUsed, rentalCosts, maximumPeople, rentalType);
+        this.roomStandard = roomStandard;
+        this.otherFacilities = otherFacilities;
+        this.poolArea = poolArea;
+        this.numberOfFloors = numberOfFloors;
     }
 
 }

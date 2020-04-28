@@ -1,68 +1,72 @@
 package CaseStudy.Task1;
 
 public abstract class Services{
-    private String tenDichVu;
-    private String dienTichSuDung;
-    private String chiPhiThue;
-    private String soLuongNguoiToiDa;
-    private String kieuThue;
+    private String serviceName;
+    private String areaUsed;
+    private String rentalCosts;
+    private String maximumPeople;
+    private String rentalType;
 
     public Services() {
     }
 
-    public Services(String tenDichVu, String dienTichSuDung, String chiPhiThue, String soLuongNguoiToiDa, String kieuThue) {
-        this.tenDichVu = tenDichVu;
-        this.dienTichSuDung = dienTichSuDung;
-        this.chiPhiThue = chiPhiThue;
-        this.soLuongNguoiToiDa = soLuongNguoiToiDa;
-        this.kieuThue = kieuThue;
+    public Services(String serviceName, String areaUsed, String rentalCosts, String maximumPeople, String rentalType) {
+        this.serviceName = serviceName;
+        this.areaUsed = areaUsed;
+        this.rentalCosts = rentalCosts;
+        this.maximumPeople = maximumPeople;
+        this.rentalType = rentalType;
     }
 
-    public String getTenDichVu() {
-        return tenDichVu;
+    public String getserviceName() {
+        return serviceName;
     }
 
-    public void setTenDichVu(String tenDichVu) {
-        this.tenDichVu = tenDichVu;
+    public void setserviceName(String tenDichVu) {
+        this.serviceName = tenDichVu;
     }
 
-    public String getDienTichSuDung() {
-        return dienTichSuDung;
+    public String getAreaUsed() {
+        return areaUsed;
     }
 
-    public void setDienTichSuDung(String dienTichSuDung) {
-        this.dienTichSuDung = dienTichSuDung;
+    public void setAreaUsed(String areaUsed) {
+        this.areaUsed = areaUsed;
     }
 
-    public String getChiPhiThue() {
-        return chiPhiThue;
+    public String getRentalCosts() {
+        return rentalCosts;
     }
 
-    public void setChiPhiThue(String chiPhiThue) {
-        this.chiPhiThue = chiPhiThue;
+    public void setRentalCosts(String rentalCosts) {
+        this.rentalCosts = rentalCosts;
     }
 
-    public String getSoLuongNguoiToiDa() {
-        return soLuongNguoiToiDa;
+    public String getMaximumPeople() {
+        return maximumPeople;
     }
 
-    public void setSoLuongNguoiToiDa(String soLuongNguoiToiDa) {
-        this.soLuongNguoiToiDa = soLuongNguoiToiDa;
+    public void setMaximumPeople(String maximumPeople) {
+        this.maximumPeople = maximumPeople;
     }
 
-    public String getKieuThue() {
-        return kieuThue;
+    public String getRentalType() {
+        return rentalType;
     }
 
-    public void setKieuThue(String kieuThue) {
-        this.kieuThue = kieuThue;
+    public void setRentalType(String rentalType) {
+        this.rentalType = rentalType;
     }
+
+    @Override
     public String toString() {
-        return "tenDichVu='" + tenDichVu + '\'' +
-                ", dienTichSuDung='" + dienTichSuDung + '\'' +
-                ", chiPhiThue='" + chiPhiThue + '\'' +
-                ", soLuongNguoiToiDa=" + soLuongNguoiToiDa +
-                ", kieuThue='" + kieuThue + '\'';
+        return "Services{" +
+                "serviceName='" + serviceName + '\'' +
+                ", areaUsed='" + areaUsed + '\'' +
+                ", rentalCosts='" + rentalCosts + '\'' +
+                ", maximumPeople='" + maximumPeople + '\'' +
+                ", rentalType='" + rentalType + '\'' +
+                '}';
     }
 
     public abstract String showInfor();

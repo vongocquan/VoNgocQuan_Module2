@@ -3,23 +3,23 @@ package CaseStudy.Task1;
 public class test {
     public static void main(String[] args) {
         Villa villa = new Villa();
-        villa.setTenDichVu("thue phong");
-        villa.setDienTichSuDung("45");
-        villa.setChiPhiThue("30do");
-        villa.setSoLuongNguoiToiDa("3");
-        villa.setKieuThue("theo ngay");
-        villa.setTieuChuanPhong("tot");
-        villa.setMoTaTienNghiKhac("may giac, tu lanh, ho boi");
-        villa.setDienTichHoBoi("15");
-        villa.setSoTang("3");
+        villa.setserviceName("thue phong");
+        villa.setAreaUsed("45");
+        villa.setRentalCosts("30do");
+        villa.setMaximumPeople("3");
+        villa.setRentalType("theo ngay");
+        villa.setRoomStandard("tot");
+        villa.setOtherFacilities("may giac, tu lanh, ho boi");
+        villa.setPoolArea("15");
+        villa.setNumberOfFloors("3");
         System.out.println(villa.showInfor());
         House house =new House();
-        house.setTieuChuanPhong("binh thuong");
+        house.setRoomStandard("binh thuong");
         house.setMoTaTienNghiKhac("may giat, tu lanh");
-        house.setSoTang("2");
+        house.setNumberOfFloors("2");
         System.out.println(house.showInfor());
         Room room = new Room();
-        room.setDichVuDiKem("an toi");
+        room.setAccompaniedService("an toi");
         System.out.println(room.showInfor());
 
 
