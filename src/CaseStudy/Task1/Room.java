@@ -1,33 +1,33 @@
 package CaseStudy.Task1;
 
 public class Room extends Services {
-    private String accompaniedService;
+    private String accompaniedServiceFrre;
 
     public Room() {
     }
 
-    public String getAccompaniedService() {
-        return accompaniedService;
+    public String getAccompaniedServiceFrre() {
+        return accompaniedServiceFrre;
     }
 
-    public void setAccompaniedService(String accompaniedService) {
-        this.accompaniedService = accompaniedService;
+    public void setAccompaniedServiceFrre(String accompaniedServiceFrre) {
+        this.accompaniedServiceFrre = accompaniedServiceFrre;
     }
 
     @Override
     public String showInfor() {
         return "Room{" + super.toString() +
-                "accompaniedService='" + accompaniedService + '\'' +
-                '}';
+                ", accompaniedService= " + accompaniedServiceFrre +
+                "}";
     }
 
 
-    public Room(String accompaniedService) {
-        this.accompaniedService = accompaniedService;
+    public Room(String accompaniedServiceFrre) {
+        this.accompaniedServiceFrre = accompaniedServiceFrre;
     }
 
-    public Room(String serviceName, String areaUsed, String rentalCosts, String maximumPeople, String rentalType, String accompaniedService) {
-        super(serviceName, areaUsed, rentalCosts, maximumPeople, rentalType);
-        this.accompaniedService = accompaniedService;
+    public Room(String serviceCode, String serviceName, String areaUsed, String rentalCosts, String maximumPeople, String rentalType, String accompaniedServiceFrre) {
+        super(serviceCode, serviceName, areaUsed, rentalCosts, maximumPeople, rentalType);
+        this.accompaniedServiceFrre = accompaniedServiceFrre;
     }
 }

@@ -1,6 +1,10 @@
 package CaseStudy.Task1;
 
-public abstract class Services{
+public abstract class Services extends AccompaniedService{
+
+
+    private String serviceCode;
+
     private String serviceName;
     private String areaUsed;
     private String rentalCosts;
@@ -10,12 +14,31 @@ public abstract class Services{
     public Services() {
     }
 
-    public Services(String serviceName, String areaUsed, String rentalCosts, String maximumPeople, String rentalType) {
+    public Services(String serviceCode, String serviceName, String areaUsed, String rentalCosts, String maximumPeople, String rentalType) {
+        this.serviceCode = serviceCode;
         this.serviceName = serviceName;
         this.areaUsed = areaUsed;
         this.rentalCosts = rentalCosts;
         this.maximumPeople = maximumPeople;
         this.rentalType = rentalType;
+    }
+
+    public Services(String nameAccompaniedService, String unit, String price, String serviceCode, String serviceName, String areaUsed, String rentalCosts, String maximumPeople, String rentalType) {
+        super(nameAccompaniedService, unit, price);
+        this.serviceCode = serviceCode;
+        this.serviceName = serviceName;
+        this.areaUsed = areaUsed;
+        this.rentalCosts = rentalCosts;
+        this.maximumPeople = maximumPeople;
+        this.rentalType = rentalType;
+    }
+
+    public String getServiceCode() {
+        return serviceCode;
+    }
+
+    public void setServiceCode(String serviceCode) {
+        this.serviceCode = serviceCode;
     }
 
     public String getserviceName() {
@@ -60,13 +83,13 @@ public abstract class Services{
 
     @Override
     public String toString() {
-        return "Services{" +
-                "serviceName='" + serviceName + '\'' +
-                ", areaUsed='" + areaUsed + '\'' +
-                ", rentalCosts='" + rentalCosts + '\'' +
-                ", maximumPeople='" + maximumPeople + '\'' +
-                ", rentalType='" + rentalType + '\'' +
-                '}';
+        return "serviceCode= "+serviceCode +
+                "serviceName= " + serviceName +
+                ", areaUsed= " + areaUsed +
+                ", rentalCosts= " + rentalCosts +
+                ", maximumPeople= " + maximumPeople +
+                ", rentalType= " + rentalType +
+                super.toString();
     }
 
     public abstract String showInfor();

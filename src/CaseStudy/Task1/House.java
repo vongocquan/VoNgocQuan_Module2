@@ -20,8 +20,8 @@ public class House extends Services {
         return otherFacilities;
     }
 
-    public void setMoTaTienNghiKhac(String moTaTienNghiKhac) {
-        this.otherFacilities = moTaTienNghiKhac;
+    public void setOtherFacilities(String otherFacilities) {
+        this.otherFacilities = otherFacilities;
     }
 
     public String getNumberOfFloors() {
@@ -38,8 +38,8 @@ public class House extends Services {
         this.numberOfFloors = numberOfFloors;
     }
 
-    public House(String serviceName, String areaUsed, String rentalCosts, String maximumPeople, String rentalType, String roomStandard, String otherFacilities, String numberOfFloors) {
-        super(serviceName, areaUsed, rentalCosts, maximumPeople, rentalType);
+    public House(String serviceCode, String serviceName, String areaUsed, String rentalCosts, String maximumPeople, String rentalType, String roomStandard, String otherFacilities, String numberOfFloors) {
+        super(serviceCode, serviceName, areaUsed, rentalCosts, maximumPeople, rentalType);
         this.roomStandard = roomStandard;
         this.otherFacilities = otherFacilities;
         this.numberOfFloors = numberOfFloors;
@@ -48,10 +48,10 @@ public class House extends Services {
     @Override
     public String showInfor() {
         return "House{" + super.toString() +
-                "roomStandard='" + roomStandard + '\'' +
-                ", otherFacilities='" + otherFacilities + '\'' +
-                ", numberOfFloors='" + numberOfFloors + '\'' +
-                '}';
+                ", roomStandard=" + roomStandard +
+                ", otherFacilities=" + otherFacilities +
+                ", numberOfFloors=" + numberOfFloors +
+                "}";
     }
 
 }

@@ -1,81 +1,80 @@
 package CaseStudy.Task5;
 
 import CaseStudy.Task1.Services;
-import CaseStudy.Task1.Villa;
-import CauTrucDuLieuVaGiaiThuatToan.CacPhuongThucCuaArrList.MyList;
-import com.sun.deploy.cache.BaseLocalApplicationProperties;
+import jdk.nashorn.internal.runtime.regexp.joni.Regex;
 
-import java.util.Arrays;
+import java.lang.reflect.Parameter;
+import java.util.Scanner;
+import java.util.regex.Pattern;
 
-public class Customer {
-    private String tenCustomer;
-    String ngaySinh;
-    String gioiTinh;
-    String cmnd;
-    String soDienThoai;
-    String email;
-    String loaiKhach;
-    String diaChi;
-    Services services;
-
+public class Customer extends Services {
+    private String nameCustomer;
+    private String birthDay;
+    private String sex;
+    private String idCard;
+    private String phone;
+    private String email;
+    private String guestType;
+    private String address;
+    private Services services;
 
 
     @Override
-    public String toString() {
+    public String showInfor() {
         return "Customer{" +
-                "tenCustomer='" + tenCustomer + '\'' +
-                ", ngaySinh='" + ngaySinh + '\'' +
-                ", gioiTinh='" + gioiTinh + '\'' +
-                ", cmnd='" + cmnd + '\'' +
-                ", soDienThoai='" + soDienThoai + '\'' +
+                "tenCustomer='" + nameCustomer + '\'' +
+                ", ngaySinh='" + birthDay + '\'' +
+                ", gioiTinh='" + sex + '\'' +
+                ", cmnd='" + idCard + '\'' +
+                ", soDienThoai='" + phone + '\'' +
                 ", email='" + email + '\'' +
-                ", loaiKhach='" + loaiKhach + '\'' +
-                ", diaChi='" + diaChi + '\'' +
+                ", loaiKhach='" + guestType + '\'' +
+                ", diaChi='" + address + '\'' +
                 ", services=" + services +
-                '}';
+                '}' + super.toString();
     }
 
     public Customer() {
     }
 
-    public String getTenCustomer() {
-        return tenCustomer;
+    public String getNameCustomer() {
+        return nameCustomer;
     }
 
-    public void setTenCustomer(String tenCustomer) {
-        this.tenCustomer = tenCustomer;
+    public void setNameCustomer(String nameCustomer) {
+        this.nameCustomer = nameCustomer;
     }
 
-    public String getNgaySinh() {
-        return ngaySinh;
+    public String getBirthday() {
+        return birthDay;
     }
 
-    public void setNgaySinh(String ngaySinh) {
-        this.ngaySinh = ngaySinh;
+    public void setBirthday(String birthday) {
+        this.birthDay = birthday;
     }
 
-    public String getGioiTinh() {
-        return gioiTinh;
+    public String getSex() {
+        return sex;
     }
 
-    public void setGioiTinh(String gioiTinh) {
-        this.gioiTinh = gioiTinh;
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 
-    public String getCmnd() {
-        return cmnd;
+    public String getIdCard() {
+        return idCard;
     }
 
-    public void setCmnd(String cmnd) {
-        this.cmnd = cmnd;
+    public void setIdCard(String idCard) {
+        this.idCard = idCard;
     }
 
-    public String getSoDienThoai() {
-        return soDienThoai;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setSoDienThoai(String soDienThoai) {
-        this.soDienThoai = soDienThoai;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getEmail() {
@@ -86,20 +85,20 @@ public class Customer {
         this.email = email;
     }
 
-    public String getLoaiKhach() {
-        return loaiKhach;
+    public String getGuestType() {
+        return guestType;
     }
 
-    public void setLoaiKhach(String loaiKhach) {
-        this.loaiKhach = loaiKhach;
+    public void setGuestType(String guestType) {
+        this.guestType = guestType;
     }
 
-    public String getDiaChi() {
-        return diaChi;
+    public String getAddress() {
+        return address;
     }
 
-    public void setDiaChi(String diaChi) {
-        this.diaChi = diaChi;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public Services getServices() {
@@ -110,22 +109,36 @@ public class Customer {
         this.services = services;
     }
 
-    public Customer(String tenCustomer, String ngaySinh, String gioiTinh, String cmnd, String soDienThoai, String email, String loaiKhach, String diaChi, Services services) {
-        this.tenCustomer = tenCustomer;
-        this.ngaySinh = ngaySinh;
-        this.gioiTinh = gioiTinh;
-        this.cmnd = cmnd;
-        this.soDienThoai = soDienThoai;
+    public Customer(String nameCustomer, String birthDay, String sex, String idCard, String phone, String email, String guestType, String address, Services services) {
+        this.nameCustomer = nameCustomer;
+        this.birthDay = birthDay;
+        this.sex = sex;
+        this.idCard = idCard;
+        this.phone = phone;
         this.email = email;
-        this.loaiKhach = loaiKhach;
-        this.diaChi = diaChi;
+        this.guestType = guestType;
+        this.address = address;
         this.services = services;
     }
+    static Customer customer = new Customer();
+    public static void addNewCustomer(){
+        String regexName =  "[A-Z]+([ '-][a-zA-Z]+)*";
+        System.out.println("nhap thong tin khac hang: ");
+        Scanner scanner = new Scanner(System.in);
+        boolean check = false;
+
+        do {
+            System.out.print("input name Customer: ");
+            customer.setNameCustomer(scanner.next());
+            for (int i = 0; i < customer.getNameCustomer().length(); i++){
+
+            }
+        }while (!check);
+
+    }
+
 
     public static void main(String[] args) {
-
-//        Customer customer = new Customer("quan", "4/1/23", "nam", "1232", "sdt", "sadsa", "asda", "asde",);
-
-//        System.out.println(customer.getCmnd());
+        addNewCustomer();
     }
 }

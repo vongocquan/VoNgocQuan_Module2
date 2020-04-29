@@ -1,17 +1,33 @@
 import javax.swing.plaf.basic.BasicButtonUI;
 import java.io.*;
+import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class Test {
     public static void main(String[] args) throws IOException {
-
-        BufferedWriter bufferedWriter1 = new BufferedWriter(new FileWriter("D:\\Test.svc"));
-        bufferedWriter1.write("vo");
-        bufferedWriter1.newLine();
-
-        bufferedWriter1.write("quan");
-        bufferedWriter1.close();
-        BufferedReader bufferedReader = new BufferedReader(new FileReader("D:\\Test.svc"));
-        System.out.println(bufferedReader.readLine().split("newLine()")[0]);
+        String regexMaDichVu = "^[S][V][V][L][-][0-9]{4}$";
+        boolean check = false;
+        Scanner scanner = new Scanner(System.in);
+        do {
+            System.out.println("nah");
+            String  a = scanner.next();
+            if (Pattern.matches(regexMaDichVu, a)){
+                check = true;
+            }else {
+                System.out.println("ads");
+            }
+        }while (!check);
+        String i = "^[A-Z]$";
+        check = false;
+        do {
+            System.out.println("nhap");
+            String c = scanner.next();
+            if (Pattern.matches(i, c)){
+                check = true;
+            }else {
+                System.out.println("nhap lai");
+            }
+        }while (!check);
 
     }
 }

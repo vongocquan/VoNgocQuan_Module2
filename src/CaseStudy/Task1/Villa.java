@@ -1,6 +1,6 @@
 package CaseStudy.Task1;
 
-public class Villa extends Services {
+public   class Villa extends Services {
     private String roomStandard;
     private String otherFacilities;
     private String poolArea;
@@ -12,11 +12,11 @@ public class Villa extends Services {
     @Override
     public String showInfor() {
         return "Villa{" + super.toString() +
-                "roomStandard='" + roomStandard + '\'' +
-                ", otherFacilities='" + otherFacilities + '\'' +
-                ", poolArea='" + poolArea + '\'' +
-                ", numberOfFloors='" + numberOfFloors + '\'' +
-                '}';
+                ", roomStandard= " + roomStandard +
+                ", otherFacilities= " + otherFacilities +
+                ", poolArea= " + poolArea +
+                ", numberOfFloors= " + numberOfFloors +
+                "}";
     }
 
 
@@ -60,8 +60,8 @@ public class Villa extends Services {
         this.numberOfFloors = numberOfFloors;
     }
 
-    public Villa(String serviceName, String areaUsed, String rentalCosts, String maximumPeople, String rentalType, String roomStandard, String otherFacilities, String poolArea, String numberOfFloors) {
-        super(serviceName, areaUsed, rentalCosts, maximumPeople, rentalType);
+    public Villa(String serviceCode, String serviceName, String areaUsed, String rentalCosts, String maximumPeople, String rentalType, String roomStandard, String otherFacilities, String poolArea, String numberOfFloors) {
+        super(serviceCode, serviceName, areaUsed, rentalCosts, maximumPeople, rentalType);
         this.roomStandard = roomStandard;
         this.otherFacilities = otherFacilities;
         this.poolArea = poolArea;
