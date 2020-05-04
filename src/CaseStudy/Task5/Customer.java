@@ -2,11 +2,17 @@ package CaseStudy.Task5;
 
 import CaseStudy.Task1.Services;
 
-import java.util.Calendar;
-import java.util.Scanner;
+import javax.swing.*;
+import java.io.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.temporal.ChronoUnit;
+import java.util.*;
 import java.util.regex.Pattern;
 
-public class Customer extends Services{
+public class Customer {
     private String nameCustomer;
     private String birthDay;
     private String sex;
@@ -18,7 +24,7 @@ public class Customer extends Services{
     private Services services;
 
 
-    @Override
+
     public String showInfor() {
         return "Customer{" +
                 "nameCustomer='" + nameCustomer + '\'' +
@@ -112,16 +118,124 @@ public class Customer extends Services{
         this.address = address;
 
     }
-    public static Customer customer = new Customer();
-    public static Scanner scanner = new Scanner(System.in);
-    static boolean check = false;
-    public static void addNewCustomer(){
 
+    public static Scanner scanner = new Scanner(System.in);
+    protected static List<Customer> list = new ArrayList<>();
+    static boolean check = false;
+    public static void addNewCustomer() throws ParseException, IOException {
+        inputCustomer();
+        displayMenu();
+    }
+
+    public static void inputCustomer() throws IOException {
+        Customer customer = new Customer();
+        inputNameCustomer(customer);
+        inputEmail(customer);
+        inputSex(customer);
+        inpuIdCard(customer);
+        System.out.print("input phone: ");
+        customer.setPhone(scanner.next());
+        inputBirtDay(customer);
+        System.out.print("input guest type: ");
+        customer.setGuestType(scanner.next());
+        System.out.print("input address: ");
+        customer.setAddress(scanner.next());
+
+        list.add(customer);
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("").getAbsoluteFile() + "\\src\\CaseStudy\\Task5\\Customer.csv"));
+        for (Customer value : list) {
+            bufferedWriter.write(value.showInfor());
+            bufferedWriter.newLine();
+        }
+        bufferedWriter.close();
+    }
+
+    private static void inputBirtDay(Customer customer) {
+        String regexBirthDay = "([0][1-9]|[1][12])[/]([0][1-9]|[12][0-9]|[3][01])[/][0-9]{4}";
+        Calendar calendar = Calendar.getInstance();
+        do {
+            System.out.print("input birthday: ");
+            customer.setBirthday(scanner.next());
+            if (Pattern.matches(regexBirthDay, customer.getBirthday())) {
+                String[] arr = customer.getBirthday().split("/");
+                LocalDate birthDay = LocalDate.of(Integer.parseInt(arr[2]), Integer.parseInt(arr[1]), Integer.parseInt(arr[0]));
+                LocalDate currentDate = LocalDate.of(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH) + 1, calendar.get(Calendar.DAY_OF_MONTH));
+                int old = (int) ChronoUnit.YEARS.between(birthDay, currentDate);
+                if (old > 18 & Integer.parseInt(arr[2]) > 1900) {
+                    check = true;
+                } else {
+                    System.out.println("erro! again iput: ");
+                }
+
+
+            } else {
+                System.out.println("erro! again iput: ");
+            }
+        } while (!check);
+        check = false;
+    }
+
+    private static void inpuIdCard(Customer customer) {
+        String regexIdCard = "[0-9]{9}";
+        do {
+            System.out.print("iput id card: ");
+            customer.setIdCard(scanner.next());
+            if (Pattern.matches(regexIdCard, customer.getIdCard())) {
+                check = true;
+            } else {
+                System.out.println("id card: nine number. input again!");
+            }
+
+        } while (!check);
+        check = false;
+    }
+
+    private static void inputSex(Customer customer) {
+        String regexSex1 = "[Mm][Aa][Ll][Ee]";
+        String regexSex2 = "[Ff][Ee][Mm][Aa][Ll][Ee]";
+        String regexSex3 = "[Uu][Nn][Kk][Nn][Oo][Ww]";
+        do {
+            System.out.print("input sex: ");
+            String sex = scanner.next();
+            if (Pattern.matches(regexSex1, sex)) {
+                check = true;
+                sex = "Male";
+            } else if (Pattern.matches(regexSex2, sex)) {
+                check = true;
+                sex = "Female";
+            } else if (Pattern.matches(regexSex3, sex)) {
+                check = true;
+                sex = "Unknow";
+            }
+            if (check) {
+                customer.setSex(sex);
+            } else {
+                System.out.println("sex: Male/ Female, Unknow. input again!");
+            }
+        } while (!check);
+        check = false;
+    }
+
+    private static void inputEmail(Customer customer) {
+        String regexEmail = "[A-Za-z][A-Za-z0-1]*[@][A-Za-z0-9]+[.][A-Za-z0-9]+";
+        do {
+            System.out.print("input email: ");
+            customer.setEmail(scanner.next());
+            if (Pattern.matches(regexEmail, customer.getEmail())) {
+                check = true;
+            } else {
+                System.out.println("The email must be in the correct format abc@abc.com. input again!");
+            }
+        } while (!check);
+        check = false;
+    }
+
+    private static void inputNameCustomer(Customer customer) {
         String regexName = "[^a-z0-9][a-z]*";
         int cont = 0;
-        do{
+        do {
             System.out.print("input name customer: ");
-            customer.setNameCustomer(scanner.nextLine());
+            customer.setNameCustomer(scanner.next());
             String[] arr = customer.getNameCustomer().split(" ");
             for (String s : arr) {
                 if (Pattern.matches(regexName, s)) {
@@ -129,80 +243,59 @@ public class Customer extends Services{
                 }
 
             }
-            if (cont == arr.length){
+            if (cont == arr.length) {
                 check = true;
-            }else {
+            } else {
                 System.out.print("name customer illegal. input again ");
                 cont = 0;
             }
-        }while (!check);
+        } while (!check);
         check = false;
-        String regexEmail = "[A-Za-z][A-Za-z0-1]*[@][A-Za-z0-9]+[.][A-Za-z0-9]+";
-        do {
-            System.out.print("input email: ");
-            customer.setEmail(scanner.next());
-            if (Pattern.matches(regexEmail, customer.getEmail())){
-                check = true;
-            }else {
-                System.out.println("The email must be in the correct format abc@abc.com. input again!");
-            }
-        }while (!check);
-        check = false;
-        String regexSex1 = "[Mm][Aa][Ll][Ee]";
-        String regexSex2 = "[Ff][Ee][Mm][Aa][Ll][Ee]";
-        String regexSex3 = "[Uu][Nn][Kk][Nn][Oo][Ww]";
-        do {
-            System.out.print("input sex: ");
-            String sex = scanner.next();
-            if (Pattern.matches(regexSex1, sex)){
-                check = true;
-                sex = "Male";
-            }else if (Pattern.matches(regexSex2, sex)){
-                check = true;
-                sex = "Female";
-            }else if (Pattern.matches(regexSex3, sex)){
-                check = true;
-                sex = "Unknow";
-            }if (check){
-                customer.setSex(sex);
-            }else {
-                System.out.println("sex: Male/ Female, Unknow. input again!");
-            }
-        }while (!check);
-        check = false;
-        String regexIdCard = "[0-9]{9}";
-        do {
-            System.out.print("iput id card: ");
-            customer.setIdCard(scanner.next());
-            if (Pattern.matches(regexIdCard, customer.getIdCard())){
-                check = true;
-            }else {
-                System.out.println("id card: nine number. input again!");
-            }
-
-        }while (!check);
-        check = false;
-        String regexBirthDay = "([0][1-9]|[12][0-9][3][01])[/]([0][1-9]|[1][12])[0-9]{4}";
-        Calendar calendar = Calendar.getInstance();
-//        do {
-//
-//                System.out.print("input birt day");
-//                customer.setBirthday(scanner.next());
-//                String[] arr = customer.getBirthday().split("/");
-//                if (Pattern.matches(regexBirthDay, customer.getBirthday())) {
-//                    if (Integer.parseInt(arr[2]) > 1900) {
-//
-//                        }
-//                    }
-//                }else {
-//                    System.out.print("year > 1900 and old >= 18. input again");
-//                }
-//        }while (!check);
-//
     }
 
-    public static void main(String[] args){
-        addNewCustomer();
+
+    static void showInformationCustomer() throws IOException, ParseException {
+        Comparator<Customer> comparator = new Comparator<Customer>() {
+            @Override
+            public int compare(Customer o1, Customer o2) {
+                if (o1.getNameCustomer().compareTo(o2.getNameCustomer()) == 0) {
+                    return compareYear(o1, o2);
+                }
+                return o1.getNameCustomer().compareTo(o2.getNameCustomer());
+
+            }
+
+            public int compareYear(Customer o1, Customer o2) {
+                int yearCustomer1 = Integer.parseInt(o1.getBirthday().substring(6, 10));
+                int yearCustomer2 = Integer.parseInt(o2.getBirthday().substring(6, 10));
+                return Integer.compare(yearCustomer1, yearCustomer2);
+            }
+        };
+        list.sort(comparator);
+        for (Customer customer : list){
+            System.out.println(customer.showInfor());
+        }
+        displayMenu();
+
+    }
+    static void displayMenu() throws IOException, ParseException {
+        System.out.println("1. addNewCustomer" +
+                "\n2. showInformationCustomer");
+        System.out.print("num: ");
+        int num = scanner.nextInt();
+        switch (num){
+            case 1: {
+                addNewCustomer();
+                break;
+            } case 2:{
+                showInformationCustomer();
+            }
+        }
+    }
+
+    public static void main(String[] args) throws ParseException, IOException {
+        displayMenu();
+
     }
 
 }

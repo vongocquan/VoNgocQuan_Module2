@@ -1,9 +1,8 @@
 package CaseStudy.Controllers;
 
 import CaseStudy.Task1.*;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+
+import java.io.*;
 import java.util.*;
 import java.util.regex.Pattern;
 
@@ -69,29 +68,17 @@ public class MainController {
         int num = scanner.nextInt();
         switch (num) {
             case 1: {
-                for (Services services : arr) {
-                    if (services instanceof Villa) {
-                        System.out.println(services.showInfor());
-                    }
-                }
+                showVilla();
                 showServices();
                 break;
             }
             case 2: {
-                for (Services services : arr) {
-                    if (services instanceof House) {
-                        System.out.println(services.showInfor());
-                    }
-                }
+                showHouse();
                 showServices();
                 break;
             }
             case 3: {
-                for (Services services : arr) {
-                    if (services instanceof Room) {
-                        System.out.println(services.showInfor());
-                    }
-                }
+                showRoom();
                 showServices();
                 break;
             }
@@ -133,7 +120,31 @@ public class MainController {
         }
     }
 
-    static List<Services> arr = new ArrayList<>();
+    public static void showRoom() {
+        for (Services services : arr) {
+            if (services instanceof Room) {
+                System.out.println(services.showInfor());
+            }
+        }
+    }
+
+    public static void showHouse() {
+        for (Services services : arr) {
+            if (services instanceof House) {
+                System.out.println(services.showInfor());
+            }
+        }
+    }
+
+    public static void showVilla() throws IOException {
+        for (Services services : arr) {
+            if (services instanceof Villa) {
+                System.out.println(services.showInfor());
+            }
+        }
+    }
+
+    public static List<Services> arr = new ArrayList<>();
     static String regexServiceName = "^[A-Z][a-z]+$";
     static boolean check = false;
     public static void addNewVilla() throws IOException {
@@ -425,7 +436,7 @@ public class MainController {
     private static void inputServiceCode(Services services) {
         String regexServiceCode;
         if (services instanceof Villa){
-            regexServiceCode = "^[S][V][V][L][-][0-9]{4}$";
+            regexServiceCode = "[S][V][V][L][-][0-9]{4}";
             do {
                 System.out.print("input service code: ");
                 services.setServiceCode(scanner.next());
@@ -437,7 +448,7 @@ public class MainController {
             }while (!check);
         }
         else if (services instanceof House){
-            regexServiceCode = "^[S][V][H][O][-][0-9]{4}$";
+            regexServiceCode = "[S][V][H][O][-][0-9]{4}";
             do {
                 System.out.print("input service code: ");
                 services.setServiceCode(scanner.next());
@@ -449,7 +460,7 @@ public class MainController {
             }while (!check);
 
         }else {
-            regexServiceCode = "^[S][V][R][O][-][0-9]{4}$";
+            regexServiceCode = "[S][V][R][O][-][0-9]{4}";
             do {
                 System.out.print("input service code: ");
                 services.setServiceCode(scanner.next());
@@ -461,7 +472,6 @@ public class MainController {
             }while (!check);
         }
         check = false;
-
     }
 
 }
