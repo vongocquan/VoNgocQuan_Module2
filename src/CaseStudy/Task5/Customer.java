@@ -2,15 +2,14 @@ package CaseStudy.Task5;
 
 import CaseStudy.Task1.Services;
 
-import javax.swing.*;
 import java.io.*;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.Period;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.regex.Pattern;
+
+import static CaseStudy.Controllers.MainController.displayMainMenu;
 
 public class Customer {
     private String nameCustomer;
@@ -120,11 +119,11 @@ public class Customer {
     }
 
     public static Scanner scanner = new Scanner(System.in);
-    protected static List<Customer> list = new ArrayList<>();
+    public static List<Customer> listCustomer = new ArrayList<>();
     static boolean check = false;
     public static void addNewCustomer() throws ParseException, IOException {
         inputCustomer();
-        displayMenu();
+        displayMainMenu();
     }
 
     public static void inputCustomer() throws IOException {
@@ -141,9 +140,9 @@ public class Customer {
         System.out.print("input address: ");
         customer.setAddress(scanner.next());
 
-        list.add(customer);
+        listCustomer.add(customer);
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("").getAbsoluteFile() + "\\src\\CaseStudy\\Task5\\Customer.csv"));
-        for (Customer value : list) {
+        for (Customer value : listCustomer) {
             bufferedWriter.write(value.showInfor());
             bufferedWriter.newLine();
         }
@@ -254,7 +253,7 @@ public class Customer {
     }
 
 
-    static void showInformationCustomer() throws IOException, ParseException {
+    public static void showInformationCustomer() throws IOException, ParseException {
         Comparator<Customer> comparator = new Comparator<Customer>() {
             @Override
             public int compare(Customer o1, Customer o2) {
@@ -271,11 +270,11 @@ public class Customer {
                 return Integer.compare(yearCustomer1, yearCustomer2);
             }
         };
-        list.sort(comparator);
-        for (Customer customer : list){
+        listCustomer.sort(comparator);
+        for (Customer customer : listCustomer){
             System.out.println(customer.showInfor());
         }
-        displayMenu();
+        displayMainMenu();
 
     }
     static void displayMenu() throws IOException, ParseException {

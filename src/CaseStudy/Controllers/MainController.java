@@ -3,26 +3,37 @@ package CaseStudy.Controllers;
 import CaseStudy.Task1.*;
 
 import java.io.*;
+import java.text.ParseException;
 import java.util.*;
 import java.util.regex.Pattern;
 
+import static CaseStudy.Booking.Booking.displayMenuBooking;
+import static CaseStudy.BookingMovie4D.BookingMovie4D.menuBooking4D;
+import static CaseStudy.Employee.Employee.menuEmployee;
+
+import static CaseStudy.FindEmployee.FindEmployee.findEmployee;
+import static CaseStudy.Task5.Customer.addNewCustomer;
+import static CaseStudy.Task5.Customer.showInformationCustomer;
+
 public class MainController {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ParseException {
         displayMainMenu();
     }
     static Scanner scanner = new Scanner(System.in);
 
-    public static void displayMainMenu() throws IOException {
+    public static void displayMainMenu() throws IOException, ParseException {
         System.out.println("1. Add New Services");
         System.out.println("2. Show Services");
         System.out.println("3. Add New Customer");
         System.out.println("4. Show Information of Customer");
         System.out.println("5. Add New Booking");
         System.out.println("6. Show Information of Employee");
-        System.out.println("7. Exit");
+        System.out.println("7. Booking Movie Ticker 4D");
+        System.out.println("8. Find Employee");
+        System.out.println("9. Exit");
 
-        System.out.print("nhap: ");
+        System.out.print("input: ");
         int num = scanner.nextInt();
         switch (num){
             case 1:{
@@ -33,12 +44,30 @@ public class MainController {
                 showServices();
                 break;
             } case 3:{
-
+                addNewCustomer();
+                break;
+            } case 4:{
+                showInformationCustomer();
+                break;
+            } case 5:{
+                displayMenuBooking();
+                break;
+            } case 6: {
+                menuEmployee();
+                break;
+            } case 7:{
+                menuBooking4D();
+                break;
+            } case 8:{
+                findEmployee();
+                break;
             }
         }
     }
 
-    public static void addNewServices() throws IOException {
+
+
+    public static void addNewServices() throws IOException, ParseException {
 
         System.out.println("1. Add New Villa \n2. Add New House \n3. Add New Room \n4. Back to menu \n5. Exit");
         System.out.print("nhập: ");
@@ -56,11 +85,13 @@ public class MainController {
             } case 4: {
                 displayMainMenu();
                 break;
+            } case 5:{
+                displayMenuBooking();
             }
         }
     }
 
-    public static void showServices() throws IOException {
+    public static void showServices() throws IOException, ParseException {
         System.out.println("1. Show all Villa \n2. Show all House \n3. Show all Room \n4. Show All Name Villa Not Duplicate" +
                 "\n5. Show All Name House Not Duplicate \n6. Show All Name Room Not Duplicate \n7. Back to menu \n8. Exit");
         Scanner scanner = new Scanner(System.in);
@@ -84,7 +115,7 @@ public class MainController {
             }
             case 4: {
                 TreeSet<String> treeSet = new TreeSet<>(new HashSet<>());
-                for (Services services : arr) {
+                for (Services services : listServices) {
                     if (services instanceof Villa) {
                         treeSet.add(services.showInfor());
 
@@ -94,7 +125,7 @@ public class MainController {
                 break;
             } case 5:{
                 TreeSet<String> treeSet = new TreeSet<>(new HashSet<>());
-                for (Services services : arr) {
+                for (Services services : listServices) {
                     if (services instanceof House) {
                         treeSet.add(services.showInfor());
 
@@ -104,7 +135,7 @@ public class MainController {
                 break;
             } case 6:{
                 TreeSet<String> treeSet = new TreeSet<>(new HashSet<>());
-                for (Services services : arr) {
+                for (Services services : listServices) {
                     if (services instanceof Room) {
                         treeSet.add(services.showInfor());
 
@@ -115,39 +146,49 @@ public class MainController {
             } case 7:{
                 displayMainMenu();
                 break;
+            } case 8:{
+
             }
 
         }
     }
 
     public static void showRoom() {
-        for (Services services : arr) {
+        for (Services services : listServices) {
             if (services instanceof Room) {
-                System.out.println(services.showInfor());
+                listRoom.add((Room) services);
             }
+        }
+        for (Room room : listRoom){
+            System.out.println(room.showInfor());
         }
     }
 
     public static void showHouse() {
-        for (Services services : arr) {
+        for (Services services : listServices) {
             if (services instanceof House) {
-                System.out.println(services.showInfor());
+                listHouse.add((House) services);
             }
+        }for (House house : listHouse){
+            System.out.println(house.showInfor());
         }
     }
-
     public static void showVilla() throws IOException {
-        for (Services services : arr) {
+        for (Services services : listServices) {
             if (services instanceof Villa) {
-                System.out.println(services.showInfor());
+                listVilla.add((Villa) services);
             }
+        }for (Villa villa : listVilla){
+            System.out.println(villa.showInfor());
         }
     }
-
-    public static List<Services> arr = new ArrayList<>();
+    static List<Room> listRoom = new ArrayList<>();
+    static List<House> listHouse = new ArrayList<>();
+    static List<Villa> listVilla = new ArrayList<>();
+    public static List<Services> listServices = new ArrayList<>();
     static String regexServiceName = "^[A-Z][a-z]+$";
     static boolean check = false;
-    public static void addNewVilla() throws IOException {
+    public static void addNewVilla() throws IOException, ParseException {
         Villa villa = new Villa();
         inputServiceCode(villa);
         inputNameService(villa);
@@ -166,9 +207,9 @@ public class MainController {
         System.out.print("input price: ");
         villa.setPrice(scanner.next());
 
-        arr.add(villa);
+        listServices.add(villa);
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("D:\\Module2\\VoNgocQuan_Module2\\src\\CaseStudy\\Data\\Villa.csv"));
-        for (Services services : arr){
+        for (Services services : listServices){
             if (services instanceof Villa){
                 bufferedWriter.write(services.showInfor());
                 bufferedWriter.newLine();
@@ -180,7 +221,7 @@ public class MainController {
 
 
 
-    public static void addNewHouse() throws IOException {
+    public static void addNewHouse() throws IOException, ParseException {
         House house = new House();
         inputServiceCode(house);
         inputNameService(house);
@@ -196,9 +237,9 @@ public class MainController {
         house.setUnit(scanner.next());
         System.out.print("input price: ");
         house.setPrice(scanner.next());
-        arr.add(house);
+        listServices.add(house);
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("D:\\Module2\\VoNgocQuan_Module2\\src\\CaseStudy\\Data\\House.csv"));
-        for (Services services : arr){
+        for (Services services : listServices){
             if (services instanceof House){
                 bufferedWriter.write(services.showInfor());
                 bufferedWriter.newLine();
@@ -208,7 +249,7 @@ public class MainController {
         addNewServices();
 
     }
-    public static void addNewRoom() throws IOException {
+    public static void addNewRoom() throws IOException, ParseException {
         Room room = new Room();
         inputServiceCode(room);
         inputNameService(room);
@@ -228,9 +269,9 @@ public class MainController {
         room.setUnit(scanner.next());
         System.out.print("input price: ");
         room.setPrice(scanner.next());
-        arr.add(room);
+        listServices.add(room);
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("D:\\Module2\\VoNgocQuan_Module2\\src\\CaseStudy\\Data\\Room.csv"));
-        for (Services services : arr){
+        for (Services services : listServices){
             if (services instanceof Room){
                 bufferedWriter.write(services.showInfor());
                 bufferedWriter.newLine();

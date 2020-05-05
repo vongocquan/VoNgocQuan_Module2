@@ -1,120 +1,99 @@
 package CaseStudy.Booking;
 
-import CaseStudy.Controllers.MainController;
-import CaseStudy.Task1.Villa;
-import CaseStudy.Task5.Customer;
-import com.sun.org.apache.xpath.internal.functions.FuncGenerateId;
-import netscape.security.UserTarget;
 
-import javax.swing.*;
+
+
+import CaseStudy.Task1.House;
+import CaseStudy.Task1.Room;
+import CaseStudy.Task1.Services;
+import CaseStudy.Task1.Villa;
+import org.omg.Messaging.SYNC_WITH_TRANSPORT;
+
 import java.io.*;
-import java.sql.ClientInfoStatus;
+
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 import static CaseStudy.Controllers.MainController.*;
-import static CaseStudy.Task5.Customer.addNewCustomer;
-import static CaseStudy.Task5.Customer.inputCustomer;
+import static CaseStudy.Task5.Customer.listCustomer;
+import static CaseStudy.Task5.Customer.scanner;
 
-public class Booking extends Customer {
 
-    static List<String> bookingList = new ArrayList<>();
-    public static void displayMenuBooking() throws IOException {
-        inputCustomer();
+public class Booking  {
 
+    public static List<String> bookingList = new ArrayList<>();
+    public static void displayMenuBooking() throws IOException, ParseException {
+        for (int i = 0; i < listCustomer.size(); i++){
+            System.out.println(i+1 + ". " + listCustomer.get(i).showInfor());
+        }
+        System.out.print("input: ");
+        int numCustomer = scanner.nextInt();
         System.out.println("1. Booking Villa" +
                 "\n2. Booking House" +
                 "\n3. Booking Room");
         Scanner scanner = new Scanner(System.in);
         System.out.print("input: ");
-        int num = scanner.nextInt();
-        switch (num){
-
+        int numBooking = scanner.nextInt();
+        List<Villa> listVilla = new ArrayList<>();
+        List<House> listHouse = new ArrayList<>();
+        List<Room> listRoom = new ArrayList<>();
+        switch (numBooking) {
             case 1: {
-                int number = 1;
-                BufferedReader bufferedReader = new BufferedReader(new FileReader(new File("").getAbsoluteFile() + "\\src\\CaseStudy\\Data\\Villa.csv"));
-                String readeVilla = "";
-                do {
-                    readeVilla = bufferedReader.readLine();
-                    if (readeVilla != null){
-                        System.out.print(number++ + ". ");
-                        System.out.println(readeVilla);
-                    }
-                }while (readeVilla != null);
-                System.out.print("input: ");
-                int input = scanner.nextInt();
-                BufferedReader bufferedReader1 = new BufferedReader(new FileReader(new File("").getAbsoluteFile() + "\\src\\CaseStudy\\Data\\Villa.csv"));
-                String booking ="";
-                for (int i = 0; i < input; i++){
-                    booking = bufferedReader1.readLine();
 
+                for (Services services : listServices){
+                    if (services instanceof Villa ){
+                        listVilla.add((Villa) services);
+                    }
                 }
-                bookingList.add(booking);
+                for (int i = 0; i < listVilla.size(); i++){
+                    System.out.println(i + 1 + ". " + listVilla.get(i).showInfor());
+                }
+                System.out.print("input booking: ");
+                int num = scanner.nextInt();
+                bookingList.add(listCustomer.get(numCustomer-1).showInfor() + listVilla.get(num-1).showInfor());
+                break;
+            } case 2:{
+                for (Services services : listServices){
+                    if (services instanceof House) {
+                        listHouse.add((House) services);
+                    }
+                }
+                for (int i = 0; i < listHouse.size(); i++){
+                    System.out.println(i + 1 + ". " + listHouse.get(i).showInfor());
+                }
+                System.out.print("input booking: ");
+                int num = scanner.nextInt();
+                bookingList.add(listCustomer.get(numCustomer).showInfor() + listHouse.get(num).showInfor());
                 break;
 
-            } case 2:{
-                int number = 1;
-                BufferedReader bufferedReader = new BufferedReader(new FileReader(new File("").getAbsoluteFile() + "\\src\\CaseStudy\\Data\\House.csv"));
-                String readeHouse = "";
-                do {
-                    readeHouse = bufferedReader.readLine();
-                    if (readeHouse != null){
-                        System.out.print(number++ + ". ");
-                        System.out.println(readeHouse);
-                    }
-                }while (readeHouse != null);
-                System.out.print("input: ");
-                int input = scanner.nextInt();
-                BufferedReader bufferedReader1 = new BufferedReader(new FileReader(new File("").getAbsoluteFile() + "\\src\\CaseStudy\\Data\\House.csv"));
-                String booking ="";
-                for (int i = 0; i < input; i++){
-                    booking = bufferedReader1.readLine();
-
-                }
-                bookingList.add(booking);
             } case 3:{
-                int number = 1;
-                BufferedReader bufferedReader = new BufferedReader(new FileReader(new File("").getAbsoluteFile() + "\\src\\CaseStudy\\Data\\House.csv"));
-                String readeRoom = "";
-                do {
-                    readeRoom = bufferedReader.readLine();
-                    if (readeRoom != null){
-                        System.out.print(number++ + ". ");
-                        System.out.println(readeRoom);
+                for (Services services : listServices) {
+                    if (services instanceof Room) {
+                        listRoom.add((Room) services);
                     }
-                }while (readeRoom != null);
-                System.out.print("input: ");
-                int input = scanner.nextInt();
-                BufferedReader bufferedReader1 = new BufferedReader(new FileReader(new File("").getAbsoluteFile() + "\\src\\CaseStudy\\Data\\Room.csv"));
-                String booking ="";
-                for (int i = 0; i < input; i++){
-                    booking = bufferedReader1.readLine();
-
                 }
-                bookingList.add(booking);
+                for (int i = 0; i < listRoom.size(); i++){
+                    System.out.println(i + 1 + ". " + listRoom.get(i).showInfor());
+                }
+                System.out.print("input booking: ");
+                int num = scanner.nextInt();
+                bookingList.add(listCustomer.get(numCustomer).showInfor() + listRoom.get(num).showInfor());
                 break;
             }
 
+
         }
-        BufferedWriter bufferedWriter1 = new BufferedWriter(new FileWriter(new File("").getAbsoluteFile() + "\\src\\CaseStudy\\Booking\\Booking.csv"));
-        for (int i = 0; i < list.size(); i++){
-            bufferedWriter1.write(i+1 + ". " + list.get(i).showInfor() + bookingList.get(i));
-            bufferedWriter1.newLine();
-        }
-        bufferedWriter1.close();
-        displayMenuBooking();
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("").getAbsoluteFile() + "\\src\\CaseStudy\\Data\\Booking.csv"));
+        for (int i = 0; i < bookingList.size(); i++){
+            bufferedWriter.write(i + 1 + ". " + bookingList.get(i));
+            bufferedWriter.newLine();
+        }bufferedWriter.close();
+        displayMainMenu();
 
     }
-
-
-
-
-
-
-
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ParseException {
         displayMenuBooking();
     }
 
