@@ -1,0 +1,2 @@
+Customer{nameCustomer='Hai', birthDay='04/02/1997', sex='Female', idCard='111111111', phone='sz', email='haiv@gamil.com', guestType='sa', address='sa'}
+Customer{nameCustomer='Quan', birthDay='04/02/1997', sex='Male', idCard='222222222', phone='sa', email='quanv@gmail.com', guestType='sa', address='ds'}

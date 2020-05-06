@@ -38,7 +38,6 @@ public class MainController {
         switch (num){
             case 1:{
                 addNewServices();
-
                 break;
             }case 2:{
                 showServices();
@@ -146,7 +145,6 @@ public class MainController {
             } case 7:{
                 displayMainMenu();
                 break;
-            } case 8:{
 
             }
 

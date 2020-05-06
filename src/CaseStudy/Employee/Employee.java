@@ -87,7 +87,7 @@ public class Employee {
 
 
 
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("").getAbsoluteFile() + "\\src\\CaseStudy\\Data\\DataEmployee.csv"));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("").getAbsoluteFile() + "\\src\\CaseStudy\\Data\\Employee.csv"));
         for (Map.Entry<String, Employee> a : map.entrySet()) {
             bufferedWriter.write("code= " + a.getKey() + ". " + a.getValue());
             bufferedWriter.newLine();

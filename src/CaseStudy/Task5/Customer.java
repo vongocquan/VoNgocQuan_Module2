@@ -141,7 +141,7 @@ public class Customer {
         customer.setAddress(scanner.next());
 
         listCustomer.add(customer);
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("").getAbsoluteFile() + "\\src\\CaseStudy\\Task5\\Customer.csv"));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("").getAbsoluteFile() + "\\src\\CaseStudy\\Data\\Customer.csv"));
         for (Customer value : listCustomer) {
             bufferedWriter.write(value.showInfor());
             bufferedWriter.newLine();
