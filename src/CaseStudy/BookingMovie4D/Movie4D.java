@@ -1,34 +1,36 @@
 package CaseStudy.BookingMovie4D;
 
-import CaseStudy.Task5.Customer;
+import CaseStudy.Customer.Customer;
 
 import java.io.IOException;
-import java.text.ParseException;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
 import static CaseStudy.Controllers.MainController.displayMainMenu;
-import static CaseStudy.Task5.Customer.listCustomer;
+import static CaseStudy.Customer.AddNewCustomer.customerList;
+import static CaseStudy.Customer.WriteCustomer.saveListCustomer;
 
-public class BookingMovie4D {
-    static Queue<Customer> bookingTicked = new LinkedList<>();
-    static Scanner scanner =new Scanner(System.in);
-    public static void menuBooking4D() throws IOException, ParseException {
+public class Movie4D {
+    public static Scanner scanner = new Scanner(System.in);
+    public static Queue<Customer> bookingTicked = new LinkedList<>();
+    public static void menuBooking4D() throws IOException, ClassNotFoundException {
         System.out.println("1. Booking movie ticked");
         System.out.println("2. Show customer booking movie ticked");
         System.out.println("3. Back menu");
-        System.out.println("input: ");
-
-        int num = scanner.nextInt();
-        switch (num){
+        System.out.println("---------------------------------------input---------------------------------- ");
+        int input = scanner.nextInt();
+        switch (input){
             case 1:{
-                for (int i = 0; i < listCustomer.size(); i++){
-                    System.out.println(i + 1 +". " + listCustomer.get(i).showInfor());
+                customerList = new ArrayList<>();
+                saveListCustomer();
+                for (int i = 0; i < customerList.size(); i++){
+                    System.out.println(i + 1 +". " + customerList.get(i).showInfor());
                 }
                 System.out.println("input booking movie ticked: ");
                 int numBookingMovie = scanner.nextInt();
-                bookingTicked.add(listCustomer.get(numBookingMovie - 1));
+                bookingTicked.add(customerList.get(numBookingMovie - 1));
                 menuBooking4D();
                 break;
             } case 2:{

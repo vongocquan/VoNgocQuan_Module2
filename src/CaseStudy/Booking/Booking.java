@@ -1,101 +1,156 @@
 package CaseStudy.Booking;
 
-
-
-
-import CaseStudy.Task1.House;
-import CaseStudy.Task1.Room;
-import CaseStudy.Task1.Services;
-import CaseStudy.Task1.Villa;
-import org.omg.Messaging.SYNC_WITH_TRANSPORT;
-
 import java.io.*;
-
-import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import static CaseStudy.Controllers.MainController.*;
-import static CaseStudy.Task5.Customer.listCustomer;
-import static CaseStudy.Task5.Customer.scanner;
+import static CaseStudy.Controllers.MainController.displayMainMenu;
+import static CaseStudy.Controllers.NewServies.*;
+import static CaseStudy.Controllers.SaveFile.saveListHouse;
+import static CaseStudy.Controllers.SaveFile.saveListVilla;
+import static CaseStudy.Customer.AddNewCustomer.check;
+import static CaseStudy.Customer.AddNewCustomer.customerList;
+import static CaseStudy.Customer.WriteCustomer.saveListCustomer;
 
-
-public class Booking  {
-
-    public static List<String> bookingList = new ArrayList<>();
-    public static void displayMenuBooking() throws IOException, ParseException {
-        for (int i = 0; i < listCustomer.size(); i++){
-            System.out.println(i+1 + ". " + listCustomer.get(i).showInfor());
+public class Booking {
+    public static List<String> bookingList;
+    public static Scanner scanner = new Scanner(System.in);
+    public static void displayMenuBooking() throws IOException, ClassNotFoundException {
+        customerList = new ArrayList<>();
+        saveListCustomer();
+        for (int i = 0; i < customerList.size(); i++){
+            System.out.println(i + 1 + ". " + customerList.get(i).showInfor());
         }
-        System.out.print("input: ");
-        int numCustomer = scanner.nextInt();
-        System.out.println("1. Booking Villa" +
-                "\n2. Booking House" +
-                "\n3. Booking Room");
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("input: ");
-        int numBooking = scanner.nextInt();
-        List<Villa> listVilla = new ArrayList<>();
-        List<House> listHouse = new ArrayList<>();
-        List<Room> listRoom = new ArrayList<>();
-        switch (numBooking) {
-            case 1: {
-
-                for (Services services : listServices){
-                    if (services instanceof Villa ){
-                        listVilla.add((Villa) services);
+        int num;
+        do {
+            System.out.println("-------------------input----------------------------");
+            num = scanner.nextInt();
+            if (num < customerList.size() + 1 & num > 0){
+                check = true;
+            }else {
+                System.out.println("Erro");
+            }
+        }while (!check);
+        System.out.println("1. booking Villa " +
+                "\n2. booking House" +
+                "\n3. booking Room");
+        System.out.println("-------------------input----------------------------");
+        int chose = scanner.nextInt();
+        check = false;
+        switch (chose){
+            case 1:{
+                bookingList = new ArrayList<>();
+                int num1;
+                villaList = new ArrayList<>();
+                saveListVilla();
+                for (int i = 0; i < villaList.size(); i++){
+                    System.out.println(i + 1 + ". " + villaList.get(i).show());
+                }
+                do {
+                    System.out.println("--------------------------input---------------------");
+                    num1 = scanner.nextInt();
+                    if (num1 < villaList.size() + 1 & num1 > 0){
+                        check = true;
                     }
+                    else {
+                        System.out.println("erro");
+                    }
+                }while (!check);
+                bookingList.add(customerList.get(num - 1).getNameCustomer() + " booking "+ villaList.get(num1 - 1).show());
+
+                BufferedReader bufferedReader = new BufferedReader(new FileReader(new File("").getAbsoluteFile()+"\\src\\CaseStudy\\Data\\Booking.csv"));
+                String string;
+                do {
+                    string = bufferedReader.readLine();
+                    if (string != null){
+                        bookingList.add(string);
+                    }
+                }while (string != null);
+
+                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("").getAbsoluteFile()+"\\src\\CaseStudy\\Data\\Booking.csv"));
+                for (String str : bookingList){
+                    bufferedWriter.write(str);
+                    bufferedWriter.newLine();
                 }
-                for (int i = 0; i < listVilla.size(); i++){
-                    System.out.println(i + 1 + ". " + listVilla.get(i).showInfor());
-                }
-                System.out.print("input booking: ");
-                int num = scanner.nextInt();
-                bookingList.add(listCustomer.get(numCustomer-1).showInfor() + listVilla.get(num-1).showInfor());
+                bufferedWriter.close();
                 break;
             } case 2:{
-                for (Services services : listServices){
-                    if (services instanceof House) {
-                        listHouse.add((House) services);
+                bookingList = new ArrayList<>();
+                int num1;
+                houseList = new ArrayList<>();
+                saveListHouse();
+                for (int i = 0; i < houseList.size(); i++){
+                    System.out.println(i + 1 + ". " + houseList.get(i).show());
+                }
+                do {
+                    System.out.println("--------------------------input---------------------");
+                    num1 = scanner.nextInt();
+                    if (num1 < houseList.size() + 1 & num1 > 0){
+                        check = true;
                     }
+                    else {
+                        System.out.println("erro");
+                    }
+                }while (!check);
+                bookingList.add(customerList.get(num - 1).getNameCustomer() + " booking "+ villaList.get(num1 - 1).show());
+
+                BufferedReader bufferedReader = new BufferedReader(new FileReader(new File("").getAbsoluteFile()+"\\src\\CaseStudy\\Data\\Booking.csv"));
+                String string;
+                do {
+                    string = bufferedReader.readLine();
+                    if (string != null){
+                        bookingList.add(string);
+                    }
+                }while (string != null);
+
+                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("").getAbsoluteFile()+"\\src\\CaseStudy\\Data\\Booking.csv"));
+                for (String str : bookingList){
+                    bufferedWriter.write(str);
+                    bufferedWriter.newLine();
                 }
-                for (int i = 0; i < listHouse.size(); i++){
-                    System.out.println(i + 1 + ". " + listHouse.get(i).showInfor());
-                }
-                System.out.print("input booking: ");
-                int num = scanner.nextInt();
-                bookingList.add(listCustomer.get(numCustomer).showInfor() + listHouse.get(num).showInfor());
+                bufferedWriter.close();
                 break;
 
             } case 3:{
-                for (Services services : listServices) {
-                    if (services instanceof Room) {
-                        listRoom.add((Room) services);
+                roomList = new ArrayList<>();
+                int num1;
+                roomList = new ArrayList<>();
+                saveListHouse();
+                for (int i = 0; i < roomList.size(); i++){
+                    System.out.println(i + 1 + ". " + roomList.get(i).show());
+                }
+                do {
+                    System.out.println("--------------------------input---------------------");
+                    num1 = scanner.nextInt();
+                    if (num1 < roomList.size() + 1 & num1 > 0){
+                        check = true;
                     }
+                    else {
+                        System.out.println("erro");
+                    }
+                }while (!check);
+                bookingList.add(customerList.get(num - 1).getNameCustomer() + " booking "+ roomList.get(num1 - 1).show());
+
+                BufferedReader bufferedReader = new BufferedReader(new FileReader(new File("").getAbsoluteFile()+"\\src\\CaseStudy\\Data\\Booking.csv"));
+                String string;
+                do {
+                    string = bufferedReader.readLine();
+                    if (string != null){
+                        bookingList.add(string);
+                    }
+                }while (string != null);
+
+                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("").getAbsoluteFile()+"\\src\\CaseStudy\\Data\\Booking.csv"));
+                for (String str : bookingList){
+                    bufferedWriter.write(str);
+                    bufferedWriter.newLine();
                 }
-                for (int i = 0; i < listRoom.size(); i++){
-                    System.out.println(i + 1 + ". " + listRoom.get(i).showInfor());
-                }
-                System.out.print("input booking: ");
-                int num = scanner.nextInt();
-                bookingList.add(listCustomer.get(numCustomer).showInfor() + listRoom.get(num).showInfor());
+                bufferedWriter.close();
                 break;
             }
-
-
         }
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File("").getAbsoluteFile() + "\\src\\CaseStudy\\Data\\Booking.csv"));
-        for (int i = 0; i < bookingList.size(); i++){
-            bufferedWriter.write(i + 1 + ". " + bookingList.get(i));
-            bufferedWriter.newLine();
-        }bufferedWriter.close();
         displayMainMenu();
 
     }
-    public static void main(String[] args) throws IOException, ParseException {
-        displayMenuBooking();
-    }
-
-
 }

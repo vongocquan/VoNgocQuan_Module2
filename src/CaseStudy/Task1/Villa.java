@@ -1,6 +1,8 @@
 package CaseStudy.Task1;
 
-public   class Villa extends Services {
+import java.io.Serializable;
+
+public   class Villa extends Services implements Serializable{
     private String roomStandard;
     private String otherFacilities;
     private String poolArea;
@@ -11,15 +13,24 @@ public   class Villa extends Services {
 
     @Override
     public String showInfor() {
-        return "Villa{" + super.toString() +
-                ", roomStandard= " + roomStandard +
-                ", otherFacilities= " + otherFacilities +
-                ", poolArea= " + poolArea +
-                ", numberOfFloors= " + numberOfFloors +
-                "}";
+        return  super.toString() + "," +
+                  roomStandard + "," +
+                otherFacilities + "," +
+                 poolArea + "," +
+                numberOfFloors;
     }
 
 
+    @Override
+    public String show() {
+        return super.show() +
+                "Villa{" +
+                "roomStandard='" + roomStandard + '\'' +
+                ", otherFacilities='" + otherFacilities + '\'' +
+                ", poolArea='" + poolArea + '\'' +
+                ", numberOfFloors='" + numberOfFloors + '\'' +
+                '}';
+    }
 
     public String getRoomStandard() {
         return roomStandard;
@@ -68,4 +79,11 @@ public   class Villa extends Services {
         this.numberOfFloors = numberOfFloors;
     }
 
+    public Villa(String nameAccompaniedService, String unit, String price, String serviceCode, String serviceName, String areaUsed, String rentalCosts, String maximumPeople, String rentalType, String roomStandard, String otherFacilities, String poolArea, String numberOfFloors) {
+        super(nameAccompaniedService, unit, price, serviceCode, serviceName, areaUsed, rentalCosts, maximumPeople, rentalType);
+        this.roomStandard = roomStandard;
+        this.otherFacilities = otherFacilities;
+        this.poolArea = poolArea;
+        this.numberOfFloors = numberOfFloors;
+    }
 }

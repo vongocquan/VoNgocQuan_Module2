@@ -16,9 +16,8 @@ public class Room extends Services {
 
     @Override
     public String showInfor() {
-        return "Room{" + super.toString() +
-                ", accompaniedService= " + accompaniedServiceFrre +
-                "}";
+        return  super.toString() + "," +
+                accompaniedServiceFrre;
     }
 
 
@@ -30,4 +29,18 @@ public class Room extends Services {
         super(serviceCode, serviceName, areaUsed, rentalCosts, maximumPeople, rentalType);
         this.accompaniedServiceFrre = accompaniedServiceFrre;
     }
+
+    public Room(String nameAccompaniedService, String unit, String price, String serviceCode, String serviceName, String areaUsed, String rentalCosts, String maximumPeople, String rentalType, String accompaniedServiceFrre) {
+        super(nameAccompaniedService, unit, price, serviceCode, serviceName, areaUsed, rentalCosts, maximumPeople, rentalType);
+        this.accompaniedServiceFrre = accompaniedServiceFrre;
+    }
+
+    @Override
+    public String show() {
+        return super.show() +
+                "Room{" +
+                "accompaniedServiceFrre='" + accompaniedServiceFrre + '\'' +
+                '}';
+    }
+
 }

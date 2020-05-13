@@ -41,6 +41,6 @@ public class AccompaniedService {
 
     @Override
     public String toString() {
-        return "AccompaniedService: nameAccompaniedService =" + this.nameAccompaniedService + ", unit = " + this.unit + ", price = " + this.price;
+        return nameAccompaniedService + "," + unit + "," + price;
     }
 }

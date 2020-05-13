@@ -2,18 +2,19 @@ package CaseStudy.FindEmployee;
 
 import CaseStudy.Employee.Employee;
 
-
 import java.io.IOException;
-
-import java.text.ParseException;
-
-import java.util.Stack;
+import java.util.*;
 
 import static CaseStudy.Controllers.MainController.displayMainMenu;
-import static CaseStudy.Employee.Employee.*;
+import static CaseStudy.Employee.Employee.map;
+import static CaseStudy.Employee.Employee.saveEmployeeMap;
 
 public class FindEmployee {
-    public static void findEmployee() throws IOException, ParseException {
+    public static Scanner scanner = new Scanner(System.in);
+    public static void findEmployee() throws IOException, ClassNotFoundException {
+        map = new HashMap<>();
+        saveEmployeeMap();
+        Set<String> set = map.keySet();
         int cont;
         boolean check = false;
         do {
@@ -29,8 +30,8 @@ public class FindEmployee {
                 }
             }
             if (cont == 1){
-                    System.out.println(stack.pop().toString());
-                    check = true;
+                System.out.println(stack.pop().toString());
+                check = true;
             }else {
                 System.out.println("code Unknown! again input code employee: ");
             }
@@ -38,6 +39,8 @@ public class FindEmployee {
         }while (!check);
         displayMainMenu();
     }
+
+
 
 
 }

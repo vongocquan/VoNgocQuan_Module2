@@ -2,24 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c23867fb-c1f2-488b-a81f-8b1df93b73f2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/BookingMovie4D/Movie4D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Controllers/NewServies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Controllers/SaveFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Controllers/ShowCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Customer/AddNewCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Customer/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/Customer/WriteCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/ShowServices/Show.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/ShowServices/ShowHouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/ShowServices/ShowRoom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/ShowServices/ShowVilla.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Booking/Booking.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Booking/Booking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/BookingMovie4D/BookingMovie4D.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Controllers/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Data/Booking.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Data/DataEmployee.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Data/Villa.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Employee/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Employee/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Employee/Employee.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/FindEmployee/FindEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/FindEmployee/FindEmployee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task5/Customer.CSV" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task5/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task5/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task1/AccompaniedService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task1/AccompaniedService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task1/House.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task1/House.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task1/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task1/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task1/Services.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task1/Services.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task1/Villa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task1/Villa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task5/Customer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/CaseStudy/Task5/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/ngonNguLapTrinh_java/HienThiSoNguyenToNhoHon100.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoNgocQuan_Module2/ngonNguLapTrinh_java/HienThiSoNguyenToNhoHon100.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Booking/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Booking/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/BookingMovie4D/BookingMovie4D.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CaseStudy/Controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Controllers/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CaseStudy/Data/Booking.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Data/Booking.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Data/DataEmployee.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Data/Customer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Data/Customer.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Data/Employee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Data/Employee.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CaseStudy/Data/Villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Data/Villa.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Employee/Employee.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CaseStudy/Employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Employee/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task5/Customer.CSV" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task5/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Task5/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/FindEmployee/FindEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/FindEmployee/FindEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task1/AccompaniedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Task1/AccompaniedService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task1/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Task1/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task1/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Task1/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task1/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Task1/Services.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task1/Villa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/Task1/Villa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Task5/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/HienThiSoNguyenToNhoHon100.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ngonNguLapTrinh_java/HienThiSoNguyenToNhoHon100.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,12 +143,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Employee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CaseStudy.Employee.Employee" />
+    <configuration name="HienThiSoNguyenToNhoHon100" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ngonNguLapTrinh_java.HienThiSoNguyenToNhoHon100" />
       <module name="VoNgocQuan_Module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CaseStudy.Employee.*" />
+          <option name="PATTERN" value="ngonNguLapTrinh_java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,10 +179,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainController" />
-        <item itemvalue="Application.Booking" />
-        <item itemvalue="Application.Customer" />
-        <item itemvalue="Application.Employee" />
+        <item itemvalue="Application.HienThiSoNguyenToNhoHon100" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Customer" />
+        <item itemvalue="Application.Booking" />
       </list>
     </recent_temporary>
   </component>
@@ -233,6 +258,23 @@
       <workItem from="1588672530723" duration="8059000" />
       <workItem from="1588681334277" duration="1815000" />
       <workItem from="1588692004486" duration="874000" />
+      <workItem from="1588728615597" duration="739000" />
+      <workItem from="1588730336730" duration="1468000" />
+      <workItem from="1588750003868" duration="5498000" />
+      <workItem from="1588755808619" duration="696000" />
+      <workItem from="1588759289509" duration="4061000" />
+      <workItem from="1588763644257" duration="2459000" />
+      <workItem from="1588778364576" duration="93000" />
+      <workItem from="1588813778953" duration="6419000" />
+      <workItem from="1588837404086" duration="6965000" />
+      <workItem from="1588860096967" duration="1609000" />
+      <workItem from="1588929371475" duration="11828000" />
+      <workItem from="1588992891207" duration="417000" />
+      <workItem from="1589000078601" duration="813000" />
+      <workItem from="1589009569271" duration="3091000" />
+      <workItem from="1589022941194" duration="802000" />
+      <workItem from="1589169694814" duration="741000" />
+      <workItem from="1589354435846" duration="8857000" />
     </task>
     <servers />
   </component>
@@ -252,10 +294,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="448" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1587732157984" />
-    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1588640698027">
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1589357033338">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1588640698027" />
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1589357033338" />
     <state x="399" y="83" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1587959590704">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -268,10 +310,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1587959462035" />
-    <state x="413" y="111" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1588668176879">
+    <state x="413" y="111" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1588944591588">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="111" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.728@0.0.1366.728" timestamp="1588668176879" />
+    <state x="413" y="111" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.728@0.0.1366.728" timestamp="1588944591588" />
     <state x="430" y="256" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1588036983518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -284,42 +326,42 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="460" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587723825540" />
-    <state width="1323" height="135" key="GridCell.Tab.0.bottom" timestamp="1588683780778">
+    <state width="1286" height="226" key="GridCell.Tab.0.bottom" timestamp="1589363210266">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="135" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588683780778" />
-    <state width="1323" height="135" key="GridCell.Tab.0.center" timestamp="1588683780777">
+    <state width="1286" height="226" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589363210266" />
+    <state width="1286" height="226" key="GridCell.Tab.0.center" timestamp="1589363210266">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="135" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588683780777" />
-    <state width="1323" height="135" key="GridCell.Tab.0.left" timestamp="1588683780777">
+    <state width="1286" height="226" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589363210266" />
+    <state width="1286" height="226" key="GridCell.Tab.0.left" timestamp="1589363210266">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="135" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588683780777" />
-    <state width="1323" height="135" key="GridCell.Tab.0.right" timestamp="1588683780778">
+    <state width="1286" height="226" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589363210266" />
+    <state width="1286" height="226" key="GridCell.Tab.0.right" timestamp="1589363210266">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="135" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588683780778" />
-    <state width="1323" height="222" key="GridCell.Tab.1.bottom" timestamp="1587921184352">
+    <state width="1286" height="226" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589363210266" />
+    <state width="1323" height="222" key="GridCell.Tab.1.bottom" timestamp="1588825239407">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587921184352" />
-    <state width="1323" height="222" key="GridCell.Tab.1.center" timestamp="1587921184352">
+    <state width="1323" height="222" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588825239407" />
+    <state width="1323" height="222" key="GridCell.Tab.1.center" timestamp="1588825239406">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1587921184352" />
-    <state width="1323" height="222" key="GridCell.Tab.1.left" timestamp="1587921184352">
+    <state width="1323" height="222" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1588825239406" />
+    <state width="1323" height="222" key="GridCell.Tab.1.left" timestamp="1588825239406">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1587921184352" />
-    <state width="1323" height="222" key="GridCell.Tab.1.right" timestamp="1587921184352">
+    <state width="1323" height="222" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1588825239406" />
+    <state width="1323" height="222" key="GridCell.Tab.1.right" timestamp="1588825239406">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1587921184352" />
-    <state x="384" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1588692025352">
+    <state width="1323" height="222" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1588825239406" />
+    <state x="384" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1589354451478">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="384" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588692025352" />
+    <state x="384" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589354451478" />
     <state x="387" y="258" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1588036417281">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -328,18 +370,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="245" y="100" width="876" height="603" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1588162750106" />
-    <state x="-4" y="253" width="540" height="461" key="extract.method.dialog" timestamp="1588646020715">
+    <state x="-4" y="231" width="540" height="497" key="extract.method.dialog" timestamp="1589360794499">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="-4" y="253" width="540" height="461" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1588646020715" />
+    <state x="-4" y="231" width="540" height="497" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1589360794499" />
     <state x="62" y="0" key="new project wizard" timestamp="1587641203096">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="62" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1587641203096" />
-    <state x="389" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1588673184264">
+    <state x="389" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1588930649577">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="389" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1588673184264" />
+    <state x="389" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1588930649577" />
     <state x="339" y="17" width="672" height="676" key="search.everywhere.popup" timestamp="1587919266735">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

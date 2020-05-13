@@ -1,5 +1,7 @@
 package CaseStudy.Task1;
 
+
+
 public abstract class Services extends AccompaniedService{
 
 
@@ -83,13 +85,26 @@ public abstract class Services extends AccompaniedService{
 
     @Override
     public String toString() {
-        return "serviceCode= "+serviceCode +
-                "serviceName= " + serviceName +
-                ", areaUsed= " + areaUsed +
-                ", rentalCosts= " + rentalCosts +
-                ", maximumPeople= " + maximumPeople +
-                ", rentalType= " + rentalType +
-                super.toString();
+        return super.toString() + "," +
+                serviceCode + "," +
+                serviceName + ","+
+                areaUsed + "," +
+                rentalCosts + "," +
+                maximumPeople +"," +
+                rentalType;
+
+
+    }
+
+    public String show() {
+        return "Services{" +
+                "serviceCode='" + serviceCode + '\'' +
+                ", serviceName='" + serviceName + '\'' +
+                ", areaUsed='" + areaUsed + '\'' +
+                ", rentalCosts='" + rentalCosts + '\'' +
+                ", maximumPeople='" + maximumPeople + '\'' +
+                ", rentalType='" + rentalType + '\'' +
+                '}';
     }
 
     public abstract String showInfor();
