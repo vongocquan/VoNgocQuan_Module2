@@ -181,7 +181,7 @@ limit 1) = so_lan;
  where nv1.ma_nhan_vien not in (
  select hop_dong.ma_nhan_vien
  from hop_dong
- where year(ngay_lam_hop_dong) between 2016 and 2019
+ where year(ngay_lam_hop_dong) in (2017, 2018, 2019)
  group by hop_dong.ma_nhan_vien
  );
  
@@ -250,5 +250,5 @@ inner join hop_dong_chi_tiet on dvdk2.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_d
 inner join hop_dong on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
 where year(ngay_lam_hop_dong) = 2019
 group by ma_dich_vu_di_kem
-having count(dvdk2.ma_dich_vu_di_kem)
+having count(dvdk2.ma_dich_vu_di_kem) > 10
 );
