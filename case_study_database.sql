@@ -239,3 +239,16 @@ set gia = gia*2 where dich_vu_di_kem.ma_dich_vu_di_kem = table_update.ma_dich_vu
 -- task 20
 select ma_nhan_vien id, ten_nhan_vien ten, email, so_dien_thoai, ngay_sinh_nhan_vien ngay_sinh, dia_chi from nhan_vien union
 select ma_khach_hang, ten_khach_hang, email, so_dien_thoai, ngay_sinh_khach_hang, dia_chi from khach_hang
+
+-- task 19
+-- ko xu ly duoc cach nay
+update dich_vu_di_kem dvdk1
+set gia = gia * 2
+where dvdk1.ma_dich_vu_di_kem in (select dvdk2.ma_dich_vu_di_kem
+from dich_vu_di_kem dvdk2
+inner join hop_dong_chi_tiet on dvdk2.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
+inner join hop_dong on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
+where year(ngay_lam_hop_dong) = 2019
+group by ma_dich_vu_di_kem
+having count(dvdk2.ma_dich_vu_di_kem)
+);
