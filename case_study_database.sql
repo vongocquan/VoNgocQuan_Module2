@@ -62,11 +62,13 @@ from hop_dong hd1
 inner join dich_vu on dich_vu.ma_dich_vu = hd1.ma_dich_vu
 inner join loai_dich_vu on dich_vu.ma_loai_dich_vu = loai_dich_vu.ma_loai_dich_vu
 where 
+-- year(hd1.ngay_lam_hop_dong) != 2019 and
 hd1.ma_dich_vu 
 not in (select hd2.ma_dich_vu
 from hop_dong hd2
 where month(hd2.ngay_lam_hop_dong) = 1 or month(hd2.ngay_lam_hop_dong) = 2 or month(hd2.ngay_lam_hop_dong) = 3
-and hd1.ma_dich_vu = hd2.ma_dich_vu);
+and hd1.ma_dich_vu = hd2.ma_dich_vu)
+group by ma_dich_vu;
 
  
  
@@ -100,15 +102,23 @@ from hop_dong
 group by month(ngay_lam_hop_dong);
 
 -- task10
-select hop_dong.ma_hop_dong, ngay_lam_hop_dong, ngay_ket_thuc, tien_dat_coc, count(hop_dong.ma_hop_dong) as so_luong_dich_vu_di_kem
-from dich_vu_di_kem
-right join hop_dong_chi_tiet on  dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
-right join hop_dong on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
-group by hop_dong.ma_hop_dong;
+SELECT 
+    hop_dong.ma_hop_dong,
+    ngay_lam_hop_dong,
+    ngay_ket_thuc,
+    tien_dat_coc,
+    COUNT(dich_vu_di_kem.ma_dich_vu_di_kem) AS so_luong_dich_vu_di_kem
+FROM
+    dich_vu_di_kem
+        RIGHT JOIN
+    hop_dong_chi_tiet ON dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
+        RIGHT JOIN
+    hop_dong ON hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
+GROUP BY hop_dong.ma_hop_dong;
 
 
 -- task11
-select ten_dich_vu_di_kem,  concat('có ' , GROUP_CONCAT(ten_khach_hang) , ' thuê' ) as tinh_trang
+select dich_vu_di_kem.ma_dich_vu_di_kem, ten_dich_vu_di_kem, gia
 from dich_vu_di_kem
 inner join hop_dong_chi_tiet on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
 inner join hop_dong on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
@@ -227,7 +237,7 @@ from hop_dong);
 ALTER TABLE hop_dong_chi_tiet ADD CONSTRAINT hop_dong_chi_tiet_ibfk_1 FOREIGN KEY(ma_hop_dong) REFERENCES hop_dong(ma_hop_dong);
 
 -- task19
-update dich_vu_di_kem inner join (select dich_vu_di_kem.ma_dich_vu_di_kem, count(dich_vu_di_kem.ma_dich_vu_di_kem)
+update dich_vu_di_kem inner join (select dich_vu_di_kem.ma_dich_vu_di_kem
 from dich_vu_di_kem
 inner join hop_dong_chi_tiet on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
 inner join hop_dong on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
@@ -238,7 +248,7 @@ set gia = gia*2 where dich_vu_di_kem.ma_dich_vu_di_kem = table_update.ma_dich_vu
 
 -- task 20
 select ma_nhan_vien id, ten_nhan_vien ten, email, so_dien_thoai, ngay_sinh_nhan_vien ngay_sinh, dia_chi from nhan_vien union
-select ma_khach_hang, ten_khach_hang, email, so_dien_thoai, ngay_sinh_khach_hang, dia_chi from khach_hang
+select ma_khach_hang, ten_khach_hang, email, so_dien_thoai, ngay_sinh_khach_hang, dia_chi from khach_hang;
 
 -- task 19
 -- ko xu ly duoc cach nay
@@ -250,5 +260,5 @@ inner join hop_dong_chi_tiet on dvdk2.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_d
 inner join hop_dong on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
 where year(ngay_lam_hop_dong) = 2019
 group by ma_dich_vu_di_kem
-having count(dvdk2.ma_dich_vu_di_kem) > 10
+having count(dvdk2.ma_dich_vu_di_kem)
 );
