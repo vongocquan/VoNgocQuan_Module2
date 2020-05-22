@@ -11,13 +11,26 @@
     <title>Title</title>
 </head>
 <body>
+
 <%
-    float rate = Float.parseFloat(request.getParameter("rate"));
-    float usd = Float.parseFloat(request.getParameter("usd"));
-    float vnd = rate * usd;
-%>
+    float rate;
+    float usd;
+    float vnd;
+    try {
+         rate = Float.parseFloat(request.getParameter("rate"));
+         usd = Float.parseFloat(request.getParameter("usd"));
+         vnd = (rate * usd);
+         %>
 <h1>Rate: <%=rate%></h1>
 <h1>USD: <%=usd%></h1>
 <h1>VND: <%=vnd%></h1>
+<%
+    }catch (NumberFormatException e) {
+        out.print("error");
+    }
+        %>
+
+
+
 </body>
 </html>

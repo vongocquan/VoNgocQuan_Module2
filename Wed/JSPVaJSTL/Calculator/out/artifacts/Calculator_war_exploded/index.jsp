@@ -28,7 +28,7 @@
 
     </label> <br/>
     <label>
-      Second Operand<input type="text" name="secondOperand" value="0"/>
+      Second Operand<input type="text" name="secondOperand" placeholder="0"/>
     </label> <br/>
     <input type="submit" value="submit">
   </form>

@@ -17,25 +17,26 @@
     String operand = request.getParameter("operand");
     String result = "";
     switch (operand) {
-        case "addition":
+        case "addition": {
             result += firstOperand + secondOperand;
             break;
-        case "subtraction":
+        } case "subtraction": {
             result += firstOperand - secondOperand;
             break;
-        case "multiplication":
+        } case "multiplication": {
             result += firstOperand * secondOperand;
             break;
-        default:
+        } default:
             if (secondOperand == 0) {
                 result = "error";
             } else {
                 result += firstOperand / secondOperand;
-            }
-            break;
-    }
+            }break;
+        }
+
 %>
 <h1><b>Result:</b></h1>
 <%=result%>
+
 </body>
 </html>
