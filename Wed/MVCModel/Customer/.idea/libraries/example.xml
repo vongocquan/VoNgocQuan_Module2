@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="example">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/jstl-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/example.zip!/" />
+    </SOURCES>
+  </library>
+</component>

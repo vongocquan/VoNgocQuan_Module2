@@ -1,0 +1,64 @@
+body{
+    font-family: Tahoma, serif;
+    font-size: 13px;
+    width: 1000px;
+    margin: 0 auto;
+}
+#logo {
+    background: forestgreen;
+    height: 100px;
+}
+#menu_top {
+    background: darkblue;
+    height: 50px;
+}
+#main #left {
+    width: 250px;
+    background: aqua;
+    float: left;
+    min-height: 600px;
+}
+#main #between {
+    width: 500px;
+    min-height: 600px;
+    float: left;
+}
+#main #right {
+    width: 250px;
+    min-height: 600px;
+    float: right;
+}
+#main #between #between_on{
+    min-height: 400px;
+    background: chartreuse;
+}
+#main #between #between_below {
+    min-height: 200px;
+    background: crimson;
+}
+#main #right #right_on {
+    min-height: 400px;
+    background: blue;
+}
+#main #right #right_below {
+    min-height: 200px;
+    background: chocolate;
+}
+#menu_top ul{
+    margin: 0;
+    padding: 0;
+
+}
+#menu_top ul li {
+    list-style: none;
+    float: left;
+}
+#menu_top ul li a {
+    text-decoration: none;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    color: azure;
+    padding: 0 70px 0 70px;
+    border-right: 1px solid azure;
+}

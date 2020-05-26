@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a476437-8d89-42f1-9602-096fc7f0daa4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../VoNgocQuan_Module2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../name='quanold=12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSPVaJSTL/Calculator/out/artifacts/Calculator_war_exploded/calculate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../JSPVaJSTL/Calculator/out/artifacts/Calculator_war_exploded/calculate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSPVaJSTL/CurrencyConverter/out/artifacts/CurrencyConverter_war_exploded/converter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../JSPVaJSTL/CurrencyConverter/out/artifacts/CurrencyConverter_war_exploded/converter.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSPVaJSTL/customer/out/artifacts/customer_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../JSPVaJSTL/customer/out/artifacts/customer_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSPVaJSTL/customer/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../JSPVaJSTL/customer/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JSPVaJSTL/customer" />
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.35" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.35" ALTERNATIVE_JRE_ENABLED="false">
@@ -68,6 +70,9 @@
       <option name="presentableId" value="Default" />
       <updated>1589969990708</updated>
       <workItem from="1589969993438" duration="59000" />
+      <workItem from="1590208566954" duration="130000" />
+      <workItem from="1590224028356" duration="547000" />
+      <workItem from="1590236013075" duration="77000" />
     </task>
     <servers />
   </component>
@@ -75,10 +80,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="464" y="106" key="FileChooserDialogImpl" timestamp="1589970032171">
+    <state x="464" y="106" key="FileChooserDialogImpl" timestamp="1590236087879">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="464" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589970032171" />
+    <state x="464" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590236087879" />
+    <state x="378" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1590236054013">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590236054013" />
     <state x="67" y="0" key="new project wizard" timestamp="1589970050649">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -28,9 +28,6 @@
     }catch (NumberFormatException e) {
         out.print("error");
     }
-        %>
-
-
-
+%>
 </body>
 </html>

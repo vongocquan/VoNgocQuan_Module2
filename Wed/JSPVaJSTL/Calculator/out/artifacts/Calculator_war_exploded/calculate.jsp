@@ -11,7 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-
 <%
     float firstOperand = Float.parseFloat(request.getParameter("firstOperand"));
     float secondOperand = Float.parseFloat(request.getParameter("secondOperand"));

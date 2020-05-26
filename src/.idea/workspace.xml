@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df124552-2b69-4d83-9249-e4eb04f5d4ab" name="Default Changelist" comment="" />
+    <list default="true" id="df124552-2b69-4d83-9249-e4eb04f5d4ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Wed/CaseStudy/CaseStudy/web/css/CaseStudy.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Wed/MVCModel/Customer/src/com/codegym/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Wed/MVCModel/Customer/src/com/codegym/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Wed/MVCModel/Customer/src/com/codegym/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Wed/MVCModel/Customer/src/com/codegym/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Wed/MVCModel/Customer/web/customer/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wed/JSPVaJSTL/Calculator/out/artifacts/Calculator_war_exploded/calculate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Wed/JSPVaJSTL/Calculator/out/artifacts/Calculator_war_exploded/calculate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wed/JSPVaJSTL/CurrencyConverter/out/artifacts/CurrencyConverter_war_exploded/converter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Wed/JSPVaJSTL/CurrencyConverter/out/artifacts/CurrencyConverter_war_exploded/converter.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wed/JSPVaJSTL/customer/out/artifacts/customer_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Wed/JSPVaJSTL/customer/out/artifacts/customer_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wed/JSPVaJSTL/customer/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Wed/JSPVaJSTL/customer/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wed/SeverTime/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Wed/SeverTime/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -33,6 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587378189274</updated>
       <workItem from="1587378193233" duration="130000" />
+      <workItem from="1590414821787" duration="17000" />
     </task>
     <servers />
   </component>
@@ -40,10 +54,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="462" y="109" key="FileChooserDialogImpl" timestamp="1587378320579">
+    <state x="462" y="109" key="FileChooserDialogImpl" timestamp="1590414837498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587378320579" />
+    <state x="462" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590414837498" />
     <state x="390" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1587378193238">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

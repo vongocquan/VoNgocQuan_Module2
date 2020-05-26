@@ -14,19 +14,6 @@
     html {
         text-align: center;
     }
-
-    table {
-        margin: 0 auto;
-    }
-
-    img {
-        height: 200px;
-        width: 300px;
-    }
-
-    td {
-        text-align: center;
-    }
 </style>
 <head>
     <title>$Title$</title>
