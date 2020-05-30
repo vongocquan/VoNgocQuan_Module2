@@ -136,11 +136,13 @@ public class customerServlet extends HttpServlet {
         String email = request.getParameter("email");
         String address = request.getParameter("address");
         int id = (int)(Math.random() * 10000);
+        if (!name.equals("") | !email.equals("") | !address.equals("")) {
+            Customer customer = new Customer(id, name, email, address);
+            this.customerService.save(customer);
+        }
+            RequestDispatcher dispatcher = request.getRequestDispatcher("customer/create.jsp");
+            request.setAttribute("message", "New customer was created");
 
-        Customer customer = new Customer(id, name, email, address);
-        this.customerService.save(customer);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("customer/create.jsp");
-        request.setAttribute("message", "New customer was created");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException e) {
@@ -185,7 +187,6 @@ public class customerServlet extends HttpServlet {
                 break;
             default:
                 break;
-
         }
 
     }
