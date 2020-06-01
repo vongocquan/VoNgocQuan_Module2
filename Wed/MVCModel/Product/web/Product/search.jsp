@@ -1,3 +1,4 @@
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -15,24 +16,27 @@
         </tr>
     </table>
     <input type="submit" value="Search Product"/>
-    <c:out value="product">
+
     <table>
         <tr>
-            <td>Name</td>
-            <td>Price</td>
-            <td>Description</td>
-            <td>Producer</td>
-            <td>Edit</td>
-            <td>Delete</td>
+            <td><c:out value="name"/></td>
+            <td><c:out value="${name}"/></td>
         </tr>
         <tr>
-            <td>${product.getName()}</td>
-            <td>${product.getPrice()}</td>
-            <td>${product.getDescription()}</td>
-            <td>${product.getProducer()}</td>
+            <td><c:out value="price"/> </td>
+            <td><c:out value="${price}"/> </td>
         </tr>
+        <tr>
+            <td><c:out value="description"/></td>
+            <td><c:out value="${description}"/></td>
+        </tr>
+        <tr>
+            <td><c:out value="producer"/></td>
+            <td><c:out value="${producer}"/></td>
+        </tr>
+
     </table>
-    </c:out>
+
 </form>
 </body>
 </html>

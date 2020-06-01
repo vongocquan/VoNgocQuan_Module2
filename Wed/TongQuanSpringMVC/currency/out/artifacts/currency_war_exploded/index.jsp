@@ -11,7 +11,7 @@
     <title>$Title$</title>
   </head>
   <body>
-  <form method="post" action="/currency">
+  <form method="get" action="/currency">
     <input type="text" name="USA" value="0"/>
     <input type="submit" value="submit"/>
   </form>

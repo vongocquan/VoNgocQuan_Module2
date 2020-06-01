@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 import static com.codegym.service.ProductServiceImpl.products;
@@ -25,7 +26,7 @@ public class ProductServlet extends HttpServlet  {
 
         List<Product> products = this.productService.findAll();
         request.setAttribute("products", products);
-         request.getRequestDispatcher("Product/list.jsp").forward(request, response);
+        request.getRequestDispatcher("Product/list.jsp").forward(request, response);
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
@@ -52,9 +53,12 @@ public class ProductServlet extends HttpServlet  {
 
     private void searchProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
-        Product product = (Product) productService.search(productService.findAll(), name);
-        request.setAttribute("product", product);
-        request.getRequestDispatcher("Product/search.jsp").forward(request,response);
+        Product product =  productService.search(productService.findAll(), name);
+        request.setAttribute("name", product.getName());
+        request.setAttribute("price", product.getPrice());
+        request.setAttribute("description", product.getDescription());
+        request.setAttribute("producer", product.getProducer());
+        request.getRequestDispatcher("Product/search.jsp").forward(request, response);
 
     }
 
