@@ -18,7 +18,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public String signUp(String name, String email, String account, String password_1, String password_2, int old, String address, List<Customer> arrayCustomer) {
-        return customerRepository.signUp(name, email, account, password_1, password_2, old, address, arrayCustomer);
+    public String signUp(String name, String email, String account, String password_1, String password_2, int old, String address) {
+        return customerRepository.signUp(name, email, account, password_1, password_2, old, address);
     }
 }
