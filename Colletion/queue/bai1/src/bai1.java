@@ -13,10 +13,9 @@ public class bai1 {
         int result = 0;
         int num = scanner.nextInt();
         for (int i = 0; i < num; i++){
-            result = queue.peek();
-            int a = queue.poll();
-            queue.add(a);
-            queue.add(a);
+            result = queue.poll();
+            queue.add(result);
+            queue.add(result);
         }
         System.out.println(result);
     }

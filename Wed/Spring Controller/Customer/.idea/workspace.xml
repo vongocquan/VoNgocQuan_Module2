@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="231f45fd-78eb-48a8-9cad-7d437c232e31" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Colletion/queue/Bai2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/queue/Bai2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Colletion/queue/Bai2/src/Bai2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/queue/Bai2/src/Bai2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Colletion/queue/bai1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/queue/bai1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Colletion/queue/bai1/out/production/bai1/bai1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/queue/bai1/out/production/bai1/bai1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Colletion/queue/bai1/src/bai1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/queue/bai1/src/bai1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Colletion/stack/Bai1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/stack/Bai1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Colletion/stack/Bai1/out/production/Bai1/BieuThucHauTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/stack/Bai1/out/production/Bai1/BieuThucHauTo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Colletion/stack/Bai1/src/BieuThucHauTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/stack/Bai1/src/BieuThucHauTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Colletion/stack/Bai4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/stack/Bai4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Colletion/stack/Bai4/src/TimChu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/stack/Bai4/src/TimChu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WED-INF/applicationContext.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="XSLT Stylesheet" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Module2\VoNgocQuan_Module2\Wed\Spring Controller\Customer\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cz7v8bPV0yoAlaSjuErOWUbu4y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="231f45fd-78eb-48a8-9cad-7d437c232e31" name="Default Changelist" comment="" />
+      <created>1591519795953</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591519795953</updated>
+      <workItem from="1591519800124" duration="1346000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="23" key="#Project_Structure" timestamp="1591520180100">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="23" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1591520180100" />
+    <state x="417" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591520656855">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="417" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1591520656855" />
+    <state x="65" y="0" key="new project wizard" timestamp="1591521131010">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1591521131010" />
+  </component>
+</project>

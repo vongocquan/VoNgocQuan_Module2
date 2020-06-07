@@ -52,8 +52,8 @@ public class Bai2 {
         Set<Integer> set = customerMap.keySet();
          Customer customer = customerQueue.poll();
         for (int i = 0; i < customerMap.size(); i++){
-             for (Object key : set){
-                 if (customerMap.get(key).equals(customer)){
+             for (Object key : set) {
+                 if (customerMap.get(key).equals(customer)) {
                      num = (int) key;
                  }
              }

@@ -27,6 +27,7 @@ public class BieuThucHauTo {
                         result = num1 + num2;
                         stack.push(String.valueOf(result));
                         break;
+
                     case "-":
                         num1 = Integer.parseInt(stack.pop());
 
