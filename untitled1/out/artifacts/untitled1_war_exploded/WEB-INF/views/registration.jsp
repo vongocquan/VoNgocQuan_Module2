@@ -35,7 +35,7 @@
         </tr>
         <tr>
             <td>old</td>
-            <td><input type="number" name="old"/> </td>
+            <td><input type="number" value="0" name="old"/> </td>
         </tr>
         <tr>
             <td>address</td>

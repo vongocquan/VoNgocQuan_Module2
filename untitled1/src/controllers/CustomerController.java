@@ -27,7 +27,7 @@ public class CustomerController {
     public String signUp(@RequestParam String name, @RequestParam String email, @RequestParam String account,
                          @RequestParam String password_1, @RequestParam String password_2, @RequestParam int old,
                          @RequestParam String address, Model model){
-        String result = customerService.signUp(name, email, account, password_1, password_2, old, address);
+        String result = customerService.signUp(name, email, account, password_1, password_2, old, address, customerService.arrayCustomer());
         model.addAttribute("result", result);
 
         return "registration";

@@ -4,6 +4,7 @@ import models.Customer;
 import repository.CustomerRepository;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class CustomerRepositoryImpl implements CustomerRepository {
@@ -15,15 +16,20 @@ public class CustomerRepositoryImpl implements CustomerRepository {
     }
 
     @Override
-    public String signUp(String name, String email, String account, String password_1, String password_2, int old, String address) {
-        if (name.equals("") | email.equals("") | account.equals("") | password_1.equals("") | password_2.equals("") | old <= 0 |address.equals("")){
+    public List<Customer> arrayCustomer() {
+        return (List<Customer>) customers.values();
+    }
+
+    @Override
+    public String signUp(String name, String email, String account, String password_1, String password_2, int old, String address, List<Customer> arrayCustomer) {
+        if (name.isEmpty() | email.isEmpty() | account.isEmpty() | password_1.isEmpty() | password_2.isEmpty() | old <= 0 |address.isEmpty()){
             return "Enter enough information";
         }else if (!password_1.equals(password_2)){
             return "password duplicate";
         }
         else {
-            for (int i = 1; i <= customers.size(); i++) {
-                if (customers.get(i).getAccount().equals(account)){
+            for (int i = 0; i < arrayCustomer.size(); i++) {
+                if (arrayCustomer.get(i).getAccount().equals(account)){
                     return "account already exist";
                 }
             }
