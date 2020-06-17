@@ -15,9 +15,9 @@
     <input name="num1" />
     <input name="num2" /><br/>
     <input type="submit" name="calculation" value="Addition(+)"/>
-    <input type="submit" name="calculation" value="Addition(-)"/>
-    <input type="submit" name="calculation" value="Addition(*)"/>
-    <input type="submit" name="calculation" value="Addition(/)"/>
+    <input type="submit" name="calculation" value="Subtraction(-)"/>
+    <input type="submit" name="calculation" value="Multiplication(*)"/>
+    <input type="submit" name="calculation" value="Division(/)"/>
 </form>
 <h1>${result}</h1>
 </body>

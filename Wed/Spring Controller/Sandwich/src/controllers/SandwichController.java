@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import services.SandwichService;
 
+import java.util.Optional;
+
 
 @Controller
 public class SandwichController {
@@ -18,10 +20,9 @@ public class SandwichController {
         return "home";
     }
     @PostMapping ("/save")
-    public String save(@RequestParam ("condiment") String[] condiments, Model model){
+    public String save(@RequestParam ("condiment") Optional<String[]> condiments, Model model){
         String result = sandwichService.show(condiments);
         model.addAttribute("result", result);
         return "save";
-
     }
 }

@@ -2,13 +2,26 @@ package services.impl;
 
 
 import org.springframework.stereotype.Service;
-import repository.impl.SandwichRepositoryImpl;
+
 import services.SandwichService;
+
+import java.nio.file.OpenOption;
+import java.util.Optional;
+
 @Service
 public class SandwichServiceImpl implements SandwichService {
-    SandwichRepositoryImpl sandwichRepository = new SandwichRepositoryImpl();
+
+
     @Override
-    public String show(String[] condiments) {
-        return sandwichRepository.show(condiments);
+    public String show(Optional<String[]> openOption) {
+        String result = "";
+        if (openOption.isPresent()) {
+            for (String value : openOption.get()){
+                result += value;
+                result += " ";
+            }
+            return result;
+        }
+        return "not ";
     }
 }

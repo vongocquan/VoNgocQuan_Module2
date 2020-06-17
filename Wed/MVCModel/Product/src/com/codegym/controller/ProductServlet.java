@@ -16,6 +16,7 @@ import java.util.List;
 
 import static com.codegym.service.ProductServiceImpl.products;
 
+
 @WebServlet(name = "ProductServlet", urlPatterns = "/products")
 public class ProductServlet extends HttpServlet  {
 

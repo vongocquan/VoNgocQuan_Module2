@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body th:object="${customer}">
+<table>
+    <tr>
+        <td th:text="*{firstName}"></td>
+        <td th:text="*{lastName}"></td>
+    </tr>
+</table>
+</body>
+</html>

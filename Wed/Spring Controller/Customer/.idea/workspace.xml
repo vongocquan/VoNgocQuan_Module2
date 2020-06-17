@@ -2,40 +2,113 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="231f45fd-78eb-48a8-9cad-7d437c232e31" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../Colletion/queue/Bai2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/queue/Bai2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Colletion/queue/Bai2/src/Bai2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/queue/Bai2/src/Bai2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Colletion/queue/bai1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/queue/bai1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Colletion/queue/bai1/out/production/bai1/bai1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/queue/bai1/out/production/bai1/bai1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Colletion/queue/bai1/src/bai1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/queue/bai1/src/bai1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Colletion/stack/Bai1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/stack/Bai1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Colletion/stack/Bai1/out/production/Bai1/BieuThucHauTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/stack/Bai1/out/production/Bai1/BieuThucHauTo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Colletion/stack/Bai1/src/BieuThucHauTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/stack/Bai1/src/BieuThucHauTo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Colletion/stack/Bai4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/stack/Bai4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Colletion/stack/Bai4/src/TimChu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Colletion/stack/Bai4/src/TimChu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WED-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVCModel/Product/out/artifacts/Product_war_exploded/WEB-INF/classes/com/codegym/controller/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVCModel/Product/out/artifacts/Product_war_exploded/WEB-INF/classes/com/codegym/controller/ProductServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVCModel/Product/out/artifacts/Product_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVCModel/Product/out/artifacts/Product_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVCModel/Product/out/production/Product/com/codegym/controller/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVCModel/Product/out/production/Product/com/codegym/controller/ProductServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVCModel/Product/src/com/codegym/controller/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVCModel/Product/src/com/codegym/controller/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVCModel/Product/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVCModel/Product/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/out/artifacts/Caculator_war_exploded/WEB-INF/classes/repository/CaculatorRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/out/artifacts/Caculator_war_exploded/WEB-INF/classes/repository/impl/CaculatorRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/out/artifacts/Caculator_war_exploded/WEB-INF/classes/services/impl/CaculatorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Caculator/out/artifacts/Caculator_war_exploded/WEB-INF/classes/services/impl/CaculatorServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/out/artifacts/Caculator_war_exploded/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Caculator/out/artifacts/Caculator_war_exploded/WEB-INF/views/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/out/production/Caculator/repository/CaculatorRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/out/production/Caculator/repository/impl/CaculatorRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/out/production/Caculator/services/impl/CaculatorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Caculator/out/production/Caculator/services/impl/CaculatorServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/src/controllers/CaculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Caculator/src/controllers/CaculatorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/src/repository/CaculatorRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/src/repository/impl/CaculatorRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/src/services/impl/CaculatorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Caculator/src/services/impl/CaculatorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/web/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Caculator/web/WEB-INF/views/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sandwich/out/artifacts/Sandwich_war_exploded/WEB-INF/classes/controllers/SandwichController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sandwich/out/artifacts/Sandwich_war_exploded/WEB-INF/classes/controllers/SandwichController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sandwich/out/artifacts/Sandwich_war_exploded/WEB-INF/classes/repository/SandwichRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sandwich/out/artifacts/Sandwich_war_exploded/WEB-INF/classes/repository/impl/SandwichRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sandwich/out/artifacts/Sandwich_war_exploded/WEB-INF/classes/services/SandwichService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sandwich/out/artifacts/Sandwich_war_exploded/WEB-INF/classes/services/SandwichService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sandwich/out/artifacts/Sandwich_war_exploded/WEB-INF/classes/services/impl/SandwichServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sandwich/out/artifacts/Sandwich_war_exploded/WEB-INF/classes/services/impl/SandwichServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sandwich/out/production/Sandwich/controllers/SandwichController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sandwich/out/production/Sandwich/controllers/SandwichController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sandwich/out/production/Sandwich/repository/SandwichRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sandwich/out/production/Sandwich/repository/impl/SandwichRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sandwich/out/production/Sandwich/services/SandwichService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sandwich/out/production/Sandwich/services/SandwichService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sandwich/out/production/Sandwich/services/impl/SandwichServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sandwich/out/production/Sandwich/services/impl/SandwichServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sandwich/src/controllers/SandwichController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sandwich/src/controllers/SandwichController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sandwich/src/repository/SandwichRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sandwich/src/repository/impl/SandwichRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sandwich/src/services/SandwichService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sandwich/src/services/SandwichService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sandwich/src/services/impl/SandwichServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sandwich/src/services/impl/SandwichServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/.idea/artifacts/untitled1_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/.idea/libraries/Spring_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/.idea/libraries/Spring_MVC_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-aop-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-aspects-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-beans-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-context-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-context-support-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-core-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-instrument-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-jms-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-messaging-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-orm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-oxm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-test-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-web-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/lib/spring-webmvc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/classes/controllers/CustomerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/classes/models/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/classes/repository/CustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/classes/repository/impl/CustomerRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/classes/services/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/classes/services/impl/CustomerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-aspects-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-context-support-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-instrument-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-jms-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-messaging-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-orm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-oxm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-test-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/views/registration.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/artifacts/untitled1_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/production/untitled1/controllers/CustomerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/production/untitled1/models/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/production/untitled1/repository/CustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/production/untitled1/repository/impl/CustomerRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/production/untitled1/services/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/out/production/untitled1/services/impl/CustomerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/src/controllers/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/src/models/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/src/repository/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/src/repository/impl/CustomerRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/src/services/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/src/services/impl/CustomerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/untitled1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/web/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/web/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/web/WEB-INF/views/registration.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../untitled1/web/WEB-INF/web.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +149,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sandwich" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -91,6 +165,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591519795953</updated>
       <workItem from="1591519800124" duration="1346000" />
+      <workItem from="1591694520217" duration="17000" />
     </task>
     <servers />
   </component>
@@ -106,6 +181,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="417" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1591520656855" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1591694535995">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591694535995" />
     <state x="65" y="0" key="new project wizard" timestamp="1591521131010">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -18,7 +18,7 @@ public class CaculatorController {
         CaculatorServiceImpl caculatorService = new CaculatorServiceImpl();
         @RequestMapping("/home")
         public String home(){
-                return "list";
+            return "list";
     }
     @RequestMapping ("/caculator")
         public String result(@RequestParam String num1, @RequestParam String num2, @RequestParam ("calculation") String calculation, Model model){

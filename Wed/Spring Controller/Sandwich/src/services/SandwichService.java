@@ -1,5 +1,8 @@
 package services;
 
+import java.nio.file.OpenOption;
+import java.util.Optional;
+
 public interface SandwichService {
-    String show(String[] condiments);
+    String show(Optional<String[]> openOption);
 }
