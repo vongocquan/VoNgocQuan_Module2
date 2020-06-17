@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<footer th:replace="layout::home_category"></footer>
+<h3 th:text="'Update Category ' + ${categoryBlog.category}"></h3>
+<form action="/edit-category" method="post" th:object="${categoryBlog}">
+    <input type="hidden" th:field="*{id}"/>
+    Category <input type="text" th:field="*{category}"/>
+    <input type="submit" value="Update"/>
+</form>
+<footer th:replace="layout::footer"></footer>
+</body>
+</html>
