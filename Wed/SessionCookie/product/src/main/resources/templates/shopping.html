@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout::head">
+</head>
+<body>
+<a href="/"><h3>Trang Chủ</h3></a>
+<h3 th:text="'Giỏ Hàng ('+ ${list.size()} + ')'">Giỏ Hàng</h3>
+
+<table>
+    <tr th:each="list:${list}">
+        <td colspan="4"><img th:src="${list.img}"></td>
+        <td>
+            <ul>
+                <li th:text="${list.name}"></li>
+                <li >Mã SP: </li>
+                <li>Đơn Giá: </li>
+                <li>Số Lượng: </li>
+                <li><a th:href="@{/delete/{id}(id=${list.codeProduct})}">Delete</a></li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li></li>
+                <li th:text="${list.codeProduct}"></li>
+                <li th:text="${list.price} + 'đ'"></li>
+                <li><input type="number" value="1"/></li>
+<!--                <li><input th:id="${list.codeProduct}"  th:value="${amount}" type="number" min="1" th:max="${list.amount}" onchange="gotoPage(this)"/></li>-->
+            </ul>
+        </td>
+    </tr>
+</table>
+<!--<h3 th:text="'Tổng tiền'"></h3>-->
+<h3 th:text="${message}"></h3>
+<footer th:replace="layout::footer"></footer>
+<!--<script>-->
+<!--    function gotoPage(selection) {-->
+<!--        window.location = "/customer/" + selection.id + "/" +  selection.value;-->
+<!--    }-->
+<!--</script>-->
+</body>
+</html>

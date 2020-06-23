@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout::head"></head>
+<body>
+<form action="/shopping" method="post">
+<table>
+    <tr>
+        <th colspan="2"><a href="/"><h3>Trang Chủ</h3></a></th>
+    </tr>
+    <tr>
+        <th colspan="2"><h3>Thông Tin Sản Phẩm</h3></th>
+    </tr>
+    <tr th:object="${product}">
+        <td>
+            <ul>
+                <li><input type="hidden" th:field="${product.codeProduct}"/></li>
+                <li><img th:src="*{img}"></li>
+                <li th:text="'Mã sản phẩm: ' + *{codeProduct}"></li>
+                <li th:text="'Giá: '+ *{codeProduct}"></li>
+                <li>
+                    <input type="submit" value="MUA NGAY"/>
+                </li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li th:text="*{name}"></li>
+                <li th:text="*{detail}"></li>
+            </ul>
+        </td>
+    </tr>
+</table>
+</form>
+<footer th:replace="layout::footer"></footer>
+</body>
+</html>
