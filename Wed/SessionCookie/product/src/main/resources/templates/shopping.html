@@ -23,7 +23,7 @@
                 <li></li>
                 <li th:text="${list.codeProduct}"></li>
                 <li th:text="${list.price} + 'đ'"></li>
-                <li><input type="number" value="1"/></li>
+                <li><input type="number" value="1" min="1" th:max="${list.amount}"/></li>
 <!--                <li><input th:id="${list.codeProduct}"  th:value="${amount}" type="number" min="1" th:max="${list.amount}" onchange="gotoPage(this)"/></li>-->
             </ul>
         </td>

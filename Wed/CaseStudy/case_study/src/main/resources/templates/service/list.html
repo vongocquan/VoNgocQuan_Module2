@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<header th:replace="layout::head"></header>
+<body>
+<header th:replace="layout::header"></header>
+<div id="main">
+    <footer th:replace="layout::section"></footer>
+    <div id="between">
+        <div id="between_on">
+            <ul id="service">
+                <li><a href="create-service">Add Service</a></li>
+                <li><h3>List Service</h3></li>
+                <li>
+                    <table border="1">
+                        <tr>
+                            <td>Tên Dịch Vụ</td>
+                            <td>Diện Tích</td>
+                            <td>Số Người Tối Đa</td>
+                            <td>Số Tầng</td>
+                            <td>Chi Phí Thuê</td>
+                            <td>Trang Thai</td>
+                            <td>Kiểu Thuê</td>
+                            <td>Giá</td>
+                            <td>Loại Dịch Vụ</td>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr th:each="service:${services.content}">
+                            <td th:text="${service.tenDichVu}"></td>
+                            <td th:text="${service.dienTich}"></td>
+                            <td th:text="${service.soNguoiToiDa}"></td>
+                            <td th:text="${service.soTang}"></td>
+                            <td th:text="${service.chiPhiThue}"></td>
+                            <td th:text="${service.trangThai}"></td>
+                            <td th:text="${service.kieuThue.tenKieuThue}"></td>
+                            <td th:text="${service.kieuThue.gia}"></td>
+                            <td th:text="${service.loaiDichVu.tenLoaiDichVu}"></td>
+                            <td><a th:href="@{/service-edit/{id}(id=${service.id})}">Edit</a></td>
+                            <td><a th:href="@{/service-delete/{id}(id=${service.id})}">Delete</a></td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <a th:if="${services.hasPrevious()}" th:href="@{/service(page=${services.number - 1})}">Previous</a>
+                    <span th:text="${services.number + 1}"></span>/<span th:text="${services.totalPages}"></span>
+                    <a th:if="${services.hasNext()}" th:href="@{/service(page=${services.number + 1})}">Next</a>
+                </li>
+            </ul>
+        </div>
+        <div id="between_below">between_below</div>
+    </div>
+    <footer th:replace="layout::feature"></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Language: <a href="?lang=en">English</a> | <a href="?lang=hawaii">Hawaii</a>
+    <table>
+        <tr>
+            <td th:text="#{user}"></td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td th:text="#{password}"></td>
+            <td><input type="text"/></td>
+        </tr>
+    </table>
+</body>
+</html>

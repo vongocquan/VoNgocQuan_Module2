@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<header th:fragment="head">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" type="text/css" href="/casetudy.css"/>
+    </head>
+</header>
+<body>
+<header th:fragment="header">
+    <div id="header">
+        <a href="/">
+            <img src="/logo.jpg" width="50" height="50">
+        </a>
+    </div>
+    <div id="menu_top">
+        <ul>
+            <li><a href="/" title="Home">Home</a></li>
+            <li>
+                <a href="/">Dịch Vụ</a>
+                <ul class="sub-service">
+                    <li><a href="/customer">Khách Hàng</a></li>
+                    <li><a href="/service">Dịch Vụ</a></li>
+                    <li><a href="/contract">Hợp Đồng</a></li>
+                    <li><a href="/contract-detail-create">Thêm Hợp Đồng Chi Tiết</a></li>
+                </ul>
+            </li>
+            <li><a href="#" title="Tìm Kiếm">Tìm Kiếm</a></li>
+            <li><a href="#" title="Review">Review</a></li>
+        </ul>
+    </div>
+</header>
+<footer th:fragment="section">
+    <div id="left">left</div>
+</footer>
+<footer th:fragment="feature">
+    <div>
+        <div id="right">
+            <div id="right_on">right_on</div>
+            <div id="right_below">right_below</div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    font-size: 13px;
+    width: 1000px;
+    margin: 0 auto;
+}
+ul{
+    list-style-type: none;
+}
+#header {
+    background: forestgreen;
+    height: 100px;
+}
+#main #left {
+    width: 150px;
+    background: aqua;
+    float: left;
+    min-height: 600px;
+}
+#main #between {
+    width: 700px;
+    min-height: 600px;
+    float: left;
+}
+
+#main #right{
+    width: 150px;
+    min-height: 600px;
+    float: left;
+    clear: none;
+}
+#main #between #between_on{
+    min-height: 400px;
+    background: chartreuse;
+}
+#main #between #between_below {
+    min-height: 200px;
+    background: crimson;
+}
+#main #right #right_on {
+    min-height: 400px;
+    background: blue;
+}
+#main #right #right_below {
+    min-height: 200px;
+    background: chocolate;
+}
+
+#service{
+    margin: 0;
+    padding: 0;
+}
+#service li{
+    text-align: center;
+}
+li table{
+    margin: auto;
+}
+
+#menu_top{
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
+#menu_top ul{
+    list-style-type: none;
+    text-align: center;
+    background: darkblue;
+}
+#menu_top ul li{
+    color: azure;
+    display: inline-table;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+#menu_top ul li a{
+    color: azure;
+    text-decoration: none;
+    display: block;
+}
+#menu_top ul li a:hover{
+    background: darkseagreen;
+}
+#menu_top ul li .sub-service{
+    display: none;
+    position: absolute;
+}
+#menu_top ul li:hover .sub-service{
+    display: block;
+}

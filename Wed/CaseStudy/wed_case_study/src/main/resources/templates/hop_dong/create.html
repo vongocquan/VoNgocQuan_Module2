@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<header th:replace="layout::head"></header>
+<body>
+<header th:replace="layout::header"></header>
+<div id="main">
+    <footer th:replace="layout::section"></footer>
+    <div id="between">
+        <div id="between_on">
+            <ul id="service">
+                <li><h3>Thêm Hợp Đồng</h3></li>
+                <li>
+                    <form action="/contract-create" method="post" th:object="${hopDong}">
+                        <table>
+                            <tr>
+                                <td>Mã Nhân Viên</td>
+                                <td><input th:field="*{nhanVien.maNhanVien}"/></td>
+                            </tr>
+                                <td>Mã Khách Hàng</td>
+                                <td><input type="text" th:field="*{khachHang.maKhachHang}"/></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><a href="/search-customer" >Tìm Kiếm Khách Hàng</a></td></tr>
+                            <tr>
+                            <tr>
+                                <td>Mã Dịch Vụ</td>
+                                <td><input type="text" th:field="*{dichVu.maDichVu}"/></td>
+                            </tr>
+                            <tr>
+                                <td>Ngày Làm Hợp Đồng</td>
+                                <td><input type="text" th:field="*{ngayLamHopDong}"/></td>
+                            </tr>
+                            <tr>
+                                <td>Ngày Kết Thúc Hợp Đồng</td>
+                                <td><input type="text" th:field="*{ngayKetThucHopDong}"/></td>
+                            </tr>
+                            <tr>
+                                <td>Tiền Đặt Cọc</td>
+                                <td><input type="text" th:field="*{tienDatCoc}"/></td>
+                            </tr>
+                            <tr>
+                                <td>Tổng Tiền</td>
+                                <td><input th:field="*{tongTien}"/></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="submit" value="Add Contract"/></td>
+                            </tr>
+                        </table>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div id="between_below">between_below</div>
+    </div>
+    <footer th:replace="layout::feature"></footer>
+</div>
+</body>
+</html>

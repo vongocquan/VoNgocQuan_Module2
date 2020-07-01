@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<header th:replace="layout::head"></header>
+<body>
+<header th:replace="layout::header"></header>
+<div id="main">
+    <footer th:replace="layout::section"></footer>
+    <div id="between">
+        <div id="between_on">
+            <ul id="service">
+                <li><a href="/service">Về Lại Danh Sách Dịch Vụ</a></li>
+                <li><h3>Thông Tinh Khác</h3></li>
+                <li>
+                    <form action="/service-create/other" method="post" th:object="${dichVu}">
+                        <input type="hidden" th:field="*{tenDichVu}"/>
+                        <input type="hidden" th:field="*{dienTichSuDung}"/>
+                        <input type="hidden" th:field="*{soNguoiToiDa}"/>
+                        <input type="hidden" th:field="*{chiPhiThue}"/>
+                        <input type="hidden" th:field="*{tieuChuanPhong}"/>
+                        <input type="hidden" th:field="*{kieuThue.maKieuThue}"/>
+                        <input type="hidden" th:field="*{loaiDichVu.maLoaiDichVu}"/>
+                        <table>
+                            <tr>
+                                <td th:if=" *{!loaiDichVu.maLoaiDichVu.equals(3)}">Tiêu Chuẩn Phòng</td>
+                                <td th:if=" *{!loaiDichVu.maLoaiDichVu.equals(3)}">
+                                    <input th:field="*{tieuChuanPhong}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td th:if=" *{!loaiDichVu.maLoaiDichVu.equals(3)}">Mô Tả Tiện Nghi Khác</td>
+                                <td th:if=" *{!loaiDichVu.maLoaiDichVu.equals(3)}">
+                                    <input th:field="*{moTaTienNghiKhac}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td th:if=" *{loaiDichVu.maLoaiDichVu.equals(1)}">Diện Tích Hồ Bơi</td>
+                                <td th:if=" *{loaiDichVu.maLoaiDichVu.equals(1)}">
+                                    <input th:field="*{dienTichHoBoi}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td th:if=" *{!loaiDichVu.maLoaiDichVu.equals(3)}">Số Tầng</td>
+                                <td th:if=" *{!loaiDichVu.maLoaiDichVu.equals(3)}">
+                                    <input type="number" th:field="*{soTang}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td th:if=" *{loaiDichVu.maLoaiDichVu.equals(3)}">Dịch Vụ Đi Kèm</td>
+                                <td th:if=" *{loaiDichVu.maLoaiDichVu.equals(3)}">
+                                    <input th:field="*{dichVuMienPhiDiKem}"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="submit" value="Thêm"/>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div id="between_below">between_below</div>
+    </div>
+    <footer th:replace="layout::feature"></footer>
+</div>
+</body>
+</html>

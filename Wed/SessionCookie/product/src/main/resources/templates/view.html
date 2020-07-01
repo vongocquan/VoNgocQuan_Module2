@@ -16,7 +16,7 @@
                 <li><input type="hidden" th:field="${product.codeProduct}"/></li>
                 <li><img th:src="*{img}"></li>
                 <li th:text="'Mã sản phẩm: ' + *{codeProduct}"></li>
-                <li th:text="'Giá: '+ *{codeProduct}"></li>
+                <li th:text="'Giá: '+ *{price} +'đ'"></li>
                 <li>
                     <input type="submit" value="MUA NGAY"/>
                 </li>
