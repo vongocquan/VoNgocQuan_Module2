@@ -1,14 +1,16 @@
 package com.codegym.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
 import java.util.List;
 
 @Entity
 public class KieuThue {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Integer maKieuThue;
     private String tenKieuThue;
+    @Pattern(regexp = "[1-9]+(\\d)*", message = "Giá phải là số nguyên dương")
     private String gia;
     @OneToMany(mappedBy = "kieuThue")
     private List<DichVu> listDichVu;
@@ -16,12 +18,12 @@ public class KieuThue {
     public KieuThue() {
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getMaKieuThue() {
+        return maKieuThue;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setMaKieuThue(Integer maKieuThue) {
+        this.maKieuThue = maKieuThue;
     }
 
     public String getTenKieuThue() {

@@ -7,35 +7,35 @@ import java.util.List;
 public class ViTri {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-    private String name;
-    @OneToMany(mappedBy = "position")
-    private List<NhanVien> employees;
+    private Integer maViTri;
+    private String tenViTri;
+    @OneToMany(mappedBy = "viTri")
+    private List<NhanVien> listNhanVien;
 
     public ViTri() {
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getMaViTri() {
+        return maViTri;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setMaViTri(Integer maViTri) {
+        this.maViTri = maViTri;
     }
 
-    public String getName() {
-        return name;
+    public String getTenViTri() {
+        return tenViTri;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTenViTri(String tenViTri) {
+        this.tenViTri = tenViTri;
     }
 
-    public List<NhanVien> getEmployees() {
-        return employees;
+    public List<NhanVien> getListNhanVien() {
+        return listNhanVien;
     }
 
-    public void setEmployees(List<NhanVien> employees) {
-        this.employees = employees;
+    public void setListNhanVien(List<NhanVien> listNhanVien) {
+        this.listNhanVien = listNhanVien;
     }
 }

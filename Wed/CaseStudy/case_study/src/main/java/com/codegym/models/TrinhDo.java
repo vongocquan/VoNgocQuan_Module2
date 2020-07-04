@@ -7,28 +7,28 @@ import java.util.List;
 public class TrinhDo {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-    private String level;
-    @OneToMany(mappedBy = "trinh_do")
+    private Integer maTrinhDo;
+    private String trinhDo;
+    @OneToMany(mappedBy = "trinhDo")
     List<NhanVien> listNhanVien;
 
     public TrinhDo() {
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getMaTrinhDo() {
+        return maTrinhDo;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setMaTrinhDo(Integer maTrinhDo) {
+        this.maTrinhDo = maTrinhDo;
     }
 
-    public String getLevel() {
-        return level;
+    public String getTrinhDo() {
+        return trinhDo;
     }
 
-    public void setLevel(String level) {
-        this.level = level;
+    public void setTrinhDo(String trinhDo) {
+        this.trinhDo = trinhDo;
     }
 
     public List<NhanVien> getListNhanVien() {

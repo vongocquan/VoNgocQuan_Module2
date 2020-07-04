@@ -1,13 +1,12 @@
 package com.codegym.models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
+import javax.validation.constraints.Pattern;
 
 @Entity
 public class HopDongChiTiet {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer maHopDongChiTiet;
     @ManyToOne
     @JoinColumn(name = "ma_hop_dong")
@@ -15,7 +14,8 @@ public class HopDongChiTiet {
     @ManyToOne
     @JoinColumn(name = "ma_dich_vu_di_kem")
     private DichVuDiKem dichVuDiKem;
-    private Integer soLuong;
+    @Pattern(regexp = "[1-9]+(\\d)*", message = "Số Lượng là số nguyên dương")
+    private String soLuong;
 
     public HopDongChiTiet() {
     }
@@ -44,11 +44,11 @@ public class HopDongChiTiet {
         this.dichVuDiKem = dichVuDiKem;
     }
 
-    public Integer getSoLuong() {
+    public String getSoLuong() {
         return soLuong;
     }
 
-    public void setSoLuong(Integer soLuong) {
+    public void setSoLuong(String soLuong) {
         this.soLuong = soLuong;
     }
 }

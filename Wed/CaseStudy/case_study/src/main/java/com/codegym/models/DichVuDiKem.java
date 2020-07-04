@@ -1,6 +1,7 @@
 package com.codegym.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
 import java.util.List;
 
 @Entity
@@ -9,6 +10,7 @@ public class DichVuDiKem {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer maDichVuDiKem;
     private String tenDichVuDiKem;
+    @Pattern(regexp = "[1-9]+(\\d)*", message = "Giá phải là số nguyên dương")
     private Integer gia;
     private Integer donVi;
     private String trangThai;

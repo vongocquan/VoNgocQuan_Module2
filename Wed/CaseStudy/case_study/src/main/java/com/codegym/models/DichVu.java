@@ -1,36 +1,43 @@
 package com.codegym.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
 import java.util.List;
 
 @Entity
 public class DichVu {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer maDichVu;
-    @OneToMany(mappedBy = "hopDong")
+    @Pattern(regexp = "(DV-)\\d{4}", message = "Mã dịch vụ phải có dạng DV-XXXX(X là ký tự số)")
+    private String maDichVu;
+    @OneToMany(mappedBy = "dichVu")
     List<HopDong> listHopDong;
     private String tenDichVu;
-    private String dienTich;
-    private Integer soTang;
-    private Integer soNguoiToiDa;
+    private String dienTichSuDung;
+    @Pattern(regexp = "[1-9]+(\\d)*", message = "Số phải là số nguyên dương")
+    private String soNguoiToiDa;
     private String chiPhiThue;
+    private String tieuChuanPhong = "không có";
+    private String moTaTienNghiKhac = "không có";
+    private String dienTichHoBoi = "không có";
+    @Pattern(regexp = "[1-9]+(\\d)*", message = "Số phải là số nguyên dương")
+    private String soTang = "1";
+    private String dichVuMienPhiDiKem = "không có";
     @ManyToOne
     @JoinColumn(name = "kieu_thue_id")
     private KieuThue kieuThue;
     @ManyToOne
     @JoinColumn(name = "loai_dich_vu_id")
     private LoaiDichVu loaiDichVu;
-    private String trangThai;
+
 
     public DichVu() {
     }
 
-    public Integer getMaDichVu() {
+    public String getMaDichVu() {
         return maDichVu;
     }
 
-    public void setMaDichVu(Integer maDichVu) {
+    public void setMaDichVu(String maDichVu) {
         this.maDichVu = maDichVu;
     }
 
@@ -50,27 +57,11 @@ public class DichVu {
         this.tenDichVu = tenDichVu;
     }
 
-    public String getDienTich() {
-        return dienTich;
-    }
-
-    public void setDienTich(String dienTich) {
-        this.dienTich = dienTich;
-    }
-
-    public Integer getSoTang() {
-        return soTang;
-    }
-
-    public void setSoTang(Integer soTang) {
-        this.soTang = soTang;
-    }
-
-    public Integer getSoNguoiToiDa() {
+    public String getSoNguoiToiDa() {
         return soNguoiToiDa;
     }
 
-    public void setSoNguoiToiDa(Integer soNguoiToiDa) {
+    public void setSoNguoiToiDa(String soNguoiToiDa) {
         this.soNguoiToiDa = soNguoiToiDa;
     }
 
@@ -98,11 +89,52 @@ public class DichVu {
         this.loaiDichVu = loaiDichVu;
     }
 
-    public String getTrangThai() {
-        return trangThai;
+    public String getDienTichSuDung() {
+        return dienTichSuDung;
     }
 
-    public void setTrangThai(String trangThai) {
-        this.trangThai = trangThai;
+    public void setDienTichSuDung(String dienTichSuDung) {
+        this.dienTichSuDung = dienTichSuDung;
     }
+
+    public String getTieuChuanPhong() {
+        return tieuChuanPhong;
+    }
+
+    public void setTieuChuanPhong(String tieuChuanPhong) {
+        this.tieuChuanPhong = tieuChuanPhong;
+    }
+
+    public String getMoTaTienNghiKhac() {
+        return moTaTienNghiKhac;
+    }
+
+    public void setMoTaTienNghiKhac(String moTaTienNghiKhac) {
+        this.moTaTienNghiKhac = moTaTienNghiKhac;
+    }
+
+    public String getDienTichHoBoi() {
+        return dienTichHoBoi;
+    }
+
+    public void setDienTichHoBoi(String dienTichHoBoi) {
+        this.dienTichHoBoi = dienTichHoBoi;
+    }
+
+    public String getSoTang() {
+        return soTang;
+    }
+
+    public void setSoTang(String soTang) {
+        this.soTang = soTang;
+    }
+
+    public String getDichVuMienPhiDiKem() {
+        return dichVuMienPhiDiKem;
+    }
+
+    public void setDichVuMienPhiDiKem(String dichVuMienPhiDiKem) {
+        this.dichVuMienPhiDiKem = dichVuMienPhiDiKem;
+    }
+
 }

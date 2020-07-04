@@ -1,6 +1,7 @@
 package com.codegym.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
 import java.util.List;
 
 @Entity
@@ -19,8 +20,10 @@ public class HopDong {
     private DichVu dichVu;
     private String ngayLamHopDong;
     private String ngayKetThucHopDong;
-    private int tienDatCoc;
-    private int tongTien;
+    @Pattern(regexp = "[1-9]+(\\d)*", message = "Tiền đặt cọc phải là số nguyên dương")
+    private String tienDatCoc;
+    @Pattern(regexp = "[1-9]+(\\d)*", message = "Tổng tiền phải là số nguyên dương")
+    private String tongTien;
     @OneToMany(mappedBy = "hopDong")
     private List<HopDongChiTiet> hopDongChiTietList;
     public HopDong() {
@@ -74,19 +77,19 @@ public class HopDong {
         this.ngayKetThucHopDong = ngayKetThucHopDong;
     }
 
-    public int getTienDatCoc() {
+    public String getTienDatCoc() {
         return tienDatCoc;
     }
 
-    public void setTienDatCoc(int tienDatCoc) {
+    public void setTienDatCoc(String tienDatCoc) {
         this.tienDatCoc = tienDatCoc;
     }
 
-    public int getTongTien() {
+    public String getTongTien() {
         return tongTien;
     }
 
-    public void setTongTien(int tongTien) {
+    public void setTongTien(String tongTien) {
         this.tongTien = tongTien;
     }
 

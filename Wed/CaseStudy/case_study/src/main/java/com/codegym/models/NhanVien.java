@@ -1,13 +1,14 @@
 package com.codegym.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
 import java.util.List;
 
 @Entity
 public class NhanVien {
     @Id
-    private int id;
-    private String name;
+    private Integer maNhanVien;
+    private String tenNhanVien;
     @ManyToOne
     @JoinColumn(name = "vi_tri_id")
     private ViTri viTri;
@@ -20,6 +21,8 @@ public class NhanVien {
     private String ngaySinh;
     private String chungMinhThu;
     private Integer luong;
+//    @Pattern(regexp = "^((090)|(\\(84\\)\\+90)|(091)|(\\(84\\)\\+91))+[0-9]{7}$"
+    @Pattern(regexp = "((090)|(091)|(\\(84\\)\\+90)|(\\(84\\)\\+91))\\d{7}")
     private String soDienThoai;
     private String email;
     private String diaChi;
@@ -28,20 +31,20 @@ public class NhanVien {
     public NhanVien() {
     }
 
-    public int getId() {
-        return id;
+    public Integer getMaNhanVien() {
+        return maNhanVien;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setMaNhanVien(Integer maNhanVien) {
+        this.maNhanVien = maNhanVien;
     }
 
-    public String getName() {
-        return name;
+    public String getTenNhanVien() {
+        return tenNhanVien;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTenNhanVien(String tenNhanVien) {
+        this.tenNhanVien = tenNhanVien;
     }
 
     public ViTri getViTri() {

@@ -10,8 +10,8 @@ public class BoPhan {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer maBoPhan;
     private String tenBoPhan;
-    @OneToMany(mappedBy = "nhanVien")
-    List<NhanVien> listNhanVien;
+    @OneToMany(mappedBy = "boPhan")
+    private List<NhanVien> listNhanVien;
 
     public BoPhan() {
     }

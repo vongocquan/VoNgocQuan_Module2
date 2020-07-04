@@ -7,35 +7,35 @@ import java.util.List;
 public class LoaiDichVu {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-    private String nameTypeOfService;
-    @OneToMany(mappedBy = "typeOfService")
-    private List<DichVu> dichVus;
+    private Integer maLoaiDichVu;
+    private String tenLoaiDichVu;
+    @OneToMany(mappedBy = "loaiDichVu")
+    private List<DichVu> listDichVu;
 
     public LoaiDichVu() {
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getMaLoaiDichVu() {
+        return maLoaiDichVu;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setMaLoaiDichVu(Integer maLoaiDichVu) {
+        this.maLoaiDichVu = maLoaiDichVu;
     }
 
-    public String getNameTypeOfService() {
-        return nameTypeOfService;
+    public String getTenLoaiDichVu() {
+        return tenLoaiDichVu;
     }
 
-    public void setNameTypeOfService(String name_type_of_service) {
-        this.nameTypeOfService = name_type_of_service;
+    public void setTenLoaiDichVu(String tenLoaiDichVu) {
+        this.tenLoaiDichVu = tenLoaiDichVu;
     }
 
-    public List<DichVu> getDichVus() {
-        return dichVus;
+    public List<DichVu> getListDichVu() {
+        return listDichVu;
     }
 
-    public void setDichVus(List<DichVu> dichVus) {
-        this.dichVus = dichVus;
+    public void setListDichVu(List<DichVu> listDichVu) {
+        this.listDichVu = listDichVu;
     }
 }

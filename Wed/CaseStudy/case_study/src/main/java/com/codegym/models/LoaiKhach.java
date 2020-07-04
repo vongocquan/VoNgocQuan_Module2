@@ -7,35 +7,35 @@ import java.util.List;
 public class LoaiKhach {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer Id;
-    private String guestType;
-    @OneToMany(mappedBy = "guestTypeCustomer")
-    private List<KhachHang> customers;
+    private Integer maLoaiKhachHang;
+    private String loaiKhach;
+    @OneToMany(mappedBy = "loaiKhach")
+    private List<KhachHang> listKhachHang;
 
     public LoaiKhach() {
     }
 
-    public Integer getId() {
-        return Id;
+    public Integer getMaLoaiKhachHang() {
+        return maLoaiKhachHang;
     }
 
-    public void setId(Integer id) {
-        Id = id;
+    public void setMaLoaiKhachHang(Integer maLoaiKhachHang) {
+        this.maLoaiKhachHang = maLoaiKhachHang;
     }
 
-    public String getGuestType() {
-        return guestType;
+    public String getLoaiKhach() {
+        return loaiKhach;
     }
 
-    public void setGuestType(String guestType) {
-        this.guestType = guestType;
+    public void setLoaiKhach(String loaiKhach) {
+        this.loaiKhach = loaiKhach;
     }
 
-    public List<KhachHang> getCustomers() {
-        return customers;
+    public List<KhachHang> getListKhachHang() {
+        return listKhachHang;
     }
 
-    public void setCustomers(List<KhachHang> customers) {
-        this.customers = customers;
+    public void setListKhachHang(List<KhachHang> listKhachHang) {
+        this.listKhachHang = listKhachHang;
     }
 }

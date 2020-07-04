@@ -10,7 +10,9 @@
 <body>
 <header th:fragment="header">
     <div id="header">
-        <img src="/logo.jpg" >
+        <a href="/">
+            <img src="/logo.jpg" width="50" height="50">
+        </a>
     </div>
     <div id="menu_top">
         <ul>
@@ -20,8 +22,9 @@
                 <ul class="sub-service">
                     <li><a href="/customer">Khách Hàng</a></li>
                     <li><a href="/service">Dịch Vụ</a></li>
-                    <li><a href="/#">Hợp Đồng</a></li>
-                    <li><a href="/#">Hợp Đồng Chi Tiết</a></li>
+                    <li><a href="/contract-create">Thêm Hợp Đồng</a></li>
+                    <li><a href="/contract-detail-create">Thêm Hợp Đồng Chi Tiết</a></li>
+                    <li><a href="/customer-use-service">Danh Sách Khách Hàng Sử Dụng Dịch Vụ</a></li>
                 </ul>
             </li>
             <li><a href="#" title="Tìm Kiếm">Tìm Kiếm</a></li>

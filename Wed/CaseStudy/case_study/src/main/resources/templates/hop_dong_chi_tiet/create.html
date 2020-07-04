@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<header th:replace="layout::head"></header>
+<body>
+<header th:replace="layout::header"></header>
+<div id="main">
+    <footer th:replace="layout::section"></footer>
+    <div id="between">
+        <div id="between_on">
+            <ul id="service">
+                <li><h3>Thêm Hợp Đồng Chi Tiết</h3></li>
+                <li th:text="${message}"></li>
+                <li>
+                    <form action="/contract-detail-create" method="post" th:object="${hopDongChiTiet}">
+                        <table>
+                            <tr>
+                                <td>Mã Hợp Đồng</td>
+                                <td>
+                                    <select th:field="*{hopDong.maHopDong}">
+                                        <option th:each="hopDong:${listHopDong}"
+                                        th:value="${hopDong.maHopDong}"
+                                        th:text="${hopDong.maHopDong}"></option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <td>Tên Dịch Vụ Đi Kèm</td>
+                            <td><select th:field="*{dichVuDiKem.maDichVuDiKem}">
+                                <option th:each="dichVuDiKem:${listDichVuDiKem}"
+                                        th:text="${dichVuDiKem.tenDichVuDiKem}"
+                                        th:value="${dichVuDiKem.maDichVuDiKem}">
+
+                                </option>
+                            </select></td>
+                            </tr>
+                            <tr>
+                                <td>Số Lượng</td>
+                                <td><input type="text" th:field="*{soLuong}"/></td>
+                                <td th:if="${#fields.hasErrors('soLuong')}" th:errors="*{soLuong}"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="submit" value="Add Contract"/></td>
+                            </tr>
+                        </table>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div id="between_below">between_below</div>
+    </div>
+    <footer th:replace="layout::feature"></footer>
+</div>
+</body>
+</html>

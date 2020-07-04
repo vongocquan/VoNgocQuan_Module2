@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<header th:replace="layout::head"></header>
+<body>
+<header th:replace="layout::header"></header>
+<div id="main">
+    <footer th:replace="layout::section"></footer>
+    <div id="between">
+        <div id="between_on">
+            <ul id="service">
+                <li><a href="/service">Hiển Thị Danh Sách Dịch Vụ</a></li>
+                <li><h3>Thêm Mới Dịch Vụ</h3></li>
+                <li>
+                    <form action="/service-create" method="post" th:object="${dichVu}">
+                        <table>
+                            <tr>
+                                <td>Mã Dịch Vụ</td>
+                                <td><input type="text" th:field="*{maDichVu}"/></td>
+                                <p th:if="${#fields.hasErrors('maDichVu')}" th:errors="*{maDichVu}"></p>
+                            </tr>
+                            <tr>
+                                <td>Tên Dịch Vụ</td>
+                                <td><input th:field="*{tenDichVu}"/></td>
+                            </tr>
+                            <tr>
+                                <td>Diện Tích Sử Dụng</td>
+                                <td><input th:field="*{dienTichSuDung}"/></td>
+                            </tr>
+                            <tr>
+                                <td>Số Người Tối Đa</td>
+                                <td><input type="number" th:field="*{soNguoiToiDa}"/></td>
+                                <p th:if="${#fields.hasErrors('soNguoiToiDa')}" th:errors="*{soNguoiToiDa}"></p>
+                            </tr>
+                            <tr>
+                                <td>Chi Phí Thuê</td>
+                                <td><input th:field="*{chiPhiThue}"/></td>
+                            </tr>
+                            <tr>
+                                <td>Kiểu Thuê</td>
+                                <td>
+                                    <select th:field="*{kieuThue.maKieuThue}">
+                                        <option th:each="kieuThue:${listKieuThue}"
+                                        th:value="${kieuThue.maKieuThue}" th:text="${kieuThue.tenKieuThue}">
+                                        </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Loai Dich Vu</td>
+                                <td>
+                                    <select th:field="*{loaiDichVu.maLoaiDichVu}">
+                                        <option th:each="loaiDichVu:${listLoaiDichVu}"
+                                                th:value="${loaiDichVu.maLoaiDichVu}"
+                                                th:text="${loaiDichVu.tenLoaiDichVu}">
+                                        </option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="submit" value="Tiếp Tục"/>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div id="between_below">between_below</div>
+    </div>
+    <footer th:replace="layout::feature"></footer>
+</div>
+</body>
+</html>

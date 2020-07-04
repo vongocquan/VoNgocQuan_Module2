@@ -1,13 +1,14 @@
 package com.codegym.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
 import java.util.List;
 
 @Entity
 public class KhachHang {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer maKhachHang;
+    @Pattern(regexp = "(KH-)\\d{4}", message = "mã khách hàng có dạng KH-XXXX(X là ký tự số)")
+    private String maKhachHang;
     @ManyToOne
     @JoinColumn(name = "ma_loai_khach")
     private LoaiKhach loaiKhach;
@@ -15,19 +16,23 @@ public class KhachHang {
     private List<HopDong> hopDongList;
     private String tenKhachHang;
     private String ngaySinh;
+    @Pattern(regexp = "(\\d{9})|(\\d{12})", message = "chứng minh thư phải có 9 hoặc 12 chữ số")
     private String chungMinhThu;
+    @Pattern(regexp = "((090)|(091)|(\\(84\\)\\+90)|(\\(84\\)\\+91))\\d{7}",
+            message = "Số điện thoại phải có dạng 090xxxxxxx hoặc 091xxxxxxx hoặc (84)+90xxxxxxx hoặc (84)+91xxxxxxx")
     private String soDienThoai;
+    @Pattern(regexp = "(\\w)+[@](\\w)+[.](\\w)+", message = "email có dạng abc@abc.abc")
     private String email;
     private String diaChi;
 
     public KhachHang() {
     }
 
-    public Integer getMaKhachHang() {
+    public String getMaKhachHang() {
         return maKhachHang;
     }
 
-    public void setMaKhachHang(Integer maKhachHang) {
+    public void setMaKhachHang(String maKhachHang) {
         this.maKhachHang = maKhachHang;
     }
 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<header th:replace="layout::head"></header>
+<body>
+<header th:replace="layout::header"></header>
+<div id="main">
+    <footer th:replace="layout::section"></footer>
+    <div id="between">
+        <div id="between_on">
+            <ul id="service">
+                <li><h3>Thêm Hợp Đồng</h3></li>
+                <li th:text="${message}"></li>
+                <li>
+                    <form action="/contract-create" method="post" th:object="${hopDong}">
+                        <table>
+                            <tr>
+                                <td>Mã Nhân Viên</td>
+                                <td><select th:field="*{nhanVien.maNhanVien}">
+                                    <option th:each="nhanVien:${lisNhanVien}" th:value="${nhanVien.maNhanVien}"
+                                            th:text="${nhanVien.tenNhanVien}"></option>
+                                </select></td>
+                            </tr>
+                            <td>Mã Khách Hàng</td>
+                            <td><select th:field="*{khachHang.maKhachHang}">
+                                <option th:each="khachHang:${listKhachHang}" th:value="${khachHang.maKhachHang}"
+                                        th:text="${khachHang.tenKhachHang}"></option>
+                            </select></td>
+                            <tr>
+                                <td>Mã Dịch Vụ</td>
+                                <td><select th:field="*{dichVu.maDichVu}">
+                                    <option th:each="dichVu:${listDichVu}" th:value="${dichVu.maDichVu}"
+                                            th:text="${dichVu.tenDichVu}"></option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td>Ngày Làm Hợp Đồng</td>
+                                <td><input type="date" th:field="*{ngayLamHopDong}"/></td>
+                            </tr>
+                            <tr>
+                                <td>Ngày Kết Thúc Hợp Đồng</td>
+                                <td><input type="date" th:field="*{ngayKetThucHopDong}"/></td>
+                            </tr>
+                            <tr>
+                                <td>Tiền Đặt Cọc</td>
+                                <td><input type="text" th:field="*{tienDatCoc}"/></td>
+                                <p th:if="${#fields.hasErrors('tienDatCoc')}" th:errors="*{tienDatCoc}"></p>
+                            </tr>
+                            <tr>
+                                <td>Tổng Tiền</td>
+                                <td><input th:field="*{tongTien}"/></td>
+                                <p th:if="${#fields.hasErrors('tongTien')}" th:errors="*{tongTien}"></p>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="submit" value="Add Contract"/></td>
+                            </tr>
+                        </table>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div id="between_below">between_below</div>
+    </div>
+    <footer th:replace="layout::feature"></footer>
+</div>
+</body>
+</html>
