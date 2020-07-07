@@ -49,7 +49,6 @@ public class KhachHangController {
             String[] arrNgaySinh = (ngaySinh.split("-"));
             list.get(i).setNgaySinh(arrNgaySinh[2]+"/"+arrNgaySinh[1]+"/"+arrNgaySinh[0]);
         }
-//        model.addAttribute("list", list);
         return "khach_hang/list";
     }
     @RequestMapping("/customer-create")

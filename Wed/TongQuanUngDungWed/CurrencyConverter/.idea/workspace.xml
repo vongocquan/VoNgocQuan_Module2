@@ -7,9 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad096ffb-1c58-46b4-a1c7-1d30dbfd1fe4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../SimpleDictionary/out/artifacts/SimpleDictionary_war_exploded/WEB-INF/classes/DictionaryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleDictionary/out/artifacts/SimpleDictionary_war_exploded/WEB-INF/classes/DictionaryServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SimpleDictionary/out/production/SimpleDictionary/DictionaryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleDictionary/out/production/SimpleDictionary/DictionaryServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SimpleDictionary/src/DictionaryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleDictionary/src/DictionaryServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_modele2/src/main/java/com/codegym/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_modele2/src/main/resources/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_modele2/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case_study/src/main/java/com/codegym/controllers/KhachHangController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case_study/src/main/java/com/codegym/controllers/KhachHangController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thi_modele2/src/main/resources/static/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../thi_modele2/src/main/resources/static/home.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JSPVaJSTL/CurrencyConverter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SeverTime" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -108,11 +110,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -131,6 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590062372717</updated>
       <workItem from="1590062379311" duration="679000" />
+      <workItem from="1593994703519" duration="10000" />
     </task>
     <servers />
   </component>
@@ -142,10 +140,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="277" y="12" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1590062729472" />
-    <state x="464" y="106" key="FileChooserDialogImpl" timestamp="1590063057683">
+    <state x="464" y="106" key="FileChooserDialogImpl" timestamp="1593994711553">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="464" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590063057683" />
+    <state x="464" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593994711553" />
     <state width="879" height="167" key="GridCell.Tab.0.bottom" timestamp="1590063060080">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

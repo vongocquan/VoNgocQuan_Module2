@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout::hear">
+<body>
+<form action="/delete" method="post" th:object="${nhanVien}">
+    <h1 th:text="'bạn có muốn xóa nhân viên' + *{maNhanVien}"></h1>
+    <input type="submit"  value="Xóa"/>
+</form>
+</body>
+</html>
