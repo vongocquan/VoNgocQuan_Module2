@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    background: olive;
+    padding-left: 100px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 0 20px 0;
+}
+.navbar div{
+    width: 100px;
+    float: left;
+    padding: 10px 0 10px 0;
+
+}
+.main{
+    padding-left: 100px;
+}

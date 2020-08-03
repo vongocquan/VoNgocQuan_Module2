@@ -1,0 +1,65 @@
+
+#jp_container_1 {
+    width: 100%;
+}
+
+div.jp-progress{
+    width: 100%;
+    margin: 10px 5px 10px 5px;
+}
+
+div.jp-volume-bar{
+
+    width: 100%;
+
+}
+
+div.jp-seek-bar{
+    width: 100%;
+}
+
+.space{
+    width: 100%;
+    height: 20px;
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+
+}
+.card-text{
+    color: brown;
+    text-align: center;
+}
+.a .col-md-3 .row a{
+    font-size: 70%;
+}
+.theme{
+    width: 500px;
+}
+.theme div a{
+    font-size: 80%;
+}
+.footer{
+    height: 100px;
+    background: #7abaff;
+}
+.footer ul{
+    margin: auto;
+
+}
+.footer ul li{
+    font-size: 80%;
+    display: inline;
+    margin-left: 20px;
+}
+
+

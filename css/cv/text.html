@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Layout</title>
+    <style>
+        header {
+            position: relative;
+        }
+        .shopping-mall{
+            position: absolute;
+            bottom: 20px;
+            font-variant: small-caps;
+        }
+        .shopping-mall>h1{
+            font-family: Impact;
+            font-size: 50px;
+            color: white;
+            letter-spacing: 0.3px;
+            text-shadow: 0 0 2px black;
+            padding-bottom: 0px;
+            border-bottom: 1px dotted gray;
+            margin: 0px;
+        }
+        .shopping-mall>h5{
+            margin-top: 5px;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container" style = "height: auto">
+    <header class="row">
+        <div class = "shopping-mall">
+            <h1>Online shopping mall</h1>
+            <h5>The center point of the professional programming</h5>
+        </div>
+        <img class = "pull-right" src="images/header-object.png"/>
+    </header>
+    <nav class="navbar navbar-inverse">
+        <span class="glyphicon glyphicon-home"></span> Trang chủ
+        <span class="glyphicon glyphicon-list-alt"></span> Giới thiệu
+        <span class="glyphicon glyphicon-earphone"></span> Liên hệ
+        <span class="glyphicon glyphicon-envelope"></span> Góp ý
+        <span class="glyphicon glyphicon-question-sign"></span> Hỏi đáp
+        <span class="glyphicon glyphicon-user"></span> Tài khoản
+    </nav>
+    <div class = "row">
+        <article class="col-sm-9">
+
+        </article>
+        <aside class="col-sm-3">
+
+        </aside>
+    </div>
+    <footer class="panel panel-default">
+        <div class = "panel-heading text-center">
+            <p>CodeGym &copy; 2017</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

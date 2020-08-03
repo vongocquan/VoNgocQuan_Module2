@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b4c94f09-2c12-42e4-a7c4-a0210e987c5e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1eWaLQjl42NjyPEZCit8zit58pk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\module3\bootstracp\layout\css" />
+      <recent name="D:\module3\bootstracp\layout" />
+      <recent name="D:\module3\bootstracp\layout\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\module3\bootstracp\layout\js" />
+      <recent name="D:\module3\bootstracp\layout" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b4c94f09-2c12-42e4-a7c4-a0210e987c5e" name="Default Changelist" comment="" />
+      <created>1594439746254</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594439746254</updated>
+      <workItem from="1594439747585" duration="3182000" />
+      <workItem from="1594480475365" duration="485000" />
+      <workItem from="1594481247992" duration="2116000" />
+      <workItem from="1594483392861" duration="1511000" />
+      <workItem from="1594520646428" duration="1247000" />
+      <workItem from="1594547009491" duration="914000" />
+      <workItem from="1594555801999" duration="1220000" />
+      <workItem from="1594557599157" duration="2721000" />
+      <workItem from="1594603361495" duration="66000" />
+      <workItem from="1594603908181" duration="84000" />
+      <workItem from="1594614123578" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="382" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594603984211">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="382" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1594603984211" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594481933402">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1594481933402" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1594603991628">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594603991628" />
+  </component>
+</project>

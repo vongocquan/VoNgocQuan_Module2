@@ -1,0 +1,188 @@
+body{
+    width: 100%;
+    height: 552px;
+    margin: auto;
+    border: 1px solid fuchsia;
+}
+
+/***************************************/
+#head{
+    width: 1000px;
+    height: 100px;
+    margin: 0 0 2px 0;
+}
+#head-link{
+    width: 100%;
+    height: 50px;
+    background: crimson;
+}
+#left{
+    clear: none;
+    float: left;
+}
+#content{
+    margin: 2px 0 0 2px;
+    width: 700px;
+    height: 118px;
+    float: left;
+}
+#right{
+    width: 146px;
+    height: 350px;
+    background: goldenrod;
+    margin: 2px 0 0 0;
+    float: right;
+}
+#footer{
+    clear: left;
+    width: 100%;
+    height: 50px;
+}
+
+/*****************Head**********************/
+#head #logo{
+    height: 100%;
+    width: 298px;
+    float: left;
+    margin: 0 2px 0 0;
+    background: olive;
+}
+
+#head #banner{
+    height: 100%;
+    width: 700px;
+    background: aqua;
+    float: left;
+}
+
+/******************head-link********************/
+
+#head-link #text{
+    padding: 10px 0 10px 100px;
+    float: left;
+}
+#head-link #sub{
+    padding: 10px 0 10px 0;
+    float: left;
+}
+#head-link div a{
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    float: left;
+    border-right: 1px solid black;
+}
+
+
+/********************left*********************/
+#left .on{
+    background: aqua;
+    width: 150px;
+    height: 150px;
+}
+#left .on p{
+    margin: 2px;
+    padding: 0 0 0 15px;
+}
+#left .below{
+    margin: 2px 0 0 0;
+    width: 150px;
+    height: 198px;
+    background: chocolate;
+}
+
+/***************content********************/
+#content .on{
+    width: 700px;
+    height: 110px;
+}
+#content .between{
+    width: 700px;
+    margin: 2px 0 0 0;
+    height: 118px;
+}
+#content .below{
+    width: 700px;
+    margin: 2px 0 0 0;
+    height: 118px;
+}
+#content .on .right{
+    background: darkviolet;
+    width: 349px;
+    height: 110px;
+    float: left;
+    margin: 0 2px 0 0;
+}
+#content .on .left{
+    width: 349px;
+    height: 110px;
+    background: darkorange;
+    float: left;
+}
+#content .between .right{
+    width: 232px;
+    height: 118px;
+    background: darksalmon;
+    margin: 0 2px 0 0;
+    float: left;
+}
+#content .between .between{
+    width: 232px;
+    height: 118px;
+    background: chartreuse;
+    margin: 0 2px 0 0;
+    float: left;
+}
+#content .between .left{
+    width: 232px;
+    height: 118px;
+    background: cyan;
+    float: left;
+}
+#content .below .right{
+    width: 232px;
+    height: 118px;
+    background: darksalmon;
+    margin: 0 2px 0 0;
+    float: left;
+}
+#content .below .between{
+    width: 232px;
+    height: 118px;
+    background: chartreuse;
+    margin: 0 2px 0 0;
+    float: left;
+}
+#content .below .left{
+    width: 232px;
+    height: 118px;
+    background: cyan;
+    float: left;
+}
+/******************footer**********************/
+#footer .right{
+    width: 400px;
+    height: 100%;
+    float: left;
+
+}
+#footer .right h6{
+    margin: 15px 0 15px 15px;
+    float: left;
+}
+#footer .left{
+    width: 600px;
+    height: 100%;
+    float: left;
+
+}
+#footer .left div{
+    float: left;
+    border-right: 1px solid black;
+    padding: 10px 20px 10px 20px;
+}
+a{
+    text-decoration: none;
+}
+
+
+
