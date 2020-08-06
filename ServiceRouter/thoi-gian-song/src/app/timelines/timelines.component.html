@@ -1,0 +1,7 @@
+<h2>Ứng dụng tính thời gian đã sống</h2>
+
+<div>
+  <input type="date" (change)="onChange($event.target.value)">
+  <button (click)="result()">submit</button>
+</div>
+<p>{{ output }}</p>

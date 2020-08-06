@@ -1,7 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33b47313-b4de-4a3b-9c5b-ea757a2cb388" name="Default Changelist" comment="" />
+    <list default="true" id="33b47313-b4de-4a3b-9c5b-ea757a2cb388" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/case/src/app/furama/contract/contract.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/src/app/furama/customer/customer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/src/app/furama/employee/employee.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/src/app/furama/service/service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/src/assets/img/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/src/assets/img/r1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/src/assets/img/r2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/src/assets/img/r3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/src/assets/img/ud1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furama/src/app/furama/contract/contract.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furama/src/app/furama/customer/customer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furama/src/app/furama/employee/employee.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furama/src/app/furama/service/service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furama/src/assets/img/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furama/src/assets/img/r1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furama/src/assets/img/r2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furama/src/assets/img/r3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furama/src/assets/img/ud1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angula Overview/angular-color-picker" beforeDir="false" afterPath="$PROJECT_DIR$/../Angula Overview/angular-color-picker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angula Overview/angular-name-card" beforeDir="false" afterPath="$PROJECT_DIR$/../Angula Overview/angular-name-card" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angula Overview/angular-progress-bar" beforeDir="false" afterPath="$PROJECT_DIR$/../Angula Overview/angular-progress-bar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angula Overview/angular-rating-bar" beforeDir="false" afterPath="$PROJECT_DIR$/../Angula Overview/angular-rating-bar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angula Overview/app" beforeDir="false" afterPath="$PROJECT_DIR$/../Angula Overview/app" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angula Overview/calculator" beforeDir="false" afterPath="$PROJECT_DIR$/../Angula Overview/calculator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angula Overview/font-size" beforeDir="false" afterPath="$PROJECT_DIR$/../Angula Overview/font-size" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angula Overview/test" beforeDir="false" afterPath="$PROJECT_DIR$/../Angula Overview/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/dang-ky-dang-nhap" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularForm/dang-ky-dang-nhap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/tsconfig.base.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/register-login/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularForm/todo" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularForm/todo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama" beforeDir="false" afterPath="$PROJECT_DIR$/furama" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/furama/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/furama/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/furama/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test" beforeDir="false" afterPath="$PROJECT_DIR$/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/app/app.module.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +86,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/furama" />
+  </component>
   <component name="ProjectId" id="1eouyRRpcaGp2YuJvGcFzt0eMvj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,7 +100,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../case_study" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/case" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -33,6 +108,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="ts.external.directory.path" value="D:\module3\CaseStudy\furama\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -56,6 +132,10 @@
       <workItem from="1595000522228" duration="3290000" />
       <workItem from="1595069951404" duration="7246000" />
       <workItem from="1595170799396" duration="132000" />
+      <workItem from="1596623281443" duration="220000" />
+      <workItem from="1596623527912" duration="194000" />
+      <workItem from="1596623736261" duration="4884000" />
+      <workItem from="1596642302156" duration="44000" />
     </task>
     <servers />
   </component>
@@ -63,9 +143,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1595170926590">
+    <state x="136" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596624476304">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595170926590" />
+    <state x="136" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1596624476304" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1596642345345">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596642345345" />
   </component>
 </project>
