@@ -12,6 +12,8 @@ import {AddEmployeeComponent} from './furama/employee/add-employee/add-employee.
 import {ListServiceComponent} from './furama/service/list-service/list-service.component';
 import {AddServiceComponent} from './furama/service/add-service/add-service.component';
 import {UpdateCustomerComponent} from './furama/customer/update-customer/update-customer.component';
+import {UpdateEmployeeComponent} from './furama/employee/update-employee/update-employee.component';
+import {UpdateServiceComponent} from './furama/service/update-service/update-service.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -28,6 +30,8 @@ const routes: Routes = [
       {path: 'list-service', component: ListServiceComponent},
       {path: 'add-service', component: AddServiceComponent},
       {path: 'update-customer/:maKhachHang', component: UpdateCustomerComponent},
+      {path: 'update-employee/:maNhanVien', component: UpdateEmployeeComponent},
+        {path: 'update-service/:maDichVu', component: UpdateServiceComponent},
     ]}
 ];
 

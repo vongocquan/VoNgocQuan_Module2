@@ -107,10 +107,10 @@
           <h4 class="text-center">Thêm nhân viên</h4>
           <form (ngSubmit)="addEmployee()" [formGroup]="formEmployee">
             <div class="form-group">
-              <label for="formGroupExampleInput1">Mã khách hàng</label>
+              <label for="formGroupExampleInput1">Mã nhân viên</label>
               <input formControlName="maNhanVien" type="text" class="form-control" id="formGroupExampleInput1" placeholder="mã khách hàng">
-              <p *ngIf="formEmployee.get('maNhanVien').hasError('required') && formEmployee.get('maNhanVien').touched">Mã khách hàng không được trống</p>
-              <p *ngIf="formEmployee.get('maNhanVien').hasError('pattern') && formEmployee.get('maNhanVien').touched">Mã khách hàng phải có dạng KH-XXXX</p>
+              <p *ngIf="formEmployee.get('maNhanVien').hasError('required') && formEmployee.get('maNhanVien').touched">Mã nhân viên không được trống</p>
+              <p *ngIf="formEmployee.get('maNhanVien').hasError('pattern') && formEmployee.get('maNhanVien').touched">Mã nhân viên phải có dạng KH-XXXX</p>
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput" >Tên nhân viên</label>
@@ -119,18 +119,32 @@
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2">Vị trí</label>
-              <input formControlName="viTri" type="text" class="form-control" id="formGroupExampleInput2" placeholder="vị trí">
-              <p *ngIf="formEmployee.get('viTri').hasError('required') && formEmployee.get('viTri').touched">Vị trí không được trống</p>
+              <select formControlName="viTri" class="form-control" >
+                <option name="Lễ tân" >Lễ tân</option>
+                <option name="phục vụ" >phục vụ</option>
+                <option name="chuyên viên" >chuyên viên</option>
+                <option name="giám sát" >giám sát</option>
+                <option name="quản lý" >quản lý</option>
+                <option name="giá đốc" >giá đốc</option>
+              </select>
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2">Trình độ</label>
-              <input formControlName="trinhDo" type="text" class="form-control" id="formGroupExampleInput2" placeholder="trình độ">
-              <p *ngIf="formEmployee.get('trinhDo').hasError('required') && formEmployee.get('trinhDo').touched">Trinh độ không được trống</p>
+              <select formControlName="trinhDo" class="form-control" >
+                <option name="Trung cấp" >Trung cấp</option>
+                <option name="Cao đẳng" >Cao đẳng</option>
+                <option name="Đại học" >Đại học</option>
+                <option name="Sau đại học" >Sau đại học</option>
+              </select>
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2">Bộ phận</label>
-              <input formControlName="boPhan" type="text" class="form-control" id="formGroupExampleInput2" placeholder="bộ phận">
-              <p *ngIf="formEmployee.get('boPhan').hasError('required') && formEmployee.get('boPhan').touched">Bộ phận không được trống</p>
+              <select formControlName="boPhan" class="form-control" >
+                <option name="Sale – Marketing" >Sale – Marketing</option>
+                <option name="Hành Chính" >Hành Chính</option>
+                <option name="Phục vụ" >Phục vụ</option>
+                <option name="Quản lý" >Quản lý</option>
+              </select>
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2">Ngày sinh</label>

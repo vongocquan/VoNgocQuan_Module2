@@ -15,7 +15,10 @@ import {FaramaRoutingModule} from './farama-routing.module';
 import { HomeComponent } from './furama/home/home.component';
 import {RouterModule} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { UpdateCustomerComponent } from './furama/customer/update-customer/update-customer.component';
+import {UpdateEmployeeComponent} from './furama/employee/update-employee/update-employee.component';
+import {UpdateCustomerComponent} from './furama/customer/update-customer/update-customer.component';
+import { UpdateServiceComponent } from './furama/service/update-service/update-service.component';
+
 
 @NgModule({
   declarations: [
@@ -30,14 +33,16 @@ import { UpdateCustomerComponent } from './furama/customer/update-customer/updat
     AddServiceComponent,
     ListServiceComponent,
     HomeComponent,
+    UpdateEmployeeComponent,
     UpdateCustomerComponent,
+    UpdateServiceComponent,
   ],
   imports: [
     BrowserModule,
     FaramaRoutingModule,
     RouterModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

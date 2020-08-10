@@ -1,4 +1,4 @@
-interface Contract {
+export class Contract {
   maHopDong: string;
   nhanVien: string;
   khachHang: string;
@@ -7,10 +7,16 @@ interface Contract {
   ngayKetThucHopDong: string;
   tienDatCoc: string;
   tongTien: string;
+
+  // tslint:disable-next-line:max-line-length
+  constructor(maHopDong: string, nhanVien: string, khachHang: string, dichVu: string, ngayLamHopDong: string, ngayKetThucHopDong: string, tienDatCoc: string, tongTien: string) {
+    this.maHopDong = maHopDong;
+    this.nhanVien = nhanVien;
+    this.khachHang = khachHang;
+    this.dichVu = dichVu;
+    this.ngayLamHopDong = ngayLamHopDong;
+    this.ngayKetThucHopDong = ngayKetThucHopDong;
+    this.tienDatCoc = tienDatCoc;
+    this.tongTien = tongTien;
+  }
 }
-export const dsHopDong = [
-  // tslint:disable-next-line:max-line-length
-  {maHopDong: 1, nhaVien: 'sad', khachHang: 'dáds', dichVu: 'dshads', ngayLamHopDong: '02/12/2020', ngayKetThucHopDong: '12/12/2020', tenDatCoc: 40000, tongTien: 200000},
-  // tslint:disable-next-line:max-line-length
-  {maHopDong: 2, nhaVien: 'sad', khachHang: 'dáds', dichVu: 'dshads', ngayLamHopDong: '02/12/2020', ngayKetThucHopDong: '12/12/2020', tenDatCoc: 40000, tongTien: 200000}
-];

@@ -131,8 +131,8 @@
             <td>{{dichVu.chiPhiThue}}VND</td>
             <td>{{dichVu.kieuThue}}</td>
             <td>{{dichVu.trangThai}}</td>
-            <td><a href="#">chỉnh sửa</a></td>
-            <td><a href="#">xóa</a></td>
+            <td><a [routerLink]="['../update-service/' + dichVu.maDichVu]">chỉnh sửa</a></td>
+            <td><a [routerLink]="['../list-service']" (click)="clickDelete(dichVu.maDichVu)">xóa</a></td>
           </tr>
           </tbody>
         </table>

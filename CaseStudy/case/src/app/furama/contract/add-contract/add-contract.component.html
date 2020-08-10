@@ -16,7 +16,7 @@
           <div class="collapse navbar-collapse bg-light" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Khách hàng
                 </a>
                 <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
@@ -26,7 +26,7 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Nhân viên
                 </a>
                 <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
@@ -35,7 +35,7 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Dịch vụ
                 </a>
                 <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
@@ -44,7 +44,7 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Hợp đồng
                 </a>
                 <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
@@ -104,36 +104,58 @@
 
       </div>
       <div class="col-lg-7">
-        <h4 class="text-center">Thêm mới dịch vụ</h4>
-        <form>
+        <h4 class="text-center">Thêm mới hợp đồng</h4>
+        <form (ngSubmit)="addContract()" [formGroup]="formContract">
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Mã hợp đồng</label>
+            <input formControlName="maHopDong" type="text" class="form-control" id="formGroupExampleInput1" >
+            <p *ngIf="formContract.get('maHopDong').hasError('required') && formContract.get('maHopDong').touched">Mã hợp đồng không trống</p>
+          </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Mã nhân viên</label>
-            <select class="form-control">
-              <option></option>
+            <select formControlName="maNhanVien" class="form-control" >
+              <option *ngFor="let nhanVien of dsNhanVien" name="{{nhanVien.maNhanVien}}">{{nhanVien.maNhanVien}}</option>
             </select>
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Mã khách hàng</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="mã khách hàng">
+            <select formControlName="maKhachHang" class="form-control">
+              <option *ngFor="let khachHang of dsKhachHang" name="{{khachHang.maKhachHang}}">{{khachHang.maKhachHang}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Mã khách hàng</label>
+            <select formControlName="maDichVu" class="form-control">
+              <option *ngFor="let dichVu of dsDichVu" name="{{dichVu.maDichVu}}">{{dichVu.maDichVu}}</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Ngày làm hợp đồng</label>
-            <input type="date" class="form-control" id="formGroupExampleInput2" >
+            <input formControlName="ngayLamHopDong" type="date" class="form-control" id="formGroupExampleInput2" >
+            <p *ngIf="formContract.get('ngayLamHopDong').hasError('required') && formContract.get('ngayLamHopDong').touched">Ngày làm hợp đồng không trống</p>
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Ngày kết thúc hợp đồng</label>
-            <input type="date" class="form-control" id="formGroupExampleInput2">
+            <input formControlName="ngayKetThucHopDong" type="date" class="form-control" id="formGroupExampleInput3">
+            <p *ngIf="formContract.get('ngayKetThucHopDong').hasError('required') && formContract.get('ngayKetThucHopDong').touched">Ngày kết thúc hợp đồng không trống</p>
+
           </div>
           <div class="form-group">
-            <label for="formGroupExampleInput2">tiền đặt cọc</label>
-            <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="0">
+            <label for="formGroupExampleInput2">Tiền đặt cọc</label>
+            <input formControlName="tienDatCoc" type="number" class="form-control" id="formGroupExampleInput4" placeholder="0">
+            <p *ngIf="formContract.get('tienDatCoc').hasError('required') && formContract.get('tienDatCoc').touched">Tiền đặt cọc không trống</p>
+            <p *ngIf="formContract.get('tienDatCoc').hasError('min') && formContract.get('tienDatCoc').touched">Tiền đặt cọc phải là số dương</p>
+
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Tổng tiền</label>
-            <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="0" >
+            <input formControlName="tongTien" type="number" class="form-control" id="formGroupExampleInput5" placeholder="0" >
+            <p *ngIf="formContract.get('tongTien').hasError('required') && formContract.get('tongTien').touched">Tổng tiền không trống</p>
+            <p *ngIf="formContract.get('tongTien').hasError('min') && formContract.get('tongTien').touched">Tổng tiền phải là số dương</p>
           </div>
           <button type="submit" class="btn btn-primary">Thêm</button>
         </form>
+        {{result}}
       </div>
     </div>
   </div>

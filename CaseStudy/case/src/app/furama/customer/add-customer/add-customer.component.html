@@ -113,9 +113,14 @@
               <p *ngIf="formCustomer.get('maKhachHang').hasError('pattern') && formCustomer.get('maKhachHang').touched">Mã khách hàng phải có dạng KH-XXXX</p>
             </div>
             <div class="form-group">
-              <label for="formGroupExampleInput">Loại khách hàng</label>
-              <input formControlName="loaiKhachHang" type="text" class="form-control" id="formGroupExampleInput" placeholder="loại khách">
-              <p *ngIf="formCustomer.get('loaiKhachHang').hasError('required') && formCustomer.get('loaiKhachHang').touched">Loai khách hàng không được trống</p>
+              <label for="formGroupExampleInput2">Loại khách hàng</label>
+              <select formControlName="loaiKhachHang" class="form-control" >
+                <option name="Diamond" >Diamond</option>
+                <option name="Platinium" >Platinium</option>
+                <option name="Gold" >Gold</option>
+                <option name="Silver" >Silver</option>
+                <option name="Member" >Member</option>
+              </select>
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2">Họ và tên</label>

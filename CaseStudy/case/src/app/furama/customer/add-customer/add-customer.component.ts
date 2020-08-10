@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {Customer} from '../customer';
 import {CustomerService} from '../customer.service';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-add-customer',
@@ -13,12 +14,12 @@ export class AddCustomerComponent implements OnInit {
   dsKhachHang: Customer[];
   customer: Customer;
   result = '';
-  constructor(private customerService: CustomerService) { }
+  constructor(private customerService: CustomerService, private router: Router) { }
 
   ngOnInit(): void {
     this.formCustomer = new FormGroup({
       maKhachHang: new FormControl('', [Validators.required, Validators.pattern('[K][H][-][0-9]{4}')]),
-      loaiKhachHang: new FormControl('', [Validators.required]),
+      loaiKhachHang: new FormControl('Diamondf'),
       hoTen: new FormControl('', [Validators.required]),
       soDienThoai: new FormControl('', [Validators.required, Validators.pattern('(([0][9][0])|([0][9][1])|([(][8][4][)][+][9][0])|([(][8][4][)][+][9][1]))([0-9]{7})')]),
       chungMinhNhanDan: new FormControl('', [Validators.required, Validators.pattern('([0-9]{9})|([0-9]{12})')]),
@@ -47,6 +48,7 @@ export class AddCustomerComponent implements OnInit {
         this.formCustomer.value.diaChi);
       this.customerService.add(this.customer);
       this.result = 'thêm khách hàng thành công';
+      this.router.navigateByUrl('home/list-customer');
     }
     console.log(this.result);
   }

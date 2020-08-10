@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Service} from './service';
+import {Employee} from '../employee/employee';
 
 @Injectable({
   providedIn: 'root'
@@ -17,5 +18,16 @@ export class ServiceService {
   }
   addService(service: Service): void{
     this.dsDichVu.push(service);
+  }
+  findById(maDichVu: string): Service{
+    return this.dsDichVu.find(service => service.maDichVu === maDichVu);
+  }
+  deleteService(maDichVu: string): void{
+    const index = this.dsDichVu.indexOf(this.findById(maDichVu));
+    this.dsDichVu.splice(index, 1);
+  }
+  updateService(dichVu: Service): void{
+    this.deleteService(dichVu.maDichVu);
+    this.dsDichVu.push(dichVu);
   }
 }

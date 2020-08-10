@@ -12,6 +12,7 @@ import {CustomerService} from '../customer.service';
 export class UpdateCustomerComponent implements OnInit {
   formCustomer: FormGroup;
   customer: Customer;
+  dsKhachHang: Customer[];
   constructor(private activatedRoute: ActivatedRoute, private customerService: CustomerService, private router: Router) { }
 
   ngOnInit(): void {
@@ -40,7 +41,7 @@ export class UpdateCustomerComponent implements OnInit {
       this.formCustomer.value.email,
       this.formCustomer.value.diaChi);
     console.log(this.customer.hoTen);
-    this.customerService.updateCustomer(this.customer);
+    this.dsKhachHang = this.customerService.updateCustomer(this.customer);
     this.router.navigateByUrl('/home/list-customer');
   }
 }

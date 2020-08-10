@@ -15,5 +15,10 @@ export class ListEmployeeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  // tslint:disable-next-line:typedef
+  clickDelete(maNhanVien: string) {
+    if (confirm('Bạn chắc chắn muốn xoa nhân viên ' + maNhanVien)) {
+      this.employeeService.deleteEmployee(maNhanVien);
+    }
+  }
 }

@@ -131,14 +131,14 @@
             <td>{{nhanVien.viTri |titlecase}}</td>
             <td>{{nhanVien.trinhDo | titlecase}}</td>
             <td>{{nhanVien.boPhan | titlecase}}</td>
-            <td>{{nhanVien.ngaySinh | date}}</td>
+            <td>{{nhanVien.ngaySinh}}</td>
             <td>{{nhanVien.soCMND}}</td>
             <td>{{nhanVien.luong | number}}VND</td>
             <td>{{nhanVien.soDienThoai}}</td>
             <td>{{nhanVien.email}}</td>
             <td>{{nhanVien.diaChi}}</td>
-            <td><a href="#">chỉnh sửa</a></td>
-            <td><a href="#">xóa</a></td>
+            <td><a [routerLink]="['../update-employee/' + nhanVien.maNhanVien]">chỉnh sửa</a></td>
+            <td><a [routerLink]="['../list-employee']" (click)="clickDelete(nhanVien.maNhanVien)">xóa</a></td>
           </tr>
           </tbody>
         </table>
@@ -153,7 +153,6 @@
             </ul>
           </nav>
         </div>
-
       </div>
     </div>
   </div>

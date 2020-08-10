@@ -20,9 +20,9 @@
                   Khách hàng
                 </a>
                 <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" [routerLink]="['/add-customer']">Thêm khách hàng</a>
-                  <a class="dropdown-item" [routerLink]="['/list-customer']">Danh sách khách hàng</a>
-                  <a class="dropdown-item" [routerLink]="['/list-customer-booking']">Danh sách khách hàng đặt phòng</a>
+                  <a class="dropdown-item" [routerLink]="['/home/add-customer']">Thêm khách hàng</a>
+                  <a class="dropdown-item" [routerLink]="['/home/list-customer']">Danh sách khách hàng</a>
+                  <a class="dropdown-item" [routerLink]="['/home/list-customer-booking']">Danh sách khách hàng đặt phòng</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -30,8 +30,8 @@
                   Nhân viên
                 </a>
                 <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink3">
-                  <a class="dropdown-item" [routerLink]="['/add-employee']">Thêm nhân viên</a>
-                  <a class="dropdown-item" [routerLink]="['/list-employee']">Danh sách nhân viên</a>
+                  <a class="dropdown-item" [routerLink]="['/home/add-employee']">Thêm nhân viên</a>
+                  <a class="dropdown-item" [routerLink]="['/home/list-employee']">Danh sách nhân viên</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -39,8 +39,8 @@
                   Dịch vụ
                 </a>
                 <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink5">
-                  <a class="dropdown-item" [routerLink]="['/add-service']">Thêm dịch vụ</a>
-                  <a class="dropdown-item" [routerLink]="['/list-service']" >Danh sách dịch vụ</a>
+                  <a class="dropdown-item" [routerLink]="['/home/add-service']">Thêm dịch vụ</a>
+                  <a class="dropdown-item" [routerLink]="['/home/list-service']" >Danh sách dịch vụ</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -48,8 +48,8 @@
                   Hợp đồng
                 </a>
                 <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" [routerLink]="['/add-contract']" >Thêm hợp đồng</a>
-                  <a class="dropdown-item" [routerLink]="['/add-contract-detail']">Thêm hợp đồng chi tiết</a>
+                  <a class="dropdown-item" [routerLink]="['/home/add-contract']" >Thêm hợp đồng</a>
+                  <a class="dropdown-item" [routerLink]="['/home/add-contract-detail']">Thêm hợp đồng chi tiết</a>
                 </div>
               </li>
             </ul>
@@ -107,8 +107,7 @@
           <h4 class="text-center">Chỉnh sửa khách hàng</h4>
           <form (ngSubmit)="updateCustomer()" [formGroup]="formCustomer" >
             <div class="form-group">
-              <label for="formGroupExampleInput">Mã khách hàng</label>
-              <input  formControlName="maKhachHang" type="text" class="form-control" id="formGroupExampleInput1">
+              <input  formControlName="maKhachHang" type="hidden" class="form-control" id="formGroupExampleInput1">
               <p *ngIf="formCustomer.get('maKhachHang').hasError('required')">Mã khách hàng không được trống</p>
               <p *ngIf="formCustomer.get('maKhachHang').hasError('pattern')">Mã khách hàng phải có dạng KH-XXXX</p>
             </div>

@@ -21,9 +21,9 @@ export class AddEmployeeComponent implements OnInit {
     this.formEmployee = new FormGroup({
       maNhanVien: new FormControl('', [Validators.required, Validators.pattern('[N][V][-][0-9]{4}')]),
       hoTen: new FormControl('', [Validators.required]),
-      viTri: new FormControl('', [Validators.required]),
-      trinhDo: new FormControl('', [Validators.required]),
-      boPhan: new FormControl('', [Validators.required]),
+      viTri: new FormControl('Lễ tân'),
+      trinhDo: new FormControl('Trung cấp'),
+      boPhan: new FormControl('Sale – Marketing'),
       ngaySinh: new FormControl('', [Validators.required]),
       chungMinhNhanDan: new FormControl('', [Validators.required, Validators.pattern('([0-9]{9})|([0-9]{12})')]),
       luong: new FormControl('', [Validators.required, Validators.min(0)]),

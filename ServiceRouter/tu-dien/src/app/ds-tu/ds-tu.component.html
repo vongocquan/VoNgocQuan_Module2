@@ -1,0 +1,3 @@
+<div *ngFor="let tuDien of dsTuDien">
+  {{tuDien.id}}. <a [routerLink]="['tra-cuu', tuDien.id]">{{tuDien.en}}</a>
+</div>

@@ -15,5 +15,9 @@ export class ListServiceComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  clickDelete(maDichVu: string): void{
+    if (confirm('Bạn chắc chắn muốn xoa dịch vụ ' + maDichVu)) {
+      this.serviceService.deleteService(maDichVu);
+    }
+  }
 }

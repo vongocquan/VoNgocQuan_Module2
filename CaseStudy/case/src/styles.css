@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+
+#furama{
+  font-size: 300%;
+  font-family: "Brush Script MT";
+
+}
+#furama img{
+  border-radius: 50px;
+  margin-left: 20px;
+}
+#fixed{
+  width: 100%;
+}
+
+
+#head a{
+  font-size: 100%;
+  color: black;
+  margin-left: 50px;
+  text-decoration: none;
+}
+#login{
+  border-radius: 100px;
+}
+#space{
+  height: 100px;
+  width: 100%;
+}
+#carouselExampleCaptions{
+  margin-left: 100px;
+}
+th, td{
+  font-size: 90%;
+}
