@@ -49,6 +49,7 @@
                 </a>
                 <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" [routerLink]="['../add-contract']">Thêm hợp đồng</a>
+                  <a class="dropdown-item" [routerLink]="['/home/list-contract']">Danh sách hợp đồng</a>
                   <a class="dropdown-item" [routerLink]="['../add-contract-detail']">Thêm hợp đồng chi tiết</a>
                 </div>
               </li>
@@ -153,9 +154,9 @@
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2">Chứng minh thư</label>
-              <input formControlName="chungMinhNhanDan" type="text" class="form-control" id="formGroupExampleInput2" placeholder="chứng minh thư">
-              <p *ngIf="formEmployee.get('chungMinhNhanDan').hasError('required') && formEmployee.get('chungMinhNhanDan').touched">Chứng minh thư không được trống</p>
-              <p *ngIf="formEmployee.get('chungMinhNhanDan').hasError('pattern') && formEmployee.get('chungMinhNhanDan').touched">Chứng minh thư 9 hoặc 12 ký tự số</p>
+              <input formControlName="soCMND" type="text" class="form-control" id="formGroupExampleInput2" placeholder="chứng minh thư">
+              <p *ngIf="formEmployee.get('soCMND').hasError('required') && formEmployee.get('soCMND').touched">Chứng minh thư không được trống</p>
+              <p *ngIf="formEmployee.get('soCMND').hasError('pattern') && formEmployee.get('soCMND').touched">Chứng minh thư 9 hoặc 12 ký tự số</p>
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2">Lương</label>

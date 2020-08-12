@@ -1,22 +1,18 @@
-export class Contract {
+import {Customer} from '../customer/customer';
+import {Employee} from '../employee/employee';
+import {Service} from '../service/service';
+
+export class Contract{
+  id: number
   maHopDong: string;
-  nhanVien: string;
-  khachHang: string;
-  dichVu: string;
+  nhanVien: Employee;
+  khachHang: Customer;
+  dichVu: Service;
   ngayLamHopDong: string;
   ngayKetThucHopDong: string;
   tienDatCoc: string;
   tongTien: string;
 
-  // tslint:disable-next-line:max-line-length
-  constructor(maHopDong: string, nhanVien: string, khachHang: string, dichVu: string, ngayLamHopDong: string, ngayKetThucHopDong: string, tienDatCoc: string, tongTien: string) {
-    this.maHopDong = maHopDong;
-    this.nhanVien = nhanVien;
-    this.khachHang = khachHang;
-    this.dichVu = dichVu;
-    this.ngayLamHopDong = ngayLamHopDong;
-    this.ngayKetThucHopDong = ngayKetThucHopDong;
-    this.tienDatCoc = tienDatCoc;
-    this.tongTien = tongTien;
+  constructor() {
   }
 }

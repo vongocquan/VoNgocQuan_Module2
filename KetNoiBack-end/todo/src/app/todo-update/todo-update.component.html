@@ -1,0 +1,11 @@
+<form [formGroup] = 'formTodo'>
+  <label>
+    title<br>
+    <input formControlName="title"/>
+  </label><br>
+  <label>
+    Body<br>
+    <textarea formControlName="body" cols="30" rows="10"> </textarea>
+  </label><br>
+  <button (click)="updateTodo()" [disabled]="formTodo.invalid">update</button>
+</form>

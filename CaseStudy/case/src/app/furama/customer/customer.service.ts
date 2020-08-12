@@ -2,53 +2,32 @@ import { Injectable } from '@angular/core';
 import {Customer} from './customer';
 import {ContractService} from '../contract/contract.service';
 import {Contract} from '../contract/contract';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CustomerService {
+  khachHang: Customer = new Customer();
   dsHopDong: Contract[];
   dsKhachHang: Customer[];
   dsKhachHangBooking: Customer[];
-  constructor(private contractService: ContractService) {
-    this.dsKhachHang = [
-      {maKhachHang: 'KH-1234', loaiKhachHang: 'vip', hoTen: 'Thanh Cong', ngaySinh: '04/02/1997',
-        soCMND: '206109631', soDienThoai: '0345443380', email: 'cong4297@gmail.com', diaChi: 'Quang Nam'},
-      {maKhachHang: 'KH-0000', loaiKhachHang: 'vip', hoTen: 'ngoc quan', ngaySinh: '04/02/1997',
-        soCMND: '206109631', soDienThoai: '0845443380', email: 'quanv4297@gmail.com', diaChi: 'Quang Nam'}
-    ];
+  IPA_URL_CUSTOMER = 'http://localhost:3000/customer';
+  constructor(private contractService: ContractService, private httpClient: HttpClient) {}
+  findAll(): Observable<Customer[]>{
+    return this.httpClient.get<Customer[]>(this.IPA_URL_CUSTOMER);
   }
-  findAll(): Customer[]{
-    return this.dsKhachHang;
+  addCustomer(customer: Customer): Observable<void>{
+    return this.httpClient.post<void>(this.IPA_URL_CUSTOMER, customer);
   }
-  // tslint:disable-next-line:max-line-length
-  add(customer: Customer): void{
-    this.dsKhachHang.push(customer);
+  findById(id: number): Observable<Customer>{
+    return this.httpClient.get<Customer>(this.IPA_URL_CUSTOMER + '/' + id);
   }
-  findById(maKhachHang: string): Customer{
-    return this.dsKhachHang.find(customer => customer.maKhachHang === maKhachHang);
+  deleteCustomer(id: number): Observable<any>{
+    return this.httpClient.delete<any>(this.IPA_URL_CUSTOMER + '/' + id);
   }
-  deleteCustomer(maKhachHang: string): void{
-    this.dsKhachHang.splice(this.dsKhachHang.indexOf(this.findById(maKhachHang)), 1);
-  }
-  updateCustomer(customer: Customer): Customer[]{
-    this.deleteCustomer(customer.maKhachHang);
-    this.dsKhachHang.push(customer);
-    return this.findAll();
-  }
-  findAllCustomerBooking(): Customer[]{
-    this.dsHopDong = this.contractService.findAll();
-    this.dsKhachHangBooking = [];
-    const arr = [];
-    // tslint:disable-next-line:prefer-for-of
-    for (let i = 0; i < this.dsHopDong.length; i++){
-      arr.push(this.dsHopDong[i].khachHang);
-    }
-    for (let i = 0; i < this.dsHopDong.length; i++ ){
-      if (arr.indexOf(this.dsHopDong[i].khachHang) === i){
-        this.dsKhachHangBooking.push(this.findById(this.dsHopDong[i].khachHang));
-      }
-    }
-    return this.dsKhachHangBooking;
+  updateCustomer(customer: Customer): Observable<void>{
+    return this.httpClient.patch<void>(this.IPA_URL_CUSTOMER + '/' + customer.id, customer);
   }
 }

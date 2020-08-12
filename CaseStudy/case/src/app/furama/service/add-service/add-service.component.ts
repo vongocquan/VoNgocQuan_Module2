@@ -15,7 +15,15 @@ export class AddServiceComponent implements OnInit {
   dsDichVu: Service[];
   service: Service;
   result = '';
-  constructor(private serviceService: ServiceService, private router: Router) { }
+  constructor(private serviceService: ServiceService, private router: Router) {
+    this.serviceService.findAll().subscribe(
+      next => {
+        this.dsDichVu = next;
+      }, error => {
+        this.dsDichVu = new Array();
+      }
+    );
+  }
 
   ngOnInit(): void {
     this.formService = new FormGroup( {
@@ -25,13 +33,12 @@ export class AddServiceComponent implements OnInit {
       soTang: new FormControl('', [Validators.required, Validators.min(0)]),
       soNguoiToiDa: new FormControl('', [Validators.required, Validators.min(0)]),
       chiPhiThue: new FormControl('', [Validators.required, Validators.min(0)]),
-      kieuThue: new FormControl('', [Validators.required]),
+      kieuThue: new FormControl('Thuê theo ngày', [Validators.required]),
       trangThai: new FormControl('', [Validators.required]),
     });
   }
   addService(): void{
     this.result = '';
-    this.dsDichVu = this.serviceService.findAll();
     // tslint:disable-next-line:prefer-for-of
     for (let i = 0; i < this.dsDichVu.length; i++){
       if (this.dsDichVu[i].maDichVu === this.formService.value.maDichVu){
@@ -39,16 +46,21 @@ export class AddServiceComponent implements OnInit {
       }
     }
     if (this.result === ''){
-      this.service = new Service(this.formService.value.maDichVu,
-        this.formService.value.tenDichVu,
-        this.formService.value.dienTich,
-        this.formService.value.soTang,
-        this.formService.value.soNguoiToiDa,
-        this.formService.value.chiPhiThue,
-        this.formService.value.kieuThue,
-        this.formService.value.trangThai);
-      this.serviceService.addService(this.service);
-      this.router.navigateByUrl('home/list-service');
+      this.service = Object.assign({}, this.formService.value);
+      this.serviceService.addService(this.service).subscribe(
+        next => {},
+        error => {},
+        () => {
+          this.router.navigateByUrl('home/list-service');
+          this.serviceService.findAll().subscribe(
+            next => {
+              this.dsDichVu = next;
+            }, error => {
+              this.dsDichVu = new Array();
+            }
+          );
+        }
+      );
     }
   }
 }

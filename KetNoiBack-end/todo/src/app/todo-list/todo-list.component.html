@@ -1,0 +1,21 @@
+<form [formGroup]="formTodo" >
+  <label>
+    title<br>
+    <input type="text" formControlName="title">
+    <p *ngIf="(formTodo.get('title').hasError('required') || formTodo.get('title').hasError('minlength'))
+    && formTodo.get('title').touched">không để trống và ký tự ko nhiều hơn 10</p>
+  </label>
+  <label>
+    body<br>
+    <textarea formControlName="body" cols="40" rows="10"></textarea>
+    <p *ngIf="(formTodo.get('body').hasError('required') || formTodo.get('body').hasError('minlength'))
+    && formTodo.get('body').touched">không để trống và ký tự ko nhiều hơn 10</p>
+  </label><br>
+  <button (click)="createTodo()" [disabled]="formTodo.invalid">add</button>
+</form>
+
+<p *ngFor="let todo of todoList">{{todo.id}}. <a [routerLink]="['detail', todo.id]">{{todo.title}}</a> <br>
+  <button (click)="delete(todo.id)">delete</button>
+  <button (click)="update(todo.id)">update</button>
+</p>
+

@@ -3,7 +3,7 @@
     <div class="">
       <div id="fixed" class="mr-4 fixed-top" >
         <nav class="navbar nav-justified navbar-light bg-light">
-          <a class="navbar-brand text-dark border-bottom" id="furama" [routerLink]="['../']"><img src="../assets/img/logo.jpg" width="70" height="70">Furama</a>
+          <a class="navbar-brand text-dark border-bottom" id="furama" [routerLink]="['/home']"><img src="../assets/img/logo.jpg" width="70" height="70">Furama</a>
           <div id="head">
             <a href="#">Trang chủ <span class="sr-only">(current)</span></a>
             <a href="#">Khuyến mãi <span class="sr-only">(current)</span></a>
@@ -20,9 +20,9 @@
                   Khách hàng
                 </a>
                 <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" [routerLink]="['../add-customer']">Thêm khách hàng</a>
-                  <a class="dropdown-item" [routerLink]="['../list-customer']">Danh sách khách hàng</a>
-                  <a class="dropdown-item" [routerLink]="['../list-customer-booking']">Danh sách khách hàng đặt phòng</a>
+                  <a class="dropdown-item" [routerLink]="['/home/add-customer']">Thêm khách hàng</a>
+                  <a class="dropdown-item" [routerLink]="['/home/list-customer']">Danh sách khách hàng</a>
+                  <a class="dropdown-item" [routerLink]="['/home/list-customer-booking']">Danh sách khách hàng đặt phòng</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -30,8 +30,8 @@
                   Nhân viên
                 </a>
                 <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" [routerLink]="['../add-employee']" >Thêm nhân viên</a>
-                  <a class="dropdown-item" [routerLink]="['../list-employee']">Danh sách nhân viên</a>
+                  <a class="dropdown-item" [routerLink]="['/home/add-employee']" >Thêm nhân viên</a>
+                  <a class="dropdown-item" [routerLink]="['/home/list-employee']">Danh sách nhân viên</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -39,8 +39,8 @@
                   Dịch vụ
                 </a>
                 <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" [routerLink]="['../add-service']">Thêm dịch vụ</a>
-                  <a class="dropdown-item" [routerLink]="['../list-service']">Danh sách dịch vụ</a>
+                  <a class="dropdown-item" [routerLink]="['/home/add-service']">Thêm dịch vụ</a>
+                  <a class="dropdown-item" [routerLink]="['/home/list-service']">Danh sách dịch vụ</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -48,8 +48,9 @@
                   Hợp đồng
                 </a>
                 <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" [routerLink]="['../add-contract']">Thêm hợp đồng</a>
-                  <a class="dropdown-item" [routerLink]="['../add-contract-detail']">Thêm hợp đồng chi tiết</a>
+                  <a class="dropdown-item" [routerLink]="['/home/add-contract']">Thêm hợp đồng</a>
+                  <a class="dropdown-item" [routerLink]="['/home/list-contract']">Danh sách hợp đồng</a>
+                  <a class="dropdown-item" [routerLink]="['/home/add-contract-detail']">Thêm hợp đồng chi tiết</a>
                 </div>
               </li>
             </ul>
@@ -124,7 +125,7 @@
           </tr>
           </thead>
           <tbody>
-          <tr *ngFor="let khachHang of dsKhachHang">
+          <tr *ngFor="let khachHang of dsKhachHang | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
             <td>{{khachHang.maKhachHang}}</td>
             <td>{{khachHang.hoTen | titlecase}}</td>
             <td>{{khachHang.loaiKhachHang}}</td>
@@ -133,19 +134,25 @@
             <td>{{khachHang.soDienThoai}}</td>
             <td>{{khachHang.email}}</td>
             <td>{{khachHang.diaChi | titlecase}}</td>
-            <td><a [routerLink]="['../update-customer/' + khachHang.maKhachHang]">chỉnh sửa</a></td>
-            <td><a [routerLink]="['../list-customer']" (click)="clickDelete(khachHang.maKhachHang)">xóa</a></td>
+            <td><a [routerLink]="['../update-customer/' + khachHang.id]">chỉnh sửa</a></td>
+            <td><a [routerLink]="['../list-customer']" (click)="clickDelete(khachHang.id)">xóa</a></td>
           </tr>
           </tbody>
         </table>
         <div>
           <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            <ul class="pagination" >
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" (click)="goPre()" [routerLink]="['/home/list-customer']">Previous</a></li>
+                  <li class="page-item" *ngIf="page === pageMax && pageMax > 2"><a class="page-link" (click)="goPage(page - 2)" [routerLink]="['/home/list-customer']">{{page - 2}}</a></li>
+                  <li class="page-item" *ngIf="page !== 1"><a class="page-link" (click)="goPage(page - 1)" [routerLink]="['/home/list-customer']">{{page - 1}}</a></li>
+                  <li class="page-item" *ngIf="dsKhachHang.length !== 0"><a class="page-link bg-primary" >{{page}}</a></li>
+                  <li class="page-item" *ngIf="page !== pageMax && dsKhachHang.length !== 0"><a class="page-link" (click)="goPage(page + 1)" [routerLink]="['/home/list-customer']">{{page + 1}}</a></li>
+                  <li class="page-item" *ngIf="page === 1 && pageMax > 2"><a class="page-link" (click)="goPage(page + 2)" [routerLink]="['/home/list-customer']">{{page + 2}}</a></li>
+                  <li class="page-item"><a class="page-link" (click)="goNext()" [routerLink]="['/home/list-customer']">Next</a></li>
+                </ul>
+              </nav>
             </ul>
           </nav>
         </div>

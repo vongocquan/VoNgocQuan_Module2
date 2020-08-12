@@ -18,6 +18,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {UpdateEmployeeComponent} from './furama/employee/update-employee/update-employee.component';
 import {UpdateCustomerComponent} from './furama/customer/update-customer/update-customer.component';
 import { UpdateServiceComponent } from './furama/service/update-service/update-service.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ListContractComponent } from './furama/contract/list-contract/list-contract.component';
 
 
 @NgModule({
@@ -36,6 +38,7 @@ import { UpdateServiceComponent } from './furama/service/update-service/update-s
     UpdateEmployeeComponent,
     UpdateCustomerComponent,
     UpdateServiceComponent,
+    ListContractComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +46,7 @@ import { UpdateServiceComponent } from './furama/service/update-service/update-s
     RouterModule,
     ReactiveFormsModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

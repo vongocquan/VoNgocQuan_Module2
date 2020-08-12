@@ -9,15 +9,54 @@ import {ServiceService} from '../service.service';
 })
 export class ListServiceComponent implements OnInit {
   dsDichVu: Service[];
+  value = '';
   constructor(private serviceService: ServiceService) {
-    this.dsDichVu = serviceService.findAll();
+    serviceService.findAll().subscribe(
+      next => {
+        this.dsDichVu = next;
+      }, error => {
+        this.dsDichVu = new Array();
+      }
+    );
   }
 
   ngOnInit(): void {
   }
-  clickDelete(maDichVu: string): void{
-    if (confirm('Bạn chắc chắn muốn xoa dịch vụ ' + maDichVu)) {
-      this.serviceService.deleteService(maDichVu);
+  clickDelete(id: number): void{
+    if (confirm('Bạn chắc chắn muốn xoa dịch vụ ' + id)) {
+      this.serviceService.deleteService(id).subscribe(
+        next => {},
+        error => {},
+        () => {
+          this.serviceService.findAll().subscribe(
+            next => {
+              this.dsDichVu = next;
+            }, error => {
+              this.dsDichVu = new Array();
+            }
+          );
+        }
+      );
     }
+  }
+  search(): void{
+    if (this.value !== '') {
+      this.dsDichVu = this.dsDichVu.filter(res => {
+        return res.maDichVu.toLocaleLowerCase().match(this.value.toLocaleLowerCase())
+          || res.tenDichVu.toLocaleLowerCase().match(this.value.toLocaleLowerCase());
+      });
+    }
+    else{
+      this.serviceService.findAll().subscribe(
+        next => {
+          this.dsDichVu = next;
+        }, error => {
+          this.dsDichVu = new Array();
+        }
+      );
+    }
+  }
+  reset(): void{
+    this.value = '';
   }
 }

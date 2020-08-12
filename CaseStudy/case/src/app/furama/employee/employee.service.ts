@@ -1,37 +1,30 @@
 import { Injectable } from '@angular/core';
 import {Employee} from './employee';
 import {Customer} from '../customer/customer';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EmployeeService {
   dsNhanVien: Employee[];
-  constructor() {
-    this.dsNhanVien = [
-      {maNhanVien: 'NV-1234', hoTen: 'thu loi', viTri: 'Lễ tân', trinhDo: 'Cao đẳng', boPhan: 'Hành Chính', ngaySinh: '06/09/1996',
-        soCMND: '0323123891', luong: '5000000', soDienThoai: '093231313', email: 'loi@Gamil.com', diaChi: 'Hue'},
-      {maNhanVien: 'NV-1212', hoTen: 'thi vi', viTri: 'Lễ tân', trinhDo: 'Cao đẳng', boPhan: 'Hành Chính', ngaySinh: '06/09/1996',
-        soCMND: '0323123891', luong: '7000000', soDienThoai: '093231313', email: 'vi@Gamil.com', diaChi: 'Quang Tri'},
-    ];
+  API_URL_EMPLOYEE = 'http://localhost:3000/employee';
+  constructor(private httpClient: HttpClient) {}
+  findAll(): Observable<Employee[]>{
+    return this.httpClient.get<Employee[]>(this.API_URL_EMPLOYEE);
   }
-  findAll(): Employee[]{
-    return this.dsNhanVien;
+  addEmployee(employee: Employee): Observable<void>{
+    return this.httpClient.post<void>(this.API_URL_EMPLOYEE, employee);
   }
-  addEmployee(employee: Employee): void{
-    this.dsNhanVien.push(employee);
+  findById(id: number): Observable<Employee>{
+    return this.httpClient.get<Employee>(this.API_URL_EMPLOYEE + '/' + id);
   }
-  findById(maNhanVien: string): Employee{
-    return this.dsNhanVien.find(employee => employee.maNhanVien === maNhanVien);
+  deleteEmployee(id: number): Observable<any>{
+    return this.httpClient.delete<any>(this.API_URL_EMPLOYEE + '/' + id);
   }
-  deleteEmployee(maNhanVien: string): void{
-    const index = this.dsNhanVien.indexOf(this.findById(maNhanVien));
-    this.dsNhanVien.splice(index, 1);
-  }
-  updateEmployee(employee: Employee): Employee[]{
-    this.deleteEmployee(employee.maNhanVien);
-    this.dsNhanVien.push(employee);
-    return this.findAll();
+  updateEmployee(employee: Employee): Observable<void>{
+    return this.httpClient.patch<void>(this.API_URL_EMPLOYEE + '/' + employee.id, employee);
   }
 }
 

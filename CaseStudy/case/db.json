@@ -1,0 +1,280 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "maKhachHang": "KH-0000",
+      "loaiKhachHang": "Diamond",
+      "hoTen": "Mỹ",
+      "ngaySinh": "2020-08-07",
+      "soCMND": "162738253",
+      "soDienThoai": "0901826354",
+      "email": "nhung@gmail.com",
+      "diaChi": "Huế"
+    },
+    {
+      "id": 2,
+      "maKhachHang": "KH-1234",
+      "loaiKhachHang": "Member",
+      "hoTen": "Thanh Cong",
+      "ngaySinh": "2020-08-13",
+      "soCMND": "206109631",
+      "soDienThoai": "0901234321",
+      "email": "cong4297@gmail.com",
+      "diaChi": "Quang Nam"
+    },
+    {
+      "maKhachHang": "KH-0003",
+      "loaiKhachHang": "Diamond",
+      "hoTen": "quan vo",
+      "soDienThoai": "0903131332",
+      "soCMND": "213232123",
+      "email": "quanv4297@gmail.com",
+      "diaChi": "dsa",
+      "ngaySinh": "2020-08-20",
+      "id": 3
+    },
+    {
+      "maKhachHang": "KH-0004",
+      "loaiKhachHang": "Silver",
+      "hoTen": "Thành",
+      "soDienThoai": "0903131332",
+      "soCMND": "231321322",
+      "email": "quanv4297@gmail.com",
+      "diaChi": "dsa",
+      "ngaySinh": "2020-08-22",
+      "id": 4
+    },
+    {
+      "maKhachHang": "KH-0005",
+      "loaiKhachHang": "Diamond",
+      "hoTen": "duc",
+      "soDienThoai": "0903131332",
+      "soCMND": "231332123",
+      "email": "quanv4297@gmail.com",
+      "diaChi": "3",
+      "ngaySinh": "2020-08-08",
+      "id": 5
+    },
+    {
+      "maKhachHang": "KH-0006",
+      "loaiKhachHang": "Silver",
+      "hoTen": "huy",
+      "soDienThoai": "0901234321",
+      "soCMND": "321834324",
+      "email": "quanv4297@gmail.com",
+      "diaChi": "fds",
+      "ngaySinh": "2020-08-19",
+      "id": 6
+    },
+    {
+      "maKhachHang": "KH-0007",
+      "loaiKhachHang": "Silver",
+      "hoTen": "Duy",
+      "soDienThoai": "0901234321",
+      "soCMND": "432132123",
+      "email": "quanv4297@gmail.com",
+      "diaChi": "ád",
+      "ngaySinh": "2020-08-30",
+      "id": 7
+    },
+    {
+      "maKhachHang": "KH-1111",
+      "loaiKhachHang": "Member",
+      "hoTen": "hung",
+      "soDienThoai": "0901234321",
+      "soCMND": "231332121",
+      "email": "quanv4297@gmail.com",
+      "diaChi": "dsa",
+      "ngaySinh": "2020-08-14",
+      "id": 8
+    }
+  ],
+  "employee": [
+    {
+      "id": 1,
+      "maNhanVien": "NV-0000",
+      "hoTen": "Ngô xuân",
+      "viTri": "Lễ tân",
+      "trinhDo": "Cao đẳng",
+      "boPhan": "Hành Chính",
+      "ngaySinh": "1993-09-20",
+      "soCMND": "0323123891",
+      "luong": "5000000",
+      "soDienThoai": "0903123231",
+      "email": "xuan@Gamil.com",
+      "diaChi": "Hue"
+    },
+    {
+      "id": 2,
+      "maNhanVien": "NV-0001",
+      "hoTen": "Van danh",
+      "viTri": "Lễ tân",
+      "trinhDo": "Cao đẳng",
+      "boPhan": "Hành Chính",
+      "ngaySinh": "06/09/1996",
+      "soCMND": "0323123891",
+      "luong": "5000000",
+      "soDienThoai": "093231313",
+      "email": "danh@Gamil.com",
+      "diaChi": "đà nẳng"
+    }
+  ],
+  "service": [
+    {
+      "id": 1,
+      "maDichVu": "DV-0001",
+      "tenDichVu": "dich vu 1",
+      "dienTich": "32",
+      "soTang": "3",
+      "soNguoiToiDa": "6",
+      "chiPhiThue": "50000",
+      "kieuThue": "Thuê theo tháng",
+      "trangThai": "da thue"
+    },
+    {
+      "id": 2,
+      "maDichVu": "DV-0001",
+      "tenDichVu": "dich vu 0",
+      "dienTich": "32",
+      "soTang": "3",
+      "soNguoiToiDa": "6",
+      "chiPhiThue": "50000",
+      "kieuThue": "Thuê theo ngày",
+      "trangThai": "da thue"
+    }
+  ],
+  "contract": [
+    {
+      "maHopDong": "HD-0000",
+      "nhanVien": {
+        "id": 1,
+        "maNhanVien": "NV-0000",
+        "hoTen": "Ngô xuân",
+        "viTri": "Lễ tân",
+        "trinhDo": "Cao đẳng",
+        "boPhan": "Hành Chính",
+        "ngaySinh": "1993-09-20",
+        "soCMND": "0323123891",
+        "luong": "5000000",
+        "soDienThoai": "0903123231",
+        "email": "xuan@Gamil.com",
+        "diaChi": "Hue"
+      },
+      "khachHang": {
+        "id": 1,
+        "maKhachHang": "KH-0000",
+        "loaiKhachHang": "Diamond",
+        "hoTen": "Mỹ",
+        "ngaySinh": "2020-08-07",
+        "soCMND": "162738253",
+        "soDienThoai": "0901826354",
+        "email": "nhung@gmail.com",
+        "diaChi": "Huế"
+      },
+      "dichVu": {
+        "id": 1,
+        "maDichVu": "DV-0001",
+        "tenDichVu": "dich vu 1",
+        "dienTich": "32",
+        "soTang": "3",
+        "soNguoiToiDa": "6",
+        "chiPhiThue": "50000",
+        "kieuThue": "Thuê theo tháng",
+        "trangThai": "da thue"
+      },
+      "ngayLamHopDong": "2020-08-12",
+      "ngayKetThucHopDong": "2020-08-15",
+      "tienDatCoc": 2,
+      "tongTien": 2,
+      "id": 1
+    },
+    {
+      "maHopDong": "HD-0001",
+      "nhanVien": {
+        "id": 1,
+        "maNhanVien": "NV-0000",
+        "hoTen": "Ngô xuân",
+        "viTri": "Lễ tân",
+        "trinhDo": "Cao đẳng",
+        "boPhan": "Hành Chính",
+        "ngaySinh": "1993-09-20",
+        "soCMND": "0323123891",
+        "luong": "5000000",
+        "soDienThoai": "0903123231",
+        "email": "xuan@Gamil.com",
+        "diaChi": "Hue"
+      },
+      "khachHang": {
+        "id": 2,
+        "maKhachHang": "KH-1234",
+        "loaiKhachHang": "Member",
+        "hoTen": "Thanh Cong",
+        "ngaySinh": "2020-08-13",
+        "soCMND": "206109631",
+        "soDienThoai": "0901234321",
+        "email": "cong4297@gmail.com",
+        "diaChi": "Quang Nam"
+      },
+      "dichVu": {
+        "id": 1,
+        "maDichVu": "DV-0001",
+        "tenDichVu": "dich vu 1",
+        "dienTich": "32",
+        "soTang": "3",
+        "soNguoiToiDa": "6",
+        "chiPhiThue": "50000",
+        "kieuThue": "Thuê theo tháng",
+        "trangThai": "da thue"
+      },
+      "ngayLamHopDong": "2020-08-16",
+      "ngayKetThucHopDong": "2020-08-13",
+      "tienDatCoc": 213,
+      "tongTien": 321,
+      "id": 2
+    },
+    {
+      "maHopDong": "HD-0003",
+      "nhanVien": {
+        "id": 2,
+        "maNhanVien": "NV-0001",
+        "hoTen": "Van danh",
+        "viTri": "Lễ tân",
+        "trinhDo": "Cao đẳng",
+        "boPhan": "Hành Chính",
+        "ngaySinh": "06/09/1996",
+        "soCMND": "0323123891",
+        "luong": "5000000",
+        "soDienThoai": "093231313",
+        "email": "danh@Gamil.com",
+        "diaChi": "đà nẳng"
+      },
+      "khachHang": {
+        "maKhachHang": "KH-0003",
+        "loaiKhachHang": "Diamond",
+        "hoTen": "quan vo",
+        "soDienThoai": "0903131332",
+        "soCMND": "213232123",
+        "email": "quanv4297@gmail.com",
+        "diaChi": "dsa",
+        "ngaySinh": "2020-08-20",
+        "id": 3
+      },
+      "dichVu": {
+        "id": 1,
+        "maDichVu": "DV-0001",
+        "tenDichVu": "dich vu 1",
+        "dienTich": "32",
+        "soTang": "3",
+        "soNguoiToiDa": "6",
+        "chiPhiThue": "50000",
+        "kieuThue": "Thuê theo tháng",
+        "trangThai": "da thue"
+      },
+      "ngayLamHopDong": "2020-08-21",
+      "ngayKetThucHopDong": "2020-08-13",
+      "tienDatCoc": 21,
+      "tongTien": 321321,
+      "id": 3
+    }
+  ]
+}

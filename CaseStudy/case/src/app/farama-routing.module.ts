@@ -14,12 +14,14 @@ import {AddServiceComponent} from './furama/service/add-service/add-service.comp
 import {UpdateCustomerComponent} from './furama/customer/update-customer/update-customer.component';
 import {UpdateEmployeeComponent} from './furama/employee/update-employee/update-employee.component';
 import {UpdateServiceComponent} from './furama/service/update-service/update-service.component';
+import {ListContractComponent} from './furama/contract/list-contract/list-contract.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home',
     children: [
       {path: '', component: HomeComponent},
+      // {path: 'list-customer', component: ListCustomerComponent},
       {path: 'list-customer', component: ListCustomerComponent},
       {path: 'add-customer', component: AddCustomerComponent},
       {path: 'list-customer-booking', component: ListCustomerBookingComponent},
@@ -29,9 +31,10 @@ const routes: Routes = [
       {path: 'add-employee', component: AddEmployeeComponent},
       {path: 'list-service', component: ListServiceComponent},
       {path: 'add-service', component: AddServiceComponent},
-      {path: 'update-customer/:maKhachHang', component: UpdateCustomerComponent},
-      {path: 'update-employee/:maNhanVien', component: UpdateEmployeeComponent},
-        {path: 'update-service/:maDichVu', component: UpdateServiceComponent},
+      {path: 'update-customer/:id', component: UpdateCustomerComponent},
+      {path: 'update-employee/:id', component: UpdateEmployeeComponent},
+        {path: 'update-service/:id', component: UpdateServiceComponent},
+        {path: 'list-contract', component: ListContractComponent},
     ]}
 ];
 

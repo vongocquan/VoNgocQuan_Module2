@@ -49,6 +49,7 @@
                 </a>
                 <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" [routerLink]="['../add-contract']">Thêm hợp đồng</a>
+                  <a class="dropdown-item" [routerLink]="['/home/list-contract']">Danh sách hợp đồng</a>
                   <a class="dropdown-item" [routerLink]="['../add-contract-detail']">Thêm hợp đồng chi tiết</a>
                 </div>
               </li>
@@ -102,10 +103,12 @@
       <div class="col-lg-2"></div>
       <div class="col-lg-10">
         <h4 class="text-center">Danh sách dịch vụ</h4>
-        <form class="form-inline  my-lg-2 text-left">
-          <input style="width: 900px" class="form-control mr-sm-2 htSearch" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0 htSearch" type="submit">Search</button>
-        </form>
+        <nav class="navbar navbar-light bg-light">
+          <form (ngSubmit) ="search()" class="form-inline my-lg-2">
+            <input style="width: 900px" class="form-control mr-sm-2 htSearch" name="value" type="search" [(ngModel)]="value" (click)="reset()" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 htSearch" type="submit">Search</button>
+          </form>
+        </nav>
         <table class="table">
           <thead>
           <tr class="bg-warning">
@@ -125,14 +128,14 @@
           <tr *ngFor="let dichVu of dsDichVu">
             <td>{{dichVu.maDichVu}}</td>
             <td>{{dichVu.tenDichVu | titlecase}}</td>
-            <td>{{dichVu.dienTich | number}}</td>
+            <td>{{dichVu.dienTich}}</td>
             <td>{{dichVu.soTang}}</td>
             <td>{{dichVu.soNguoiToiDa}}</td>
             <td>{{dichVu.chiPhiThue}}VND</td>
             <td>{{dichVu.kieuThue}}</td>
             <td>{{dichVu.trangThai}}</td>
-            <td><a [routerLink]="['../update-service/' + dichVu.maDichVu]">chỉnh sửa</a></td>
-            <td><a [routerLink]="['../list-service']" (click)="clickDelete(dichVu.maDichVu)">xóa</a></td>
+            <td><a [routerLink]="['../update-service/' + dichVu.id]">chỉnh sửa</a></td>
+            <td><a [routerLink]="['../list-service']" (click)="clickDelete(dichVu.id)">xóa</a></td>
           </tr>
           </tbody>
         </table>

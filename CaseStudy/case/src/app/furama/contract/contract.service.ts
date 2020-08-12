@@ -1,25 +1,21 @@
 import { Injectable } from '@angular/core';
 import {Contract} from './contract';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
+import {Customer} from '../customer/customer';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContractService {
   dsHopDong: Contract[];
-  constructor() {
-    this.dsHopDong = [
-      // tslint:disable-next-line:max-line-length
-      {maHopDong: 'HD-0001', nhanVien: 'sad', khachHang: 'KH-1234', dichVu: 'dshads', ngayLamHopDong: '02/12/2020', ngayKetThucHopDong: '12/12/2020',
-        tienDatCoc: '40000', tongTien: '200000'},
-      // tslint:disable-next-line:max-line-length
-      {maHopDong: 'HD-0002', nhanVien: 'sad', khachHang: 'KH-1234', dichVu: 'dshads', ngayLamHopDong: '02/12/2020', ngayKetThucHopDong: '12/12/2020',
-        tienDatCoc: '40000', tongTien: '200000'}
-    ];
+  IPA_URL_CONTRACT = 'http://localhost:3000/contract';
+  constructor(private httpClient: HttpClient) {
   }
-  findAll(): Contract[]{
-    return this.dsHopDong;
+  findAll(): Observable<Contract[]>{
+    return this.httpClient.get<Contract[]>(this.IPA_URL_CONTRACT);
   }
-  addContract(contract: Contract): void{
-    this.dsHopDong.push(contract);
+  addContract(contract: Contract): Observable<void>{
+    return this.httpClient.post<void>(this.IPA_URL_CONTRACT, contract);
   }
 }

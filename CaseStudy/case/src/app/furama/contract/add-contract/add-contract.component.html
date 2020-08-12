@@ -49,6 +49,7 @@
                 </a>
                 <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" [routerLink]="['../add-contract']">Thêm hợp đồng</a>
+                  <a class="dropdown-item" [routerLink]="['/home/list-contract']">Danh sách hợp đồng</a>
                   <a class="dropdown-item" [routerLink]="['../add-contract-detail']">Thêm hợp đồng chi tiết</a>
                 </div>
               </li>
@@ -113,20 +114,20 @@
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Mã nhân viên</label>
-            <select formControlName="maNhanVien" class="form-control" >
-              <option *ngFor="let nhanVien of dsNhanVien" name="{{nhanVien.maNhanVien}}">{{nhanVien.maNhanVien}}</option>
+            <select formControlName="nhanVien" class="form-control" >
+              <option *ngFor="let nhanVien of dsNhanVien" >{{nhanVien.maNhanVien}}</option>
             </select>
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Mã khách hàng</label>
-            <select formControlName="maKhachHang" class="form-control">
-              <option *ngFor="let khachHang of dsKhachHang" name="{{khachHang.maKhachHang}}">{{khachHang.maKhachHang}}</option>
+            <select formControlName="khachHang" class="form-control">
+              <option *ngFor="let khachHang of dsKhachHang">{{khachHang.maKhachHang}}</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="formGroupExampleInput2">Mã khách hàng</label>
-            <select formControlName="maDichVu" class="form-control">
-              <option *ngFor="let dichVu of dsDichVu" name="{{dichVu.maDichVu}}">{{dichVu.maDichVu}}</option>
+            <label for="formGroupExampleInput2">Mã dịch vụ</label>
+            <select formControlName="dichVu" class="form-control">
+              <option *ngFor="let dichVu of dsDichVu" >{{dichVu.maDichVu}}</option>
             </select>
           </div>
           <div class="form-group">
@@ -153,7 +154,7 @@
             <p *ngIf="formContract.get('tongTien').hasError('required') && formContract.get('tongTien').touched">Tổng tiền không trống</p>
             <p *ngIf="formContract.get('tongTien').hasError('min') && formContract.get('tongTien').touched">Tổng tiền phải là số dương</p>
           </div>
-          <button type="submit" class="btn btn-primary">Thêm</button>
+          <button type="submit" [disabled]="formContract.invalid" class="btn btn-primary">Thêm</button>
         </form>
         {{result}}
       </div>

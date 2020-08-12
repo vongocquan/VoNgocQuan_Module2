@@ -26,7 +26,6 @@ export class BlogComponent implements OnInit {
       .subscribe(next => {
         this.postList.unshift(next);
         this.postForm.reset({
-          id: '',
           title: '',
           body: ''
         });
