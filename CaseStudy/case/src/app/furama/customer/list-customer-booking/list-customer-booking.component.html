@@ -103,6 +103,12 @@
       <div class="col-lg-2"></div>
       <div class="col-lg-10">
         <h4 class="text-center">Danh sách khách hàng đặt phòng</h4>
+        <nav class="navbar navbar-light bg-light">
+          <form (ngSubmit) ="search()" class="form-inline my-lg-2">
+            <input style="width: 900px" class="form-control mr-sm-2 htSearch" name="value" type="search" [(ngModel)]="value" (click)="reset()" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 htSearch" type="submit">Search</button>
+          </form>
+        </nav>
         <table class="table">
           <thead>
           <tr class="bg-warning">
@@ -118,7 +124,7 @@
           </tr>
           </thead>
           <tbody>
-          <tr *ngFor="let KhachHangBooking of dsKhachHangBooking">
+          <tr *ngFor="let KhachHangBooking of dsKhachHangBooking | slice : (page -1) * pageSize : (page - 1) * pageSize + pageSize">
             <td>{{KhachHangBooking.maKhachHang}}</td>
             <td>{{KhachHangBooking.hoTen | titlecase}}</td>
             <td>{{KhachHangBooking.loaiKhachHang}}</td>
@@ -133,11 +139,13 @@
         <div>
           <nav aria-label="Page navigation example">
             <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              <li class="page-item"><a class="page-link" (click)="goPer()" [routerLink]="">Previous</a></li>
+              <li class="page-item" *ngIf="pageMax === page && pageMax > 2"><a class="page-link" (click)="goPage(page - 2)" [routerLink]="">{{page - 2}}</a></li>
+              <li class="page-item" *ngIf="page > 1 "><a class="page-link" (click)="goPage(page - 1)" [routerLink]="">{{page - 1}}</a></li>
+              <li class="page-item"><a class="page-link bg-primary">{{page}}</a></li>
+              <li class="page-item" *ngIf="page < pageMax"><a class="page-link" (click)="goPage(page + 1)" [routerLink]="">{{page + 1}}</a></li>
+              <li class="page-item" *ngIf="page === 1 && pageMax > 2"><a class="page-link" (click)="goPage(page + 2)" [routerLink]="">{{page + 2}}</a></li>
+              <li class="page-item"><a class="page-link" (click)="goNext()" [routerLink]="">Next</a></li>
             </ul>
           </nav>
         </div>

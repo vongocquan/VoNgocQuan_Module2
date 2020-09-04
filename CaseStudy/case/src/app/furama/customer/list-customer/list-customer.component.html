@@ -146,9 +146,9 @@
                 <ul class="pagination">
                   <li class="page-item"><a class="page-link" (click)="goPre()" [routerLink]="['/home/list-customer']">Previous</a></li>
                   <li class="page-item" *ngIf="page === pageMax && pageMax > 2"><a class="page-link" (click)="goPage(page - 2)" [routerLink]="['/home/list-customer']">{{page - 2}}</a></li>
-                  <li class="page-item" *ngIf="page !== 1"><a class="page-link" (click)="goPage(page - 1)" [routerLink]="['/home/list-customer']">{{page - 1}}</a></li>
-                  <li class="page-item" *ngIf="dsKhachHang.length !== 0"><a class="page-link bg-primary" >{{page}}</a></li>
-                  <li class="page-item" *ngIf="page !== pageMax && dsKhachHang.length !== 0"><a class="page-link" (click)="goPage(page + 1)" [routerLink]="['/home/list-customer']">{{page + 1}}</a></li>
+                  <li class="page-item" *ngIf="page > 1"><a class="page-link" (click)="goPage(page - 1)" [routerLink]="['/home/list-customer']">{{page - 1}}</a></li>
+                  <li class="page-item"><a class="page-link bg-primary" >{{page}}</a></li>
+                  <li class="page-item" *ngIf="page < pageMax"><a class="page-link" (click)="goPage(page + 1)" [routerLink]="['/home/list-customer']">{{page + 1}}</a></li>
                   <li class="page-item" *ngIf="page === 1 && pageMax > 2"><a class="page-link" (click)="goPage(page + 2)" [routerLink]="['/home/list-customer']">{{page + 2}}</a></li>
                   <li class="page-item"><a class="page-link" (click)="goNext()" [routerLink]="['/home/list-customer']">Next</a></li>
                 </ul>

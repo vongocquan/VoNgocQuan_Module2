@@ -47,7 +47,16 @@ export class ListCustomerComponent implements OnInit {
         error => {
         },
         () => {
-          this.listCustomer();
+          this.customerService.findAll().subscribe(
+            next => {
+              this.dsKhachHang = next;
+            }, error => {
+              this.dsKhachHang = new Array();
+            }, () => {
+              this.pageMax = Math.ceil((this.dsKhachHang.length / this.pageSize));
+              this.page = 1;
+            }
+          );
         }
       );
     }
@@ -57,10 +66,8 @@ export class ListCustomerComponent implements OnInit {
     this.customerService.findAll().subscribe(
       next => {
         this.dsKhachHang = next;
-        this.pageMax = Math.ceil((this.dsKhachHang.length / this.pageSize));
       }, error => {
         this.dsKhachHang = new Array();
-        this.pageMax = Math.ceil((this.dsKhachHang.length / this.pageSize));
       }, () => {
         if (this.value !== '') {
           this.dsKhachHang = this.dsKhachHang.filter(res => {
@@ -68,9 +75,9 @@ export class ListCustomerComponent implements OnInit {
               || res.maKhachHang.toLocaleLowerCase().match(this.value.toLocaleLowerCase())
               || (res.id).toString().toLocaleLowerCase().match(this.value.toLocaleLowerCase());
           });
-          this.pageMax = Math.ceil((this.dsKhachHang.length / this.pageSize));
-          this.page = 1;
         }
+        this.pageMax = Math.ceil((this.dsKhachHang.length / this.pageSize));
+        this.page = 1;
       }
     );
   }

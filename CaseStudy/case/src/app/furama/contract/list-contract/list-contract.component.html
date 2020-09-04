@@ -123,7 +123,7 @@
           </tr>
           </thead>
           <tbody>
-          <tr *ngFor="let hopDong of dsHopDong">
+          <tr *ngFor="let hopDong of dsHopDong | slice : (page - 1) * pageSize : (page - 1) * pageSize + pageSize">
             <td>{{hopDong.maHopDong}}</td>
             <td>{{hopDong.nhanVien.maNhanVien}}</td>
             <td>{{hopDong.khachHang.maKhachHang}}</td>
@@ -137,10 +137,15 @@
         </table>
         <div>
           <nav aria-label="Page navigation example">
-            <!--            <ul class="pagination" >-->
-            <!--              <li class="page-item"><a class="page-link" (click)="goPre()" [routerLink]="['/home/list-customer/' + page]">Previous</a></li>-->
-            <!--              <li class="page-item"><a class="page-link" (click)="goNext()" [routerLink]="['/home/list-customer/' + page]">Next</a></li>-->
-            <!--            </ul>-->
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" (click)="goPer()" [routerLink]="">Previous</a></li>
+              <li class="page-item" *ngIf="page === pageMax && page > 2"><a class="page-link" (click)="goPage(page - 2)" [routerLink]="">{{page - 2}}</a></li>
+              <li class="page-item" *ngIf="page > 1"><a class="page-link" (click)="goPage(page - 1)" [routerLink]="">{{page - 1}}</a></li>
+              <li class="page-item"><a class="page-link bg-primary" >{{page}}</a></li>
+              <li class="page-item" *ngIf="page < pageMax"><a class="page-link" (click)="goPage(page + 1)" [routerLink]="">{{page + 1}}</a></li>
+              <li class="page-item" *ngIf="page === 1 && pageMax > 2" (click)="goPage(page + 2)" [routerLink]=""><a class="page-link" href="#">{{page + 2}}</a></li>
+              <li class="page-item"><a class="page-link" (click)="goNext()" [routerLink]="">Next</a></li>
+            </ul>
           </nav>
         </div>
       </div>

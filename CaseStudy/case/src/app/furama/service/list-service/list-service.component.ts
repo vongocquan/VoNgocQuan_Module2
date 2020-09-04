@@ -10,12 +10,17 @@ import {ServiceService} from '../service.service';
 export class ListServiceComponent implements OnInit {
   dsDichVu: Service[];
   value = '';
+  page = 1;
+  pageSize = 2;
+  pageMax: number;
   constructor(private serviceService: ServiceService) {
     serviceService.findAll().subscribe(
       next => {
         this.dsDichVu = next;
       }, error => {
         this.dsDichVu = new Array();
+      }, () => {
+        this.pageMax =  Math.ceil(this.dsDichVu.length / this.pageSize);
       }
     );
   }
@@ -33,6 +38,9 @@ export class ListServiceComponent implements OnInit {
               this.dsDichVu = next;
             }, error => {
               this.dsDichVu = new Array();
+            }, () => {
+              this.pageMax =  Math.ceil(this.dsDichVu.length / this.pageSize);
+              this.page = 1;
             }
           );
         }
@@ -40,23 +48,39 @@ export class ListServiceComponent implements OnInit {
     }
   }
   search(): void{
-    if (this.value !== '') {
-      this.dsDichVu = this.dsDichVu.filter(res => {
-        return res.maDichVu.toLocaleLowerCase().match(this.value.toLocaleLowerCase())
-          || res.tenDichVu.toLocaleLowerCase().match(this.value.toLocaleLowerCase());
-      });
-    }
-    else{
-      this.serviceService.findAll().subscribe(
-        next => {
-          this.dsDichVu = next;
-        }, error => {
-          this.dsDichVu = new Array();
+    this.serviceService.findAll().subscribe(
+      next => {
+        this.dsDichVu = next;
+      }, error => {
+        this.dsDichVu = new Array();
+      }, () => {
+        if (this.value !== '') {
+          this.dsDichVu = this.dsDichVu.filter(res => {
+            return res.maDichVu.toLocaleLowerCase().match(this.value.toLocaleLowerCase())
+              || res.tenDichVu.toLocaleLowerCase().match(this.value.toLocaleLowerCase());
+          });
         }
-      );
-    }
+        this.pageMax =  Math.ceil(this.dsDichVu.length / this.pageSize);
+        this.page = 1;
+      }
+    );
   }
   reset(): void{
     this.value = '';
+  }
+  goPer(): void{
+    this.pageMax =  Math.ceil(this.dsDichVu.length / this.pageSize);
+    if (this.page > 1){
+      this.page--;
+    }
+  }
+  goNext(): void{
+    this.pageMax =  Math.ceil(this.dsDichVu.length / this.pageSize);
+    if (this.page < this.pageMax){
+      this.page++;
+    }
+  }
+  goPage(page: number): void{
+    this.page = page;
   }
 }

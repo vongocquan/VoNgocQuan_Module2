@@ -125,7 +125,7 @@
           </tr>
           </thead>
           <tbody>
-          <tr *ngFor="let dichVu of dsDichVu">
+          <tr *ngFor="let dichVu of dsDichVu | slice : (page - 1) * pageSize : (page - 1) * pageSize + pageSize">
             <td>{{dichVu.maDichVu}}</td>
             <td>{{dichVu.tenDichVu | titlecase}}</td>
             <td>{{dichVu.dienTich}}</td>
@@ -142,11 +142,13 @@
         <div>
           <nav aria-label="Page navigation example">
             <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              <li class="page-item"><a class="page-link" (click)="goPer()" [routerLink]="">Previous</a></li>
+              <li class="page-item" *ngIf="page === pageMax && page > 2"><a class="page-link" (click)="goPage(page - 2)" [routerLink]="">{{page - 2}}</a></li>
+              <li class="page-item" *ngIf="page > 1"><a class="page-link" (click)="goPage(page - 1)" [routerLink]="">{{page - 1}}</a></li>
+              <li class="page-item"><a class="page-link bg-primary" >{{page}}</a></li>
+              <li class="page-item" *ngIf="page < pageMax"><a class="page-link" (click)="goPage(page + 1)" [routerLink]="">{{page + 1}}</a></li>
+              <li class="page-item" *ngIf="page === 1 && pageMax > 2" (click)="goPage(page + 2)" [routerLink]=""><a class="page-link" href="#">{{page + 2}}</a></li>
+              <li class="page-item"><a class="page-link" (click)="goNext()" [routerLink]="">Next</a></li>
             </ul>
           </nav>
         </div>

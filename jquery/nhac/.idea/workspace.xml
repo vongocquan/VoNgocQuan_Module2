@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe3e3746-59f1-414e-8839-24a129fa8aa5" name="Default Changelist" comment="" />
+    <list default="true" id="fe3e3746-59f1-414e-8839-24a129fa8aa5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Angula Overview/angular-color-picker" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angula Overview/angular-color-picker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Angula Overview/angular-name-card" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angula Overview/angular-name-card" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Angula Overview/angular-progress-bar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angula Overview/angular-progress-bar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Angula Overview/angular-rating-bar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angula Overview/angular-rating-bar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Angula Overview/app" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angula Overview/app" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Angula Overview/calculator" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angula Overview/calculator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Angula Overview/font-size" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angula Overview/font-size" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Angula Overview/test" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angula Overview/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularForm/dang-ky-dang-nhap" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularForm/dang-ky-dang-nhap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularForm/todo" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularForm/todo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/contract/list-contract/list-contract.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/contract/list-contract/list-contract.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/contract/list-contract/list-contract.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/contract/list-contract/list-contract.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/customer/list-customer-booking/list-customer-booking.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/customer/list-customer-booking/list-customer-booking.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/customer/list-customer-booking/list-customer-booking.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/customer/list-customer-booking/list-customer-booking.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/customer/list-customer/list-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/customer/list-customer/list-customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/customer/list-customer/list-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/customer/list-customer/list-customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/employee/list-employee/list-employee.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/employee/list-employee/list-employee.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/employee/list-employee/list-employee.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/employee/list-employee/list-employee.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/service/list-service/list-service.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/service/list-service/list-service.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/service/list-service/list-service.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/service/list-service/list-service.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/test" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bootstracp/layout/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bootstracp/layout/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nhac.html" beforeDir="false" afterPath="$PROJECT_DIR$/nhac.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tao_hieu_ung/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tao_hieu_ung/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +43,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1ehhw858rTzhGGL226Mauk2vCFJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,7 +57,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CaseStudy/layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -74,6 +106,10 @@
       <workItem from="1595069183561" duration="764000" />
       <workItem from="1595207894907" duration="4288000" />
       <workItem from="1595239885289" duration="60000" />
+      <workItem from="1597760256222" duration="77000" />
+      <workItem from="1598690661087" duration="4154000" />
+      <workItem from="1598757113174" duration="4091000" />
+      <workItem from="1598781350317" duration="106000" />
     </task>
     <servers />
   </component>
@@ -100,10 +136,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1594785913891" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1595239944347">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1598781427488">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595239944347" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598781427488" />
     <state width="1345" height="214" key="GridCell.Tab.0.bottom" timestamp="1595069948677">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

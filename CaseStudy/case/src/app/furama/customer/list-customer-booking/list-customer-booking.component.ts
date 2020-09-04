@@ -13,19 +13,40 @@ export class ListCustomerBookingComponent implements OnInit {
   dsHopDong: Contract[] = [];
   dsKhachHangChung: Customer[] = [];
   dsKhachHangBooking: Customer[] = [];
+  value = '';
+  page = 1;
+  pageSize = 2;
+  pageMax: number;
   constructor(private customerService: CustomerService, private contractService: ContractService) {
     contractService.findAll().subscribe(
       next => {
         this.dsHopDong = next;
-        this.findCustomerBooking();
         console.log('leg' + this.dsHopDong.length);
       }, error => {
         this.dsHopDong = new Array();
+      }, () => {
+        this.findCustomerBooking();
+        this.page = 1;
+        this.pageMax = Math.ceil(this.dsKhachHangBooking.length / this.pageSize);
       }
     );
   }
 
   ngOnInit(): void {
+  }
+  search(): void {
+    this.dsKhachHangChung = [];
+    this.dsKhachHangBooking = [];
+    this.findCustomerBooking();
+    if (this.value !== '') {
+      this.dsKhachHangBooking = this.dsKhachHangBooking.filter(res => {
+          return res.maKhachHang.toLocaleLowerCase().match(this.value.toLocaleLowerCase())
+            || res.hoTen.toLocaleLowerCase().match(this.value.toLocaleLowerCase());
+        }
+      );
+    }
+    this.page = 1;
+    this.pageMax = Math.ceil(this.dsKhachHangBooking.length / this.pageSize);
   }
 
   findCustomerBooking(): void{
@@ -39,5 +60,21 @@ export class ListCustomerBookingComponent implements OnInit {
         this.dsKhachHangBooking.push(this.dsKhachHangChung[i]);
       }
     }
+  }
+  goPer(): void{
+    if (this.page !== 1){
+      this.page--;
+    }
+  }
+  goNext(): void{
+    if (this.page !== this.pageMax){
+      this.page++;
+    }
+  }
+  goPage(page: number): void{
+    this.page = page;
+  }
+  reset(): void{
+    this.value = '';
   }
 }

@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81e9a507-452a-4992-ba50-264dce83ca50" name="Default Changelist" comment="" />
+    <list default="true" id="81e9a507-452a-4992-ba50-264dce83ca50" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Angula Overview/angular-color-picker" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angula Overview/angular-color-picker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Angula Overview/angular-name-card" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angula Overview/angular-name-card" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Angula Overview/angular-progress-bar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angula Overview/angular-progress-bar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Angula Overview/angular-rating-bar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angula Overview/angular-rating-bar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Angula Overview/app" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angula Overview/app" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Angula Overview/calculator" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angula Overview/calculator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Angula Overview/font-size" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angula Overview/font-size" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Angula Overview/test" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angula Overview/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularForm/dang-ky-dang-nhap" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularForm/dang-ky-dang-nhap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularForm/todo" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularForm/todo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/contract/list-contract/list-contract.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/contract/list-contract/list-contract.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/contract/list-contract/list-contract.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/contract/list-contract/list-contract.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/customer/list-customer-booking/list-customer-booking.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/customer/list-customer-booking/list-customer-booking.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/customer/list-customer-booking/list-customer-booking.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/customer/list-customer-booking/list-customer-booking.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/customer/list-customer/list-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/customer/list-customer/list-customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/customer/list-customer/list-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/customer/list-customer/list-customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/employee/list-employee/list-employee.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/employee/list-employee/list-employee.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/employee/list-employee/list-employee.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/employee/list-employee/list-employee.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/service/list-service/list-service.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/service/list-service/list-service.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/service/list-service/list-service.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/case/src/app/furama/service/list-service/list-service.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/test" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nhac/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../nhac/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +41,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1eeuz9ZjIfUVYnwMTt7Kfh1n8R8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -51,6 +81,7 @@
       <workItem from="1594694640966" duration="5901000" />
       <workItem from="1594719077914" duration="219000" />
       <workItem from="1594783684413" duration="152000" />
+      <workItem from="1597760334015" duration="606000" />
     </task>
     <servers />
   </component>

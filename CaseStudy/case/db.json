@@ -68,8 +68,8 @@
     },
     {
       "maKhachHang": "KH-0007",
-      "loaiKhachHang": "Silver",
-      "hoTen": "Duy",
+      "loaiKhachHang": "Platinium",
+      "hoTen": "Thuy",
       "soDienThoai": "0901234321",
       "soCMND": "432132123",
       "email": "quanv4297@gmail.com",
@@ -87,6 +87,17 @@
       "diaChi": "dsa",
       "ngaySinh": "2020-08-14",
       "id": 8
+    },
+    {
+      "maKhachHang": "KH-1232",
+      "loaiKhachHang": "Member",
+      "hoTen": "hung",
+      "soDienThoai": "0901234321",
+      "soCMND": "231332121",
+      "email": "quanv4297@gmail.com",
+      "diaChi": "dsa",
+      "ngaySinh": "2020-08-14",
+      "id": 9
     }
   ],
   "employee": [
@@ -117,6 +128,62 @@
       "soDienThoai": "093231313",
       "email": "danh@Gamil.com",
       "diaChi": "đà nẳng"
+    },
+    {
+      "maNhanVien": "NV-9999",
+      "hoTen": "Hạnh",
+      "viTri": "Lễ tân",
+      "trinhDo": "Trung cấp",
+      "boPhan": "Sale – Marketing",
+      "ngaySinh": "2020-08-15",
+      "soCMND": "233213212",
+      "luong": 31,
+      "soDienThoai": "0903123231",
+      "email": "quanv4297@gmail.com",
+      "diaChi": "da",
+      "id": 3
+    },
+    {
+      "maNhanVien": "NV-0004",
+      "hoTen": "Truyền",
+      "viTri": "chuyên viên",
+      "trinhDo": "Đại học",
+      "boPhan": "Hành Chính",
+      "ngaySinh": "2020-08-14",
+      "soCMND": "3213213321",
+      "luong": 32132,
+      "soDienThoai": "0903123231",
+      "email": "quanv4297@gmail.com",
+      "diaChi": "dsad",
+      "id": 4
+    },
+    {
+      "maNhanVien": "NV-1232",
+      "hoTen": "Hồng",
+      "viTri": "quản lý",
+      "trinhDo": "Cao đẳng",
+      "boPhan": "Quản lý",
+      "ngaySinh": "2020-08-07",
+      "soCMND": "2132313232",
+      "luong": 231213,
+      "soDienThoai": "0903123231",
+      "email": "quanv4297@gmail.com",
+      "diaChi": "a",
+      "id": 5
+    },
+    {
+      "maNhanVien": "NV-8888",
+      "hoTen": "thu",
+      "viTri": "giám sát",
+      "trinhDo": "Đại học",
+      "boPhan": "Sale – Marketing",
+      "ngaySinh": "2020-08-15",
+      "soCMND": "213321322",
+      "luong": 3213,
+      "soDienThoai": "0903123231",
+      "email": "quanv4297@gmail.com",
+      "diaChi": "Quang tri",
+      "id": 6
     }
   ],
   "service": [
@@ -133,7 +200,7 @@
     },
     {
       "id": 2,
-      "maDichVu": "DV-0001",
+      "maDichVu": "DV-0002",
       "tenDichVu": "dich vu 0",
       "dienTich": "32",
       "soTang": "3",
